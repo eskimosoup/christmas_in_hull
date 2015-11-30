@@ -1,0 +1,58 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    actionmailer (2.3.14)
+      actionpack (= 2.3.14)
+    actionpack (2.3.14)
+      activesupport (= 2.3.14)
+      rack (~> 1.1.0)
+    activerecord (2.3.14)
+      activesupport (= 2.3.14)
+    activeresource (2.3.14)
+      activesupport (= 2.3.14)
+    activesupport (2.3.14)
+    acts-as-taggable-on (2.0.6)
+    ancestry (1.2.5)
+      activerecord (>= 2.2.2)
+    authlogic (2.1.6)
+      activesupport
+    babosa (0.3.11)
+    friendly_id (3.2.1.1)
+      babosa (~> 0.3.0)
+    mysql (2.9.1)
+    nokogiri (1.5.11)
+    paperclip (2.3.11)
+      activerecord (>= 2.3.0)
+      activesupport (>= 2.3.2)
+    rack (1.1.6)
+    rails (2.3.14)
+      actionmailer (= 2.3.14)
+      actionpack (= 2.3.14)
+      activerecord (= 2.3.14)
+      activeresource (= 2.3.14)
+      activesupport (= 2.3.14)
+      rake (>= 0.8.3)
+    rake (10.4.2)
+    rmagick (2.13.3)
+    sanitize (2.0.3)
+      nokogiri (>= 1.4.4, < 1.6)
+    searchlogic (2.4.23)
+      activerecord (>= 2.0.0)
+    will_paginate (2.3.15)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  acts-as-taggable-on (= 2.0.6)
+  ancestry (= 1.2.5)
+  authlogic (= 2.1.6)
+  friendly_id (= 3.2.1.1)
+  mysql
+  nokogiri (= 1.5.11)
+  paperclip (= 2.3.11)
+  rails (= 2.3.14)
+  rmagick (~> 2.13.1)
+  sanitize (= 2.0.3)
+  searchlogic (= 2.4.23)
+  will_paginate (= 2.3.15)

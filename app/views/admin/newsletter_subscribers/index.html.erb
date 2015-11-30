@@ -1,0 +1,5 @@
+<% title("Newsletter Subscribers") %>
+
+<p><%= link_to "New Newsletter Subscriber", new_admin_newsletter_subscriber_path %></p>
+
+<%= eskimo_table({:columns => ["email"], :list => @newsletter_subscribers}) %>

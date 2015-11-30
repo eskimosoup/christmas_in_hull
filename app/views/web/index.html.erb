@@ -1,0 +1,37 @@
+<% metadata(@page_node.active_content.meta_description, @page_node.active_content.meta_tags) %>
+
+<% content_for :head do %>
+  <%= javascript_include_tag "scriptaculous" %>
+<% end %>
+
+<% if @banners.length > 1 %>
+	<% add_load_function("startPage();") %>
+<% end %>
+
+<% hide_left %>
+
+<% title(@page_node.title) %>
+
+<% if @events.empty? and @articles.empty? %>
+
+	<%= @page_node.active_content.main_content %>
+
+<% else %>
+
+	<% if !@events.empty? %>
+    <div class="col_1">
+      <%= render "events" %>
+    </div>
+	<% end %>
+
+	<% if !@articles.empty? %>
+    <div class="col_2">
+      <%= render "articles" %>
+    </div>
+	<% end %>
+
+<% end %>
+
+<% content_for :right do %>
+	<%= render "/shared/common_right" %>
+<% end %>

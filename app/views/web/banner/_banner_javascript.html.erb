@@ -1,0 +1,35 @@
+<script type="text/javascript">
+  
+  var banners = new Array(<%= @banners.length %>);
+	var i = 0;
+	var wait = 7500;
+  var setIntervalId;
+	
+	<% @banners.each_with_index do |banner, index| %>
+		banners[<%= index %>] = "banner_<%= index %>";
+	<% end %>
+	
+	// Auto
+		
+		function startPage() {
+			setIntervalId = setInterval('swapFade()', wait);
+		}
+		
+		function swapFade() {
+			Effect.Fade(banners[i], { duration:1, from:1.0, to:0.0 });
+			i++;
+			if (i == banners.length) i = 0;
+			Effect.Appear(banners[i], { duration:1, from:0.0, to:1.0 });
+		}
+		
+	// Click
+		
+		function showImage(bannerIndex) {
+			clearInterval(setIntervalId);
+			<% @banners.each_with_index do |banner, index| %>
+				$('banner_<%= index %>').style.display = "none";
+			<% end %>
+			$('banner_' + bannerIndex).style.display = "";
+		}
+		
+</script>

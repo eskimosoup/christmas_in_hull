@@ -1,0 +1,14 @@
+<% out = [] %>
+<div>
+  <% for page_node in nodes %>
+	  <% link_options = {} %>
+	  <% if @current_page_node && (@current_page_node == page_node || @current_page_node.ancestors.include?(page_node)) %>
+		  <% link_options.merge!(:class => "highlight") %>
+	  <% end %>
+	  <% if page_node.access_key? %>
+		  <% link_options.merge!(:accesskey => page_node.access_key) %>
+	  <% end %>
+	  <% out << link_to(h(page_node.navigation_title), url_for(page_node.path), link_options) %>
+  <% end %>
+  <%= out.join('') %>
+</div>

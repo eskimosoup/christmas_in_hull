@@ -1,0 +1,78 @@
+<% form_for [:admin, @banner], :html => {:multipart => true} do |f| %>
+
+  <%= f.error_messages %>
+
+	<fieldset>
+		<legend>Main Information</legend>
+		<p>
+			<%= f.label :name %><br />
+			<%= f.text_field :name %>
+		</p>
+	  <p>
+			<%= image_field_tag f, :banner, :image %>
+		</p>
+    
+		<p>
+			<%= f.label :content %><br />
+			<%= f.text_area :content %>
+		</p>
+	</fieldset>
+
+	<fieldset>
+		<legend>Linked to</legend>
+		<p>
+			This banner will link through to only one of the following places. The order of priority is as below. So, if you select a page but also an event, this banner will link through to the page.
+		</p>
+		<p>
+			<%= f.label :page_id, "Page" %><br />
+			<%= f.collection_select :page_id, PageNode.unrecycled, :id, :name, {:include_blank => true} %>
+		</p>
+		<% if @events.nil? %>
+			<p><small>
+				No Events to link to<br />
+				<%= link_to "Create one", new_admin_event_path %> | <%= link_to "Activate one", admin_events_path %>
+			</small></p>
+		<% else %>
+			<p>
+				<%= f.label :event_id, "Event" %><br />
+				<%= f.collection_select :event_id, Event.active, :id, :name, {:include_blank => true} %>
+			</p>
+		<% end %>
+		<% if @articles.nil? %>
+			<p><small>
+				No Articles to link to<br />
+				<%= link_to "Create one", new_admin_article_path %> | <%= link_to "Activate one", admin_articles_path %>
+			</small></p>
+		<% else %>
+			<p>
+				<%= f.label :article_id, "Article" %><br />
+				<%= f.collection_select :article_id, Article.active, :id, :name, {:include_blank => true} %>
+			</p>
+		<% end %>
+		<% if @venues.nil? %>
+			<p><small>
+				No Venues to link to<br />
+				<%= link_to "Create one", new_admin_venue_path %> | <%= link_to "Activate one", admin_venues_path %>
+			</small></p>
+		<% else %>
+			<p>
+				<%= f.label :venue_id, "Venue" %><br />
+				<%= f.collection_select :venue_id, Venue.active, :id, :name, {:include_blank => true} %>
+			</p>
+		<% end %>
+		<p>
+			<%= f.label :external_link, "External site or page" %><br />
+			<%= f.text_field :external_link, {:placeholder => "e.g. http://www.eskimosoup.co.uk"} %>
+		</p>
+	</fieldset>
+
+	<p>
+		<%= f.check_box :display %>
+		<%= f.label :display %>
+	</p>
+
+  <p>
+		<%= f.submit "Submit" %>
+	</p>
+
+<% end %>

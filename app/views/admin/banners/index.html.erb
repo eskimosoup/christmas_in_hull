@@ -1,0 +1,5 @@
+<% title("Banners") %>
+
+<p><%= link_to "New Banner", new_admin_banner_path %></p>
+
+<%= eskimo_table({:columns => [["", lambda{|banner| image_tag(banner.image? ? banner.image(:sample) : "/images/no_image.jpg")}, ""], ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"]], :list => @banners, :images => true, :manual_sorting => true}) %>

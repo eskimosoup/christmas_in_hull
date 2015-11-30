@@ -1,0 +1,56 @@
+<% form_for([:admin, @offer], :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <fieldset>
+  	<legend>Company Information</legend>
+		<p>
+			<%= f.label :company_name %><br />
+			<%= f.text_field :company_name %>
+		</p>
+		
+		<p>
+			<%= image_field_tag f, :offer, :logo %>
+		</p>
+		
+		<p>
+			<%= f.label :website %><br />
+			<%= f.text_field :website %>
+		</p>
+		
+		<p>
+			<%= f.label :address %><br />
+			<%= f.text_area :address %>
+		</p>
+		
+		<p>
+			<%= f.helpful_label :postcode, "Postcode", "This will be used to build the link to Google Maps." %><br />
+			<%= f.text_field :postcode %>
+		</p>
+	</fieldset>
+	
+	<fieldset>
+  	<legend>Offer Information</legend>
+		<p>
+			<%= f.label :summary %><br />
+			<%= f.text_area :summary %>
+		</p>
+		
+		<p>
+			<%= image_field_tag f, :offer, :image %>
+		</p>	
+		
+		<p>
+			<%= f.label :description %><br />
+			<%= f.advanced_text_area :description %>
+		</p>
+	</fieldset>
+	
+	<p>
+		<%= f.check_box :display %>
+		<%= f.label :display %>
+  </p>
+
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

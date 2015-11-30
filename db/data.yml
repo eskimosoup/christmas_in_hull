@@ -1,0 +1,5229 @@
+
+--- 
+administrators: 
+  columns: 
+  - id
+  - username
+  - email
+  - crypted_password
+  - password_salt
+  - persistence_token
+  - last_login_at
+  - login_count
+  - super_admin
+  - failed_login_count
+  - created_at
+  - updated_at
+  - css
+  - perishable_token
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - image_alt
+  records: 
+  - - "1"
+    - eskimosoup
+    - info@eskimosoup.co.uk
+    - d8ae18c5c7c060fd079ab5ad2acbd05ed20fc8771b843b7daa8a142eec036c9e1052e2ddaf3ea8660fd29c1ccdb9a7012a4462f69c96ca9f3ca6b6c50660810c
+    - QsJ2Kt29CnSZ5FaWMa
+    - aeda795f0575b33dd568893eeea2637e281ea0d8ecea2db7db0f8075e2b3a4edb0721db644d01d91f9827895e7e17d2572d7c3df7ba1fe10630a87ff0c0d144b
+    - 
+    - "37"
+    - true
+    - "0"
+    - 2011-11-03 00:00:00
+    - 2011-12-06 10:08:13
+    - admin_orange
+    - b0fClV8jmqb3ZizJx1nv
+    - 
+    - 
+    - 
+    - 
+    - ""
+  - - "2"
+    - admin
+    - admin@eskimosoup.co.uk
+    - f3847f2c669a3e08ef6260c72953d56c8ea45ac78d8a7dca418b4500354fef0ba4e135635f87e963850e19e7ec2330b9bc2532fcfe63960e11bbabe292cf8a15
+    - GnM6OYHPCPzpY79r3
+    - b22d33d4f835602febaf4ce598465154485ed891125289b45268c8328ffe9e3899a324587ea2e1467647d3785b09ee0f545e8482aa5ed1d157abe7254a285b27
+    - 
+    - "0"
+    - false
+    - "0"
+    - 2011-11-03 00:00:00
+    - 2011-11-03 00:00:00
+    - admin_pink
+    - hRFz4cBFfpHLOtJwZvi
+    - 
+    - 
+    - 
+    - 
+    - ""
+
+--- 
+administrators_roles: 
+  columns: 
+  - administrator_id
+  - role_id
+  records: 
+  - - "2"
+    - "3"
+
+--- 
+articles: 
+  columns: 
+  - id
+  - headline
+  - summary
+  - main_content
+  - date
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - image_alt
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "3"
+    - City Centre Christmas Lights Switch-on
+    - |-
+      Hull's famous Lights Switch-on!
+      Thursday 24th November from 4pm
+    - |-
+      <p style="text-align: justify;">With an extra special Yuletide procession, snowflake light show and countless festive illuminations, Hull City Centre comes alive with colour and excitement!</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;">The Santa Parade leaves Holy Trinity at 6:15pm and makes its jolly way to Queen Victoria Square via Whitefriargate, whilst a large screen next to Hull City Hall displays musical entertainment that everyone can enjoy.</p>
+      <p style="text-align: justify;">The facade of Ferens Art Gallery transforms into a work of art in itself, with projected snowflakes giving it the magical appearance of a gigantic snowglobe. This is made possible through the&nbsp;<a href="http://www.snowandlights.com/index.html" target="_blank">Snow and Lights</a>&nbsp;community art project, created by contemporary artist Arran Todd.</p>
+      <p style="text-align: justify;">Join thousands of other spectators for the exciting countdown at 6:50pm, an essential part of Christmas in Hull that we can all share together.</p>
+      <p style="text-align: justify;">As the nights become darker, everyone can bask in the heartwarming glow and celebratory atmosphere of a traditional Christmas throughout Hull City Centre.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+    - "2011-11-08"
+    - 4_home_banner_lights.jpg
+    - image/jpeg
+    - "55911"
+    - 2011-11-08 09:26:22
+    - Christmas Lights
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-03 13:12:48
+    - 2011-11-11 16:31:40
+  - - "5"
+    - Mega Win Christmas Balloon Drop
+    - "Mega win St Stephen's balloon drop every Thursday and Sunday, starting 17th November.\r\n\
+      \r\n\
+      \xC2\xA3100 to be won in every drop.\r\n\
+      \r\n\
+      Includes Christmas entertainment, Karate Santas, walking Christmas trees and Jack Frost on stilts!"
+    - |-
+      <p style="text-align: justify;">The St Stephen's mega win balloon drop. Be in with a chance of winning &pound;100 with every St Stephen's mega balloon drop.</p>
+      <p style="text-align: justify;">The first drop is on the 17th November, marking the first night of late night Christmas shopping and the switch-on of St Stephen's Christmas lights.</p>
+      <p style="text-align: justify;">A drop will take place every Thursday at 8:30pm and Sunday at 3:30pm from the 17th November and will end on the 22nd December&nbsp;</p>
+      <p style="text-align: justify;">If giving away hundreds of pounds is not enough, St Stephen's will be bringing you festive entertainment througout November and December:&nbsp; Karate Santas in the form of Britain's Got Talent finalists Strike, walking Christmas trees, Jack Frost on stilts, choirs and a brass band!</p>
+    - "2011-11-07"
+    - St Stephens Christmas Tree.jpg
+    - image/jpeg
+    - "233425"
+    - 2011-11-08 10:02:25
+    - St Stephen's Christmas Tree
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-08 10:02:25
+    - 2011-11-17 10:12:53
+  - - "6"
+    - City on search for its Busk Idol
+    - If you busk or have thought of busking then this competition is for you!
+    - |-
+      <p style="text-align: justify;">Hull is searching for its&nbsp;Busk Idol for 2011/12. If you busk or have thought of busking then this competition is for you.</p>
+      <p style="text-align: justify;">There&rsquo;s the chance to perform at the Christmas Lights Switch-on,&nbsp;Thursday 24<sup>th</sup> November, and at the Freedom Festival in 2012, as well as busk at one of our five Busk Stops on Thursdays and Saturdays on the run up to Christmas.</p>
+      <p style="text-align: justify;">Working in partnership, Hull City Council, Hull BID, Viking FM, Magic 1161 and the Hull Daily Mail are looking to showcase the region's best talent this Christmas, adding to the fun and lively experience created by all the partners who are putting on events and activities for Christmas in Hull.</p>
+      <p style="text-align: justify;">The&nbsp;five Busk Stops will complement other Christmas activities stretching from the Interchange to Trinity Square as part of the bid to drive footfall across the City Centre: Transport Interchange, King Edward Street, Monument Bridge, Parliament Street/Whitefriargate and Trinity Square.</p>
+      <p style="text-align: justify;">Councillor Terry Geraghty, Portfolio Holder for Culture and Leisure, said: &ldquo;Busk Idol offers a chance for entertainers of all types to compete to perform in front of crowds at the Christmas Lights Switch-on, as well as showcasing the city&rsquo;s busking talent at five busk stops in the city centre on the weekends and late night shopping evenings on the run up to Christmas.</p>
+      <p style="text-align: justify;">"The performers will&nbsp;complement the Christmas in Hull activity put together by Hull BID, which is further complemented by other partners and shopping centres, to offer lively and fun festive shopping experiences in the city for businesses, residents and visitors.&rdquo;</p>
+      <p style="text-align: justify;">Whether you&rsquo;re a singer, juggler, street dancer or any other kind of street entertainer, we want to hear from you.&nbsp; 96.9 Viking FM Breakfast Show host, Paul Foster, said: &ldquo;The great thing about this competition is that it&rsquo;s not just for musicians; we&rsquo;re keen to have all aspects of street performance represented and the prize offers a platform for great exposure for the winner!&rdquo;<br /> <br /> If you are a busker new or old you can get involved by registering for the heats at <a href="http://www.vikingfm.co.uk/buskidol">www.vikingfm.co.uk/buskidol</a> before midday Friday 18 November. Heats take place in the form of live busking at the Paragon Transport Interchange in Hull on Sunday 20<sup> </sup>November.</p>
+    - "2011-11-11"
+    - busk-idol-big-pic.jpg
+    - image/jpeg
+    - "55539"
+    - 2011-11-11 15:37:16
+    - Busk Idol
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-11 15:37:16
+    - 2011-11-11 15:37:16
+  - - "7"
+    - Buses, parking and road closures
+    - Bus services, parking and road closure information to make Christmas nice and easy.
+    - |-
+      <p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Bus services</strong></span></p>
+      <p style="text-align: justify;">Priory Park and Ride will operate as usual (return tickets: &pound;2.30 adult, &pound;1.20 child) with additional Thursday evenings from 17<sup>th</sup> November to 22<sup>nd</sup> December inclusive, last bus to depart Priory Park at 9pm.</p>
+      <p style="text-align: justify;">Sunday service commencing on 20<sup>th</sup> November to 18<sup>th</sup> December inclusive - this service will operate from 10am until 5:10pm.</p>
+      <p style="text-align: justify;">EYMS &ndash; normal service</p>
+      <p style="text-align: justify;"><strong>Please note that there will be no bus services on Christmas Day and New Year's Day.</strong></p>
+      <p style="text-align: justify;">Bus Call: 01482 222222</p>
+      <p style="text-align: justify;">Open 8am-8pm daily apart from Christmas Day, Boxing Day and New Year's day, when it will be closed.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Parking</strong><strong>&nbsp;</strong></span></p>
+      <p style="text-align: justify;">All Hull City Council owned surface car parks: FREE public parking on Sundays (same arrangement all year).</p>
+      <p style="text-align: justify;">All on-street pay and display parking: Charges 6 days a week but FREE on a Sunday for the Christmas period.&nbsp; FREE parking every night after 6pm, which is the same all year round. Sunday charges will be reinstated on Sunday 8th January 2012</p>
+      <p style="text-align: justify;">Please do not leave valuables and Sat-Navs on display in your vehicle. Thank you.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Road closures</strong></span></p>
+      <p style="text-align: justify;">Paragon Street, Wednesday 23<sup>rd</sup> November 8pm until Thursday 24<sup>th</sup> November 10pm.</p>
+      <p style="text-align: justify;">Carr Lane, Thursday 24<sup>th</sup> November from 6pm-9pm.</p>
+      <ul style="text-align: justify;">
+      </ul>
+    - "2011-11-17"
+    - bus.jpg
+    - image/jpeg
+    - "8597"
+    - 2011-11-16 09:49:05
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-16 09:49:05
+    - 2011-11-30 12:12:37
+  - - "8"
+    - Princes Quay has it all!
+    - A range of festive activity fills Princes Quay this Christmas.
+    - |-
+      <p style="text-align: justify;">Princes Quay transforms into a magical wonderland, with Santa's Grotto, late night shopping, 24 Days of Christmas and the Lights Switch-on with Capital FM inside, and a Festive Market, real-life reindeer and a Santa Parade outside!</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;">Please check the <a href="../../events?venue=4">Princes Quay events page</a> for full details.</p>
+      <p>&nbsp;</p>
+    - "2011-11-23"
+    - Princes Quay.jpg
+    - image/jpeg
+    - "70102"
+    - 2011-11-23 14:21:54
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-23 14:21:55
+    - 2011-11-30 12:14:10
+  - - "9"
+    - Farino to play as part of Christmas at Trinity
+    - "A fantastic acoustic duo from Hull who love to strum and make you move your feet with their Latino beats! Follow them on Twitter: @FarinoLive"
+    - |-
+      <p style="text-align: justify;">Farino are an acoustic, instrumental guitar duo from Hull with a unique sound and style. They've found popularity and wide recognition in the busy and diverse music scene, fusing their many influences to create a show of high quality musicianship and fast-paced live shows.</p>
+      <p style="text-align: justify;">We're thrilled that Farino will play at the <a href="../../events/36" target="_blank">first Christmas at Trinity event on Saturday 10th December</a>, from 12noon-12:30pm.</p>
+      <p style="text-align: justify;">Make sure to come along and enjoy the show, and purchase a Farino CD whilst you're there - a perfect Christmas gift!</p>
+      <p style="text-align: justify;">&nbsp;<a href="http://twitter.com/#!/FarinoLive" target="_blank">Follow Farino on Twitter</a></p>
+      <p style="text-align: justify;"><strong><em>&ldquo;These  two guitarists are some of the best I have heard in a long time and are  also enjoyable to watch live&hellip; addictive to the ears.&rdquo;</em></strong></p>
+      <p style="text-align: justify;">Mark Robinson, Seaside FM</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;">The Christmas at Trinity days take place on Saturdays 10th and 17th December, 11am-4pm. With music, hot festive food, a range of gift stalls, Santa's Grotto and children's workshops, these events are not to be missed!</p>
+      <p>&nbsp;</p>
+    - "2011-11-27"
+    - Farino.jpg
+    - image/jpeg
+    - "849329"
+    - 2011-12-05 15:07:49
+    - Farino
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-23 16:31:56
+    - 2011-12-05 15:07:50
+  - - "10"
+    - Hull Vintage Fair
+    - |
+      Vintage Fair Saturday November 26th at the Guildhall.
+
+    - "<p style=\"text-align: justify;\">Hello Hull! The UKs Leading Vintage Fair is heading over to Hull this November.<br /><br />Come and see us in the beautiful Guildhall where we'll be offering up to 50 of the UKs best traders selling men's &amp; women's Vintage clothing, accessories, jewellery and homewares<br /><br />THE VINTAGE TEA PARTY<br />Alongside all the fabulous shopping you'll find our jewel in the crown, The Vintage Tea Party. Come and have a spot of tea and a nice cupcake on fine china.<br /><br />THE VINTAGE BEAUTY SALON<br />One of the vintage beauty team will style your hair and makeup to match your new outfit for your special occasion or just as a treat. If you'd like an appointment email <a href=\"mailto:elisasolaris@gmail.com\">elisasolaris@gmail.com</a><br /><br />Sat 26th November<br />12pm - 5pm<br />Hull Guildhall<br /><br />Join our dedicated Hull Fan Page: <a rel=\"nofollow\" href=\"https://www.facebook.com/hullvintage\" target=\"_blank\">https://www.facebook.com/hullvintage</a><br /><br />Join our national page: <a rel=\"nofollow\" href=\"http://www.facebook.com/vintagefair\" target=\"_blank\">www.facebook.com/vintagefair</a><br /><br />Sign up to our mailing list: <a rel=\"nofollow nofollow\" href=\"http://www.thevintagefair.com/\" target=\"_blank\">www.thevintagefair.com</a></p>"
+    - "2011-11-21"
+    - vintage.jpg
+    - image/jpeg
+    - "16166"
+    - 2011-11-25 09:52:46
+    - vintage fair
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-11-25 09:52:47
+    - 2011-11-30 12:14:30
+  - - "11"
+    - Be Safe Taxi Campaign
+    - "Hail It \xE2\x80\x93 Book It \xE2\x80\x93 Avoid It"
+    - |-
+      <p style="text-align: justify;">Hull City Council&rsquo;s &lsquo;Hail It &ndash; Book It &ndash; Avoid It&rsquo; Be Safe taxi campaign is back in the spotlight this Christmas, as thousands of people gear up for their Christmas nights out. Handy tips, plus all local private hire taxi numbers and black cab rank locations, are available on the City Council&rsquo;s website:</p>
+      <p style="text-align: justify;"><a href="http://www.hullcc.gov.uk/taxis" target="_blank">www.hullcc.gov.uk/taxis</a></p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p>&nbsp;</p>
+    - "2011-12-03"
+    - taxi logo.JPG
+    - image/jpeg
+    - "46408"
+    - 2011-12-05 14:29:13
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-12-05 14:28:14
+    - 2011-12-05 16:55:44
+  - - "12"
+    - Hidden Gems found in time for Christmas!
+    - Unique shops for those perfect gifts, from sweet things to eternity rings.
+    - |-
+      <p style="text-align: justify;"><span style="font-size: small;"><span style="color: #000000;">A glossy guide to Hull&rsquo;s retail secrets is helping to boost trade for the city centre&rsquo;s small independent businesses, with 45  outlets featured in Hull BID&rsquo;s new Hidden Gems brochure. </span></span></p>
+      <p style="text-align: justify;"><span style="font-size: small;"><span style="color: #000000;">Hull  BID covered the cost of the initiative, which embraces retailers with  only a few weeks of trading experience behind them and shops that have  been in existence for more than 50 years.</span></span></p>
+      <p style="text-align: justify;"><span style="font-size: small;"><span style="color: #000000;">There are some wonderful places hidden away in this brochure that are just crying out to be discovered, and now's the perfect time of year to pay them a visit!</span></span></p>
+      <p style="text-align: justify;"><span style="font-size: small;"><span style="color: #000000;">To read the full article and download the Hidden Gems brochure, please visit the <a href="http://www.hullbid.co.uk/articles/70" target="_blank">HullBID website</a>.<br /></span></span></p>
+    - "2011-12-05"
+    - Hull BID Hidden Gems 2011 A6.indd_Page_01.jpg
+    - image/jpeg
+    - "47379"
+    - 2011-12-05 16:54:08
+    - Hidden Gems
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - 2011-12-05 16:54:09
+    - 2011-12-05 16:54:09
+
+--- 
+banners: 
+  columns: 
+  - id
+  - name
+  - content
+  - article_id
+  - event_id
+  - page_id
+  - venue_id
+  - external_link
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - image_alt
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - Christmas Lights Switch-on
+    - |-
+      Hull's famous Lights Switch-on, Thursday 24th November from 4pm in Queen Victoria Square.
+      Be part of an extra special Christmas experience!
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - hull_20091119_9366-Edit.jpg
+    - image/jpeg
+    - "485333"
+    - 2011-11-08 10:09:50
+    - Christmas Lights Switch-on
+    - "1"
+    - "1"
+    - false
+    - 
+    - false
+    - "4"
+    - 2011-11-03 13:35:09
+    - 2011-11-25 09:11:05
+  - - "2"
+    - Winter Wonderland
+    - |-
+      Ride the Magical Train through snowy scenes, meet Christmas characters and elves, watch 3D cinema, enjoy a sleigh ride and visit Santa in his North Pole Grotto. 
+      
+      Good boys and girls will receive a present.
+    - 
+    - "42"
+    - 
+    - "8"
+    - ""
+    - home_banner_winter_wonderland.jpg
+    - image/jpeg
+    - "33730"
+    - 2011-11-07 17:27:31
+    - Winter Wonderland
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "2"
+    - 2011-11-03 13:36:28
+    - 2011-11-23 15:32:41
+  - - "5"
+    - Christmas At Trinity
+    - |
+      Free live music and choirs, a range of gift stalls, Santa's Grotto, children's workshops and delicious snacks from Pie and Lucy Beal Cakery, all within Holy Trinity Church. Plus fairground rides in Trinity Square!
+
+    - 
+    - 
+    - 
+    - "2"
+    - ""
+    - home_banner_trinity.jpg
+    - image/jpeg
+    - "34855"
+    - 2011-11-07 16:58:08
+    - Trinity Square at Christmas
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "1"
+    - 2011-11-03 17:05:56
+    - 2011-12-05 17:02:10
+  - - "6"
+    - Get festive at Princes Quay
+    - With real-life reindeer, a Festive Market, Santa's Grotto, late night shopping, 24 Days of Christmas and festive illuminations, Princes Quay has it all this Christmas!
+    - 
+    - 
+    - 
+    - "4"
+    - ""
+    - Princes Quay.jpg
+    - image/jpeg
+    - "168140"
+    - 2011-11-23 11:49:19
+    - PQ banner
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "3"
+    - 2011-11-23 11:44:23
+    - 2011-12-05 17:03:46
+
+--- 
+events: 
+  columns: 
+  - id
+  - name
+  - venue_id
+  - summary
+  - main_content
+  - booking_information
+  - start_date
+  - start_time
+  - end_date
+  - end_time
+  - price
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - image_alt
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - position
+  - highlight
+  - created_at
+  - updated_at
+  records: 
+  - - "5"
+    - The Elves and the Shoemaker
+    - "6"
+    - You think you know the story, do you? Old man leaves out leather, elves turn it into shoes in the night? You haven't heard the half of it. What about the elves? What are they doing making shoes? Why aren't they making toys for&nbsp; Santa&nbsp;like normal elves?
+    - |-
+      <p style="text-align: justify;"><strong>Tickets: &pound;7 - &pound;10, please visit the <a href="http://www.hulltruck.co.uk/whats-on/family-fun?action=view&amp;id=370" target="_blank">Hull Truck website</a> for full details and booking information, or call the Box Office on 01482 323638. </strong></p>
+      <p style="text-align: justify;"><strong>Show times: 10:30am and 1pm</strong></p>
+      <p style="text-align: justify;"><strong><br /></strong></p>
+      <p style="text-align: justify;"><strong>&nbsp;</strong>Fun for all sizes! Ages 4 and up.</p>
+      <p style="text-align: justify;">You think you know the story, do you? Old man leaves out leather, elves turn it into shoes in the night? You haven't heard the half of it. What about the elves? What are they doing making shoes? Why aren't they making toys for Santa&nbsp;like normal elves?<br /><br />And what happens when the shoemaker's wife fancies owning her own personal magic elf?</p>
+      <p style="text-align: justify;">This&nbsp;Christmas, join Corky and Peeptoe, the weirdest elves nobody has ever met, and hear a side of the&nbsp;classic&nbsp;fairytale you have never heard before.<br /><br />A cast of hundreds, played by two elves (and a variety of shoes), will take you on a journey you're not going to forget in a hurry. The songs will be silly, the jokes will be... jokey - and it may even change the way you think about flip-flops.</p>
+      <p style="text-align: justify;">Adapted and Directed by: Nick Lane&nbsp;</p>
+    - ""
+    - "2011-12-14"
+    - "10:30:00"
+    - "2012-01-14"
+    - "23:59:00"
+    - "10.00"
+    - The Elves and the Shoemaker.jpg
+    - image/jpeg
+    - "131875"
+    - 2011-11-04 15:19:58
+    - The Elves and the Shoemaker
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:19:59
+    - 2011-11-21 15:37:22
+  - - "6"
+    - The Flint Street Nativity
+    - "6"
+    - The hilarious and touching comedy of Christmas misunderstandings by the writer of Calendar Girls - all about what happens when you're not playing Mary.
+    - |-
+      <p style="text-align: justify;"><strong>Tickets: &pound;10 - &pound;18, please visit the <a href="http://www.hulltruck.co.uk/whats-on/main-house?action=view&amp;id=371" target="_blank">Hull Truck website</a> for full details and booking information, or call the Box Office on 01482 323638. </strong></p>
+      <p style="text-align: justify;"><strong>Matinees every Wednesday and Saturday at 2:30pm (except 17th December).</strong></p>
+      <p style="text-align: justify;"><strong><br /></strong></p>
+      <p style="text-align: justify;">The hilarious and&nbsp;touching comedy&nbsp;of Christmas misunderstandings by the writer of&nbsp;Calendar&nbsp;Girls&nbsp;- all about what happens when you're not playing Mary.&nbsp;<br /><br />The same actors play both children and their&nbsp;uncannily&nbsp;similar parents, as we join the infants class at Flint Street School preparing for their first nativity performance. The Virgin Mary has a fierce competitor in the&nbsp;spiteful Angel Gabriel, Wise Man Frankincense is verbally challenged by a lisp, Herod rages like a footballer brutally brought down mid-match and the Innkeeper behaves like a psychopath. To crown it all, baby Jesus' head has fallen off. Fretting about their offspring's impending public performance, the adults row rage and&nbsp;obsess&nbsp;just like their children, to hilarious effect. Whilst the clothes may change, the foibles are all too similar...!</p>
+      <p style="text-align: justify;">An&nbsp;uplifting, fast-paced comedy which reminds us that, even as adults, we're never too far away from being children. Joyful, daft, and&nbsp;deeply Christmassy, this is a heartwarmingly funny play. Based on&nbsp;Tim Firth's&nbsp;own hit TV comedy, which starred&nbsp;Jane Horrocks,&nbsp;Stephen Tompkinson,&nbsp;Neil Morrissey&nbsp;and&nbsp;Josie Lawrence.</p>
+      <p style="text-align: justify;">Hull Truck's grown-up seasonal treat is perfect for adults - and the child in all of us.</p>
+    - ""
+    - "2011-12-08"
+    - "19:45:00"
+    - "2012-01-14"
+    - "23:59:00"
+    - "18.00"
+    - The Flint Street Nativity.jpg
+    - image/jpeg
+    - "100159"
+    - 2011-11-04 15:23:47
+    - The Flint Street Nativity
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:23:49
+    - 2011-11-21 15:37:57
+  - - "7"
+    - A Play, a Pie and a Pint - The Anti-Panto Plays
+    - "6"
+    - In this Christmas Play, Pie and a Pint special, Hull Truck will be tasking a team of writers to stay up and burn the midnight oil together to craft a play which they will pass on to a team of actors and a director. They will then craft that work into a play which you, the audience, will consume at the same time as the pies in your hands!
+    - |-
+      <p style="text-align: justify;">In this Christmas Play, Pie and a Pint special, Hull Truck will be tasking a team of writers to stay up and burn the midnight oil together to craft a play which they will pass on to a team of actors and a director. They will then craft that work into a play which you, the audience, will consume at the same time as the pies in your hands!</p>
+      <p style="text-align: justify;">As new and exciting writing goes, this is as fresh as it gets - this play has never been seen before... ever!</p>
+      <p style="text-align: justify;">What will come out? Book early and make sure you're there to see.</p>
+      <p style="text-align: justify;">The clock is ticking...<br style="padding: 0px; margin: 0px;" /><br />Hull Truck gratefully acknowledges the use of&nbsp;<strong>A Play, a Pie and a Pint</strong> concept, with thanks to&nbsp;<strong>Oran Mor&nbsp;</strong>and&nbsp;<strong>Paines Plough</strong>.</p>
+    - Call the box office on 01482 323638
+    - "2011-12-21"
+    - "18:00:00"
+    - "2011-12-21"
+    - "20:00:00"
+    - "7.50"
+    - A play, a Pie and a Pint.jpg
+    - image/jpeg
+    - "54587"
+    - 2011-11-04 15:30:15
+    - A Play, a Pie and a Pint - The Anti-Panto Play
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:29:58
+    - 2011-11-08 11:07:23
+  - - "8"
+    - Remember When at Christmas
+    - "9"
+    - Making a welcome return is one of the country&rsquo;s most popular nostalgia shows with the all new 2011 production of their ever popular Christmas show.
+    - |-
+      <p style="text-align: justify;">Making a welcome return is one of the country&rsquo;s most popular nostalgia shows with the all new 2011 production of their ever popular Christmas show.</p>
+      <p style="text-align: justify;">Start Christmas in Style with this delightful and unforgettable festive trip down memory lane back to a time Christmas really was so special.</p>
+      <p style="text-align: justify;">We can all be dreaming of a White Christmas and watching Chestnuts Roasting on an open fire, with Neil Sands and his brilliant cast of West End performers who will have you singing along to all your festive favourites.</p>
+      <p style="text-align: justify;">This enchanting Christmas production now in its 5th sell out year, is a truly wonderful mixture of great songs, stunning costumes, lots of good old fashioned festive fun, and a unique atmosphere that will warm your heart on the coldest winters day, taking you back to a time when Christmas really was the most wonderful time of the year.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+    - You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.
+    - "2011-11-23"
+    - "14:30:00"
+    - "2011-11-23"
+    - "16:30:00"
+    - "10.00"
+    - hgtuty.jpg
+    - image/jpeg
+    - "57359"
+    - 2011-11-22 09:12:50
+    - Remember When at Christmas
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:36:09
+    - 2011-11-22 09:12:50
+  - - "9"
+    - Hull Philharmonic Orchestra
+    - "9"
+    - <p>A concert of four major 20th Century works. World renowned clarinettist EMMA JOHNSON returns to Hull to play the Copland Concerto written for Benny Goodman. The East Riding Youth Orchestra join the Hull Philharmonic in two major symphonies by Sir Malcolm Arnold as part of the nationwide celebrations of his 90th Anniversary.</p>
+    - |-
+      <p>Conductor:&nbsp; Andrew Penny</p>
+      <p>Soloist:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Emma Johnson &ndash; clarinet</p>
+      <p>&nbsp;</p>
+      <p>Shostakovich&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Festival Overture</p>
+      <p>Arnold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Symphony No. 8&nbsp;</p>
+      <p>Copland&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Clarinet Concerto</p>
+      <p>Arnold&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Symphony No.7</p>
+      <p>&nbsp;</p>
+      <p>A concert of four major 20th Century works. World renowned clarinettist EMMA JOHNSON returns to Hull to play the Copland Concerto written for Benny Goodman. The East Riding Youth Orchestra join the Hull Philharmonic in two major symphonies by Sir Malcolm Arnold as part of the nationwide celebrations of his 90th Anniversary.</p>
+      <p>6.30 Pre-Concert talk on the Arnold Symphonies by Andrew Penny and Paul Harris for ticket holders</p>
+    - You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.
+    - "2011-11-26"
+    - "18:30:00"
+    - "2011-11-26"
+    - "20:30:00"
+    - "22.00"
+    - Phil orchestra.jpg
+    - image/jpeg
+    - "3647"
+    - 2011-11-04 15:41:09
+    - Hull Philharmonic Orchestra
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:41:11
+    - 2011-11-08 17:23:20
+  - - "10"
+    - Voice in a Million
+    - "9"
+    - An Orphan's Christmas Wish
+    - |-
+      <p>An Orphan&rsquo;s Christmas Wish</p>
+      <p>The most popular children&rsquo;s choir in the UK, the Voice in a Million Choir performing their new Show &lsquo;An Orphan&rsquo;s Christmas Wish&rsquo;. This spectacular musical adaptation of the story of a young orphan boy at Christmas, is perfect entertainment for all the family.</p>
+      <p>One of the most delightful and magical Christmas shows ever. Full of seasonal hits including All I want for Christmas, Oh Holy Night, Do They Know its Christmas, I Believe in Father Christmas, Happy Christmas, Little Drummer Boy and many more.</p>
+      <p>Experience the inspirational and exceptional young voices of the Voice in a Million Choir as they deliver a powerful and uplifting musical; a captivating old time story, with a modern twist, revealing the true spirit of Christmas.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-29"
+    - "19:30:00"
+    - "2011-11-29"
+    - "21:30:00"
+    - "18.50"
+    - Orphan.jpg
+    - image/jpeg
+    - "5375"
+    - 2011-11-04 15:46:46
+    - Voice in a Million
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:46:48
+    - 2011-11-07 10:30:30
+  - - "11"
+    - The Royal British Legion presents Festival of Remembrance
+    - "9"
+    - <p>In this, their 90th year, and in the 70th year since the Hull Blitz, the Royal British Legion who are&nbsp;&ldquo;Shoulder to Shoulder with all who Serve&rdquo;&nbsp;are hosting an inaugural Festival or Remembrance to celebrate all that our servicemen and women, both past and present, have given.&nbsp;</p>
+    - |-
+      <p style="text-align: justify;">In this, their 90th year, and in the 70th year since the Hull Blitz, the Royal British Legion who are&nbsp;<em>&ldquo;Shoulder to Shoulder with all who Serve&rdquo;</em>&nbsp;are hosting an inaugural Festival of Remembrance to celebrate all that our servicemen and women, both past and present, have given. &nbsp;</p>
+      <p style="text-align: justify;">The Festival will be a musical spectacular in the form of a wind band concert, including displays from the Army and Sea Cadets, the Ghurkhas, the traditional Muster, a short Service of Remembrance and concluding with the &lsquo;Last Night of the Proms&rsquo; finale sequence.</p>
+      <p style="text-align: justify;">Performers include: The massed bands of 150 (Yorkshire) Transport Regiment Royal Logistic Corps and the Humberside Police Concert Band, TS Iron Duke Sea Cadets, Corps of Drums South Yorkshire and Humberside Army Cadet Force, Ghurkhas display team, Mark Keith (Holy Trinity Organist) and Sally-Ann Shepherdson (female vocalist).</p>
+      <p style="text-align: justify;">All proceeds from the concert will go to the Royal British Legion, aiding them to continue to spend nearly &pound;1.4 million a week delivering health and welfare support to our Service people, young and old, and their families.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-11"
+    - "19:30:00"
+    - "2011-11-11"
+    - "21:30:00"
+    - "12.00"
+    - remberance.jpg
+    - image/jpeg
+    - "6505"
+    - 2011-11-04 15:51:31
+    - Remembrance Festival
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:51:32
+    - 2011-11-08 20:07:26
+  - - "14"
+    - Warsaw Philharmonic Orchestra
+    - "9"
+    - |-
+      <p>Conductor: Antoni Wit</p>
+      <p>Soloist: Kuba Jacowicz, violoin</p>
+      <p>Programme: MONIUSZKO, Overture to the opera Paria, MENDELSSOHN, Violin, Interval, GORECKI, Three Pieces in the Old Style, BEETHOVEN, Symphony No.5</p>
+    - |-
+      <p>Conductor: Antoni Wit</p>
+      <p>Soloist: Kuba Jacowicz, violin</p>
+      <p>Programme: MONIUSZKO, Overture to the opera Paria, MENDELSSOHN, Violin, Interval, GORECKI, Three Pieces in the Old Style, BEETHOVEN, Symphony No.5</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-15"
+    - "19:30:00"
+    - "2011-11-15"
+    - "21:30:00"
+    - "28.00"
+    - WARSAW.jpg
+    - image/jpeg
+    - "7381"
+    - 2011-11-04 15:56:19
+    - Warsaw Philharmonia Orchestra
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:56:21
+    - 2011-11-08 17:23:40
+  - - "15"
+    - Clare Teal and the BBC Big Band
+    - "9"
+    - <p>Yorkshire born Clare Teal is one of the most successful Female British jazz singers in decades with a string of albums behind her, including the UK National Top 20 hit "Don't Talk".</p>
+    - |-
+      <p>Yorkshire born Clare Teal is one of the most successful Female British jazz singers in decades with a string of albums behind her, including the UK National Top 20 hit "Don't Talk".</p>
+      <p>Clare Teal and the BBC Big Band explore the treasures of the Great British Songbook. Join them as they perform the biggest hits of the past 100 years including&nbsp;Try a Little Tenderness,Mad About the Boy,&nbsp;The Touch of Your Lips,&nbsp;Spread a Little Happiness&nbsp;and&nbsp;Smile&nbsp;&ndash; composed by the very best of great British songwriters.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-19"
+    - "19:30:00"
+    - "2011-11-19"
+    - "21:30:00"
+    - "22.50"
+    - Clare Teal.jpg
+    - image/jpeg
+    - "3168"
+    - 2011-11-04 15:59:20
+    - Clare Teal and the BBC Big Band
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 15:59:22
+    - 2011-11-08 17:00:03
+  - - "16"
+    - " Tommy Emmanuel"
+    - "9"
+    - <p>Two-time Grammy award nominee&nbsp;Tommy Emmanuel&nbsp;will come to Hull City Hall on&nbsp;Thursday 1st December&nbsp;as part of his 50th anniversary world tour.</p>
+    - |-
+      <p>Two-time Grammy award nominee&nbsp;Tommy Emmanuel&nbsp;will come to Hull City Hall on&nbsp;Thursday 1st December&nbsp;as part of his 50th anniversary world tour.</p>
+      <p>This legendary guitarist is one of Australia&rsquo;s most respected musicians. Tommy's unique style - he calls it simply &lsquo;finger style&rsquo; - is akin to playing guitar the way a pianist plays piano, using all ten fingers. Rather than using a whole band for melody, rhythm, bass, and drum parts, Tommy plays it all - and more &ndash; on just one guitar.</p>
+      <p>Emmanuel's unusually broad repertoire encompasses not only country and bluegrass, but pop, jazz, blues, gospel, even classical, flamenco, and aboriginal styles. His technical precision and his virtuosic improvisations make this performance a must see for all fans of guitar-based music.</p>
+      <p>Throughout his career, Tommy has picked up numerous awards for his unique and innovative musical style. In 2009 Tommy was honored with Guitar Player Magazine's most prestigious annual Guitar Legend Award, as well as being named Thumb-picker of the Year for the second time.&nbsp; Most recently, Guitar Players 2010 Readers Choice Awards named him Best Acoustic Guitarist for the second time.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-01"
+    - "19:30:00"
+    - "2011-12-01"
+    - "21:30:00"
+    - "20.00"
+    - thumb_tommy_emmanuel_web_1_thumb.jpg
+    - image/jpeg
+    - "4047"
+    - 2011-11-04 16:02:31
+    - Tommy Emmanuel
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:02:33
+    - 2011-11-07 10:29:59
+  - - "17"
+    - Festival of Carols
+    - "9"
+    - |-
+      <p>Join us for this annual Christmas Carol Concert given by Hull Primary School Children.</p>
+      <p>The programme will include carols old and new with some for the audience to join in with.&nbsp;</p>
+    - |-
+      <p>Join us for this annual Christmas Carol Concert given by Hull Primary School Children.</p>
+      <p>The programme will include carols old and new with some for the audience to join in with.&nbsp;</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-05"
+    - "19:30:00"
+    - "2011-12-05"
+    - "21:30:00"
+    - "4.50"
+    - 
+    - 
+    - 
+    - 
+    - Festival of Carols
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:06:11
+    - 2011-11-07 10:29:33
+  - - "18"
+    - Kate Rusby
+    - "9"
+    - <p>Kate Rusby is steeped in her local traditions and tonight showcases the carols and songs learnt through childhood in her native South Yorkshire. Come along to hear new variations of familiar carols mostly unheard outside the area.</p>
+    - |-
+      <p>Kate Rusby is steeped in her local traditions and tonight showcases the carols and songs learnt through childhood in her native South Yorkshire. Come along to hear new variations of familiar carols mostly unheard outside the area.</p>
+      <p>This un-missable evening follows the release of Kate&rsquo;s 2nd album of Yorkshire-inspired songs and carols in November 2011 and Kate is touring with her band, complete with brass quintet - a rousing Christmas celebration!</p>
+      <p>The defining voice of contemporary English folk music, Kate Rusby&rsquo;s exquisite interpretations of traditional songs and finely wrought self-penned tunes have won her an audience that reaches beyond the genre. A rare achievement for a folk artist but entirely understandable given Rusby&rsquo;s expressive vocals that invest whatever she sings with irresistible emotional depth.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-08"
+    - "19:30:00"
+    - "2011-12-08"
+    - "21:30:00"
+    - "20.00"
+    - kate_rusby_250_web_thumb.jpg
+    - image/jpeg
+    - "4752"
+    - 2011-11-04 16:08:27
+    - Kate Rusby
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:08:29
+    - 2011-11-07 10:28:36
+  - - "19"
+    - Maureen Hunter Singers present Christmas Voices and Brass 2011
+    - "9"
+    - <p>With special guests the superb Hammonds Saltaire Band.</p>
+    - <p>With special guests the superb Hammonds Saltaire Band.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-10"
+    - "19:30:00"
+    - "2011-12-10"
+    - "21:30:00"
+    - "10.50"
+    - Maureen Hunter.jpg
+    - image/jpeg
+    - "19231"
+    - 2011-11-16 09:19:10
+    - Maureen Hunter Singers
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:10:52
+    - 2011-11-16 09:19:10
+  - - "20"
+    - East Riding Youth Orchestra and Senior Wind Band Christmas Concert
+    - "9"
+    - East Riding Youth Orchestra and Senior Wind Band Christmas Concert&nbsp;<br />Sunday 11th December, 7.30pm
+    - |-
+      <p style="text-align: justify;">East Riding Youth Orchestra and Senior Wind Band Christmas Concert&nbsp;<br /> Sunday 11th December, 7.30pm</p>
+      <p style="text-align: justify;">Tickets &pound;10.00&nbsp;<br /> Concessions on main floor, Senior citizens, Students &pound;5.00&nbsp;<br /> School children accompanied by an adult on main floor &pound;1.00</p>
+      <p style="text-align: justify;">Join the East Riding Youth Orchestra and Senior Wind Band and Guests for a festive concert to fill you with the Christmas spirit and good cheer. &nbsp;</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-11"
+    - "16:00:00"
+    - "2011-12-11"
+    - "18:00:00"
+    - "10.00"
+    - 
+    - 
+    - 
+    - 
+    - East Riding Youth Orchestra and Senior Wind Band Christmas Concert
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:12:19
+    - 2011-11-08 17:25:11
+  - - "21"
+    - Christmas Bandbox
+    - "9"
+    - <p>Christmas Bandbox Concert featuring the City of Hull Youth Brass Band, the City of Hull  Youth Symphonic Windband and the City of Hull Youth Jazz Orchestra.</p>
+    - <p>Christmas Bandbox Concert featuring the City of Hull Youth Brass Band, the City of Hull  Youth Symphonic Windband and the City of Hull Youth Jazz Orchestra.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-12"
+    - "19:00:00"
+    - "2011-12-12"
+    - "21:00:00"
+    - "7.50"
+    - Christmas Concerts small.jpg
+    - image/jpeg
+    - "57642"
+    - 2011-11-08 16:57:44
+    - Christmas Bandbox
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:15:19
+    - 2011-11-08 16:57:44
+  - - "22"
+    - City of Hull Youth Orchestra Family Christmas Concert
+    - "9"
+    - <p>Featuring the City of Hull Youth Symphony Orchestra and Youth Choir.</p>
+    - <p>Featuring the City of Hull Youth Symphony Orchestra and Youth Choir.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-14"
+    - "19:30:00"
+    - "2011-12-14"
+    - "21:30:00"
+    - "7.50"
+    - Christmas Concerts small.jpg
+    - image/jpeg
+    - "57642"
+    - 2011-11-08 16:58:10
+    - City of Hull Youth Orchestra Family Christmas Concert
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:17:18
+    - 2011-11-08 17:25:46
+  - - "23"
+    - The Searchers Christmas Show
+    - "9"
+    - <p>Get your Christmas off to a festive start with The Searchers Christmas Show, featuring Frank, John, Spencer and Scott.</p>
+    - |-
+      <p style="text-align: justify;">Get your Christmas off to a festive start! with The Searchers Christmas Show, featuring Frank, John, Spencer and Scott.</p>
+      <p style="text-align: justify;">With special guests The Merseybeats, featuring original lead singer TTony Crane and Hull&rsquo;s favourites The Aces.</p>
+      <p style="text-align: justify;">Complete with balloons, Christmas tree and a wonderful festive atmosphere.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-18"
+    - "19:00:00"
+    - "2011-12-18"
+    - "21:00:00"
+    - "23.50"
+    - the searchers.jpg
+    - image/jpeg
+    - "2406"
+    - 2011-11-04 16:19:26
+    - The Searchers Christmas Show
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:18:54
+    - 2011-11-08 11:16:09
+  - - "26"
+    - Christmas Crooners
+    - "9"
+    - <p>&ldquo;Christmas Crooners&rdquo; features many of the Christmas favourites of Bing Crosby, Nat King Cole and Ol&rsquo; blue eyes himself, Frank Sinatra.</p>
+    - |-
+      <p style="text-align: justify;">'Christmas Crooners' features many of the Christmas favourites of Bing Crosby, Nat King Cole and Ol&rsquo; blue eyes himself, Frank Sinatra.</p>
+      <p style="text-align: justify;">A fantastic cast of West End Singers, backed by the superb and talented&nbsp;Jazz All-Stars, perform over 30 well-known Christmas hits,&nbsp; including 'Chestnuts Roasting on an Open Fire', 'Little Drummer Boy&rdquo;' &ldquo;White Christmas&rdquo; and many swing arrangements of Christmas hymns and songs, including 'God Rest Ye Merry Gentlemen', 'Deck the Halls' and 'Silent Night', and many more festive favourites.</p>
+      <p style="text-align: justify;">Staged in the style of Andy Williams Christmas Shows, this brilliant production comes complete with a stunning d&eacute;cor - Christmas trees, a rocking chair and of course a lovely warm fireplace;&nbsp; just right for roasting those chestnuts, The Crooners give the audience a show full of swinging Christmas Cheer&hellip;</p>
+      <p style="text-align: justify;">&rdquo;A show guaranteed to get you in the festive mood, come and sing along to great songs from Christmas past&rdquo;.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-19"
+    - "19:30:00"
+    - "2011-12-19"
+    - "21:30:00"
+    - "15.00"
+    - christmas crooners.jpg
+    - image/jpeg
+    - "7482"
+    - 2011-11-04 16:22:22
+    - Christmas Crooners
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:21:40
+    - 2011-11-08 17:26:15
+  - - "27"
+    - Hull Choral Union Annual Carol Concert
+    - "9"
+    - <p>Hull Choral Union's&nbsp;ANNUAL CAROL CONCERT.</p>
+    - |-
+      <p style="text-align: justify;">Hull&nbsp;Choral&nbsp;Union's Annual Carol Concert.</p>
+      <p style="text-align: justify;">With Hull&nbsp;Choral Union Junior Chorus&nbsp;and guests&nbsp;Hull&nbsp;Ladies&nbsp;Choir&nbsp;- 75th Anniversary Celebration.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-21"
+    - "19:30:00"
+    - "2011-12-21"
+    - "23:59:00"
+    - "12.00"
+    - 
+    - 
+    - 
+    - 
+    - Hull Choral Union Annual Carol Concert
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:24:04
+    - 2011-11-17 16:17:40
+  - - "28"
+    - Snow White On Ice
+    - "10"
+    - <p>This year the Hull Arena is producing a ice spectacular "Snow White On Ice" the show&nbsp;incorporates a stunning aerial display performed by Cirque Bijou.&nbsp;Also appearing is the Current British Men's Figure Skating Champion, David Richardson, supported by our very own talanted skaters.</p>
+    - |-
+      <p style="text-align: justify;">This year the Hull Arena is producing a ice spectacular "Snow White On Ice". The show&nbsp;incorporates a stunning aerial display performed by Cirque Bijou.&nbsp;Also appearing is the current British Men's Figure Skating Champion, David Richardson, supported by our very own talanted skaters.</p>
+      <p style="text-align: justify;">A show not to be missed. Book early to avoid dissapointment</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-09"
+    - "00:00:00"
+    - "2011-12-11"
+    - "23:59:00"
+    - "10.00"
+    - Snow White on Ice.jpg
+    - image/jpeg
+    - "50461"
+    - 2011-11-08 10:07:23
+    - Snow White On Ice Pantomime
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:28:55
+    - 2011-11-16 09:29:39
+  - - "29"
+    - Peter Pan - The Musical
+    - "7"
+    - <p>Following the huge success of last year's production of 'The Wizard of Oz', One Off Productions return with another colourful, magical, family-friendly musical -&nbsp;'Peter Pan'.</p>
+    - |-
+      <p style="text-align: justify;">Following the huge success of last year's production of 'The Wizard of Oz', One Off Productions return with another colourful, magical, family-friendly musical - 'Peter Pan'.</p>
+      <p style="text-align: justify;">The age-old story of the boy who never grows up, complete with magical flying, ticking crocodiles, swashbuckling pirates and great songs, this&nbsp;muscial is a must-see for musical theatre fans of all ages.</p>
+      <p style="text-align: justify;">This is a local amateur production.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-08"
+    - "19:30:00"
+    - "2011-11-12"
+    - "21:30:00"
+    - "16.00"
+    - Peter Pan musical.jpg
+    - image/jpeg
+    - "41774"
+    - 2011-11-08 09:21:04
+    - Peter Pan - The Musical
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:34:00
+    - 2011-11-08 20:09:23
+  - - "30"
+    - Joseph and the Amazing Technicolor Dreamcoat
+    - "7"
+    - <p>Having enjoyed sensational reviews, Bill Kenwright's 'Amazing', 'Superb', 'Wonderful' and 'Brilliant' production of Tim Rice and Andrew Lloyd Webber's sparkling family musical continues to enjoy huge success across the country, with standing ovations at every performance.</p>
+    - |-
+      <p style="text-align: justify;">Having enjoyed sensational reviews, BIll Kenwright's&nbsp;'Amazing', 'Superb', 'Wonderful' and 'Brilliant'&nbsp;production of Tim Rice and Andrew Lloyd Webber's sparkling family musical continues to enjoy huge success across the country, with standing ovations at every performance.</p>
+      <p style="text-align: justify;">Keith Jack, the hugely popular runner-up who finished just a hair's breadth behind winner Lee Mead in hit BBC series 'Any Dream Will Do', takes on the title role, having won the hearts of the nation with his sparkling charisma and sensational singing voice.&nbsp;</p>
+      <p style="text-align: justify;">Retelling the Biblical story of Joseph, his eleven brothers and the coat of many colours, this magical musical is full of unforgettable songs including 'Any Dream Will Do', 'Close Every Door To Me' and 'One More Angel'.</p>
+      <p style="text-align: justify;">Joseph bursts onto the stage at a theatre very, very near you - so book your tickets now and be part of the magic!</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-15"
+    - "00:00:00"
+    - "2011-11-20"
+    - "23:59:00"
+    - "29.00"
+    - joseph_a3_hull_layoutlr_web.jpg
+    - image/jpeg
+    - "49203"
+    - 2011-11-16 09:53:16
+    - Joseph and the Amazing Technicolor Dreamcoat
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:35:53
+    - 2011-11-16 09:53:16
+  - - "31"
+    - Leaps presents Christmas Countdown 4
+    - "7"
+    - <p>Leaps presents Christmas Countdown 4 'Carousels of Music' in aid of Kingstown Hospital Radio&nbsp;1350 MW's 50th year.</p>
+    - <p>Leaps presents Christmas Countdown 4 'Carousels of Music' in aid of Kingstown Hospital Radio&nbsp;1350 MW's 50th year.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-29"
+    - "19:30:00"
+    - "2011-11-29"
+    - "21:30:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Leaps presents Christmas Countdown 4
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:37:09
+    - 2011-11-16 17:14:51
+  - - "32"
+    - Circus of Horrors
+    - "7"
+    - |-
+      <p>The Show that Rocked Britain's Got Talent is back with a new Awe inspiring Jaw dropping sensation.</p>
+      <p>Set in&nbsp;1921 Berlin, This was the roaring twenties, a decedent decade and the birth of the Cabaret&rsquo;.</p>
+    - |-
+      <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+      <p>&nbsp;</p>
+      <p>The Show that Rocked Britain's Got Talent is back with a new Awe inspiring Jaw dropping sensation.<br /> <br /> Set in&nbsp;1921 Berlin, This was the roaring twenties, a decedent decade and the birth of the Cabaret&rsquo;.<br /> <br /> One particular Venue was struggling to make ends meet, new blood was needed and it was found when&nbsp;Dr Haze rolled into town with his&nbsp;Vampire Vaudeville show, featuring hair hanging beauties, twisted contortionists, flying aerialists, demon dwarfs, gyrating jugglers, voodoo warriors, pickled people, sword swallowers and its latest and greatest new found star&nbsp;The Ventriloquist.<br /> <br /> Inspired by the Evil Ventriloquist movies&nbsp;&lsquo;Devil Doll&rsquo; &amp;&nbsp;&lsquo;The Dead of Night&rsquo; the story twists and turns, sending a shiver down your spine as the demonic dummy seems to take on a life of its own<br /> <br /> With a brilliant cast&nbsp;The Circus of Horrors features some of the greatest, most&nbsp;bizarre &amp; beautiful Circus acts on earth.<br /> Where else can you see a dare devil&nbsp;sword swallower&nbsp;swallowing a lit neon tube!<br /> Where else can you see a beautiful creature hung upside-down while a dare devil trapeze artist performs a exquisite ariel act&nbsp;hung solely from her partners hair!<br /> Where else can you see a&nbsp;contortionist&nbsp;contort her body while firing a&nbsp;arrow from a long bowwith her feet!<br /> All this and a whole lot more.<br /> <br /> Without a doubt a musical masterpiece with the pulsating Devil driven Rock n Roll of&nbsp;Dr Haze&amp; The Interceptors From Hell.&nbsp;<br /> Without a doubt the most sinister and sensational Circus of Horrors show to date.<br /> Without a doubt the chilling tale of THE VENTRILOQUIST.<br /> <br /> Imagine if Quentin Tarantino had directed Cirque Du Soleil then you would be only half way there.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-25"
+    - "19:30:00"
+    - "2011-11-25"
+    - "21:30:00"
+    - "25.00"
+    - green_vince_ray_web.jpg
+    - image/jpeg
+    - "45691"
+    - 2011-11-04 16:39:06
+    - Circus of Horrors
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:39:08
+    - 2011-11-07 10:33:36
+  - - "33"
+    - "Shakin Stevens - The 30th Anniversary Tour \xE2\x80\x93 Phase II"
+    - "7"
+    - <p>Shakin Stevens - The 30th Anniversary Tour &ndash; Phase II.&nbsp;This Tour commemorates the anniversary of Stevens&rsquo; first UK hit. &nbsp;</p>
+    - |-
+      <p>Shakin Stevens - The 30th Anniversary Tour &ndash; Phase II</p>
+      <p>This Tour commemorates the anniversary of Stevens&rsquo; first UK hit.&nbsp;&nbsp;</p>
+      <p>Shaky paid his dues, performing in bands, and working the circuit in the UK and Europe, before eventually signing as a solo artist to Track Records, and then to CBS / Epic on a world-wide basis, finally establishing himself as an enduring International artist.&nbsp;</p>
+      <p>He has collaborated with and worked alongside some of the most astute rock and country blues-aware musicians in the world.</p>
+      <p>So join Stevens and his 10-strong band in the celebrations, for a great night of Hits, Rock and Country Blues &ndash; together with a few surprises - from across the years of this truly unique Artist&rsquo;s career. Join us !</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-26"
+    - "19:30:00"
+    - "2011-11-26"
+    - "21:30:00"
+    - "26.50"
+    - thumb_shaky_with_30th_logo_1.jpg
+    - image/jpeg
+    - "22671"
+    - 2011-11-04 16:40:49
+    - "Shakin Stevens - The 30th Anniversary Tour \xE2\x80\x93 Phase II"
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:40:50
+    - 2011-11-07 10:32:55
+  - - "34"
+    - Sensational 60s Experience
+    - "7"
+    - <p>Without doubt the most explosive 60&rsquo;s show touring the UK, this is the must see 60&rsquo;s show for 2011. Original classics performed by 4 of the most popular bands of the 60s&nbsp;Starring</p>
+    - |-
+      <p>Without doubt the most explosive 60&rsquo;s show touring the UK, this is the must see 60&rsquo;s show for 2011. Original classics performed by 4 of the most popular bands of the 60s&nbsp;Starring</p>
+      <p>The Tremeloes, Hermans Hermits, The Union Gapuk&nbsp;and The Dreamers</p>
+      <p>Hosted by Alan Mosca from Freddie &amp; The Dreamers</p>
+      <p>This quintessential 60s line up is packed with nostalgia and hits such as&nbsp;The Tremeloes-Silence is Golden, Twist and Shout, Here comes my Baby, Do you Love Me , Helule Helule, Even The Bad Times Are Good, &nbsp;Hermans Hermits-I&rsquo;m Into Something Good, Something Is Happening, No Milk Today, I&rsquo;m Henry The 8th, Silhouettes, Mrs Brown You&rsquo;ve Got A Lovely Daughter,&nbsp;The Union Gapuk-Young Girl, Lady Willpower, Woman Woman, Over You,&nbsp;The Dreamers&nbsp;-I&rsquo;m Telling You Now, You Were Made For Me, If You Gotta Make A Fool Of Somebody .</p>
+      <p>&nbsp;</p>
+      <p>Don`t miss the ultimate sensational 60s show of 2011 with over 25 hits performed by four of the most influential bands of their time. Step back in time and relive the past during an evening true to the 60s when pop music was at its very best</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-11-28"
+    - "19:30:00"
+    - "2011-11-28"
+    - "23:59:00"
+    - "21.00"
+    - thumb_sensational_60s_web_2.jpg
+    - image/jpeg
+    - "24173"
+    - 2011-11-04 16:42:33
+    - Sensational 60s Experience
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:42:34
+    - 2011-11-17 16:15:42
+  - - "35"
+    - Cinderella
+    - "7"
+    - <p>It's never too early to book for our spectacular 2011/12 pantomine 'Cinderella', starring The Chuckle Brothers.</p>
+    - <p>It's never too early to book for our spectacular 2011/12 pantomine 'Cinderella', starring The Chuckle Brothers.</p>
+    - <p>You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.</p>
+    - "2011-12-08"
+    - "00:00:00"
+    - "2012-01-08"
+    - "23:59:00"
+    - "23.00"
+    - cinders-hull-poster_web_thumb.jpg
+    - image/jpeg
+    - "7734"
+    - 2011-11-04 16:44:41
+    - Cinderella
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-04 16:44:43
+    - 2011-11-08 13:36:05
+  - - "36"
+    - Christmas at Trinity
+    - "2"
+    - Enjoy all of the sights, sounds and smells of a traditional Christmas!
+    - |-
+      <div style="text-align: justify;">
+      <div>
+      <div>
+      <div>Holy Trinity is a beautiful and breathtaking feat of architecture, radiating 700 years of history and community engagement.</div>
+      <p>The Christmas at Trinity events will  see the Grade I listed building   fill with music, laughter,  creativity,  Yuletide magic, wonderful   gifts and delicious aromas.</p>
+      <p>Listen to the choirs and Christmas bands whilst browsing the many     gift stalls. Fill your belly with delicious food and then indulge in a   sweet treat from Lucy Beal Cakery.</p>
+      <p>Children can visit Santa and receive a gift, then take part in the     fun activity workshops whilst parents have a rest nearby and sip a     refreshing cuppa or cheeky mulled wine.</p>
+      <p>This is also the perfect opportunity to walk  around and appreciate   the art, sculpture, heritage, medieval architecture, and of course the   cleansing feeling  that Holy Trinity offers to everyone who enters its   doors.</p>
+      <br />
+      <div>The Christingle on Saturday 17th starts at 4pm and  welcomes anyone to join in. Light a candle and celebrate the true  meaning of Christmas: togetherness, peace on earth and goodwill to all.&nbsp;</div>
+      <div>&nbsp; &nbsp;</div>
+      <div>Meanwhile, outside in Trinity Square, traditional fair rides will  add to the festivities and light up not only the surroundings, but the  faces of children and adults alike.</div>
+      <div>&nbsp;</div>
+      <div>These events are FREE but any donations to the church and choirs are greatly appreciated.</div>
+      <div>
+      <div>
+      <div>&nbsp;</div>
+      <div>&nbsp;</div>
+      <div><strong>Enjoy carols and acoustic music:</strong></div>
+      <div>
+      <p>Hull Ukulele  Band, 11am-11:30pm</p>
+      <p>Farino, 12-12:30pm</p>
+      <p>School choir, 1pm-1:30pm<strong><br /></strong></p>
+      <p>Hull Ladies Choir, 2pm-3pm</p>
+      <p>School choir, 3:30pm-4pm</p>
+      </div>
+      <div>&nbsp;</div>
+      <div>&nbsp;&nbsp;</div>
+      <div><strong>With this range of stalls, you'll be sure to find the perfect gift!</strong><br /><br />
+      <p>Thornton's - Chocolate heaven since 1911.</p>
+      <p>Back in Bloom - Poinsettias and Yuletide flowers to brighten up your home.</p>
+      <p>Experience Toys - A variety of lovely children's gifts.</p>
+      <p>Font Yeti - Super cool T-shirts from a funky new local screen printer.</p>
+      <p>Roisin Dubh - Home accessories, vintage and modern.</p>
+      <p>Hull One World Shop&nbsp; - Fair Trade products from around the world.</p>
+      <p>Lush - Get the bath all bubbly this Christmas.</p>
+      <p>The Art Box - All the supplies you need to get crafty.</p>
+      <p>King Edward Street Fruit Stall - Satsumas, chestnuts and more.</p>
+      <p>Hulls Angels Roller Dames - The local roller derby girls will be bringing all kinds of "wheely" good merchandise. ;)</p>
+      <p>Beasley's - Bobble hats, gloves, scarves and anything else you might need to keep you warm this winter.</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    - Free
+    - "2011-12-10"
+    - "11:00:00"
+    - "2011-12-10"
+    - "16:00:00"
+    - "0.00"
+    - 4060922250_8b3eaacb80_o.jpg
+    - image/jpeg
+    - "143521"
+    - 2011-11-07 17:08:37
+    - Holy Trinity Church
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-07 17:05:14
+    - 2011-12-05 17:20:16
+  - - "37"
+    - Christmas Lights Switch-on
+    - "9"
+    - With an extra special Yuletide procession, abseiling Santa, Viking FM, snowflake light show and countless festive illuminations, Hull City Centre comes alive with colour and excitement!
+    - |-
+      <p style="text-align: justify;">Put the 24th November on your calendar and make sure to wrap-up warm, because it's time for the biggest public event of Christmas 2011!</p>
+      <p style="text-align: justify;">Take part in <strong>craft workshops</strong> in Ferens Art Gallery and Queen Victoria Square from 4pm and enjoy the live&nbsp;<strong>musical entertainment</strong>&nbsp;outside Hull City Hall from 5pm.</p>
+      <p style="text-align: justify;">Follow the&nbsp;<strong>Santa Parade</strong>&nbsp;as it leaves Holy Trinity at 6pm and makes its jolly way to Queen Victoria Square via Whitefriargate.&nbsp;</p>
+      <p style="text-align: justify;">The facade of Ferens Art Gallery transforms into a work of art in itself, with <strong>projected snowflakes</strong> giving it the magical appearance of a gigantic snowglobe. This is made possible through the&nbsp;<a href="http://www.snowandlights.com/index.html" target="_blank">Snow and Lights</a>&nbsp;community art project, created by contemporary artist Arran Todd.</p>
+      <p style="text-align: justify;"><strong>Cheer on Santa</strong> as he abseils down City Hall at 6:30pm before joining thousands of other spectators for the <strong>exciting countdown</strong> at 6:50pm, an essential part of Christmas in Hull that we can all share together.</p>
+      <p style="text-align: justify;">As the nights become darker, everyone can bask in the heartwarming glow and celebratory atmosphere of a traditional Christmas throughout Hull City Centre.</p>
+    - ""
+    - "2011-11-24"
+    - "16:00:00"
+    - "2011-11-24"
+    - "21:00:00"
+    - "0.00"
+    - 4_home_banner_lights.jpg
+    - image/jpeg
+    - "55911"
+    - 2011-11-07 17:24:08
+    - Christmas Lights Switch On
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-07 17:24:09
+    - 2011-11-24 09:21:52
+  - - "38"
+    - Christmas at Trinity
+    - "2"
+    - Enjoy all of the sights, sounds and smells of a traditional Christmas!
+    - |-
+      <div style="text-align: justify;">
+      <div>
+      <div>
+      <div>Holy Trinity is a beautiful and breathtaking feat of architecture, radiating 700 years of history and community engagement.</div>
+      <p>The Christmas at Trinity events will  see the Grade I listed building  fill with music, laughter,  creativity,  Yuletide magic, wonderful  gifts and delicious aromas.</p>
+      <p>Listen to the choirs and Christmas bands whilst browsing the many    gift stalls. Fill your belly with delicious food and then indulge in a  sweet treat from Lucy Beal Cakery.</p>
+      <p>Children can visit Santa and receive a gift, then take part in the    fun activity workshops whilst parents have a rest nearby and sip a    refreshing cuppa or cheeky mulled wine.</p>
+      <p>This is also the perfect opportunity to walk  around and appreciate  the art, sculpture, heritage, medieval architecture, and of course the  cleansing feeling  that Holy Trinity offers to everyone who enters its  doors.</p>
+      <br />
+      <div>
+      <div>
+      <div>The Christingle on Saturday 17th starts at 4pm and welcomes anyone to join in. Light a candle and celebrate the true meaning of Christmas: togetherness, peace on earth and goodwill to all.&nbsp;</div>
+      <div>&nbsp; &nbsp;</div>
+      <div>Meanwhile, outside in Trinity Square, traditional fair rides will add to the festivities and light up not only the surroundings, but the faces of children and adults alike.</div>
+      <div>&nbsp;</div>
+      <div>These events are FREE but any donations to the church and choirs are greatly appreciated.</div>
+      <div>&nbsp;</div>
+      <div><strong>With this range of stalls, you'll be sure to find the perfect gift at a Christmas at Trinity event!</strong><br /><br />
+      <p>Thornton's - Chocolate heaven since 1911.</p>
+      <p>Back in Bloom - Poinsettias and Yuletide flowers to brighten up your home.</p>
+      <p>Experience Toys - A variety of lovely children's gifts.</p>
+      <p>Font Yeti - Super cool T-shirts from a funky new local screen printer.</p>
+      <p>Roisin Dubh - Home accessories, vintage and modern.</p>
+      <p>Hull One World Shop&nbsp; - Fair Trade products from around the world.</p>
+      <p>Lush - Get the bath all bubbly this Christmas.</p>
+      <p>The Art Box - All the supplies you need to get crafty.</p>
+      <p>King Edward Street Fruit Stall - Satsumas, chestnuts and more.</p>
+      <p>Hulls Angels Roller Dames - The local roller derby girls will be bringing all kinds of "wheely" good merchandise. ;)</p>
+      <p>Beasley's - Bobble hats, gloves, scarves and anything else you might need to keep you warm this winter.</p>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+    - ""
+    - "2011-12-17"
+    - "11:00:00"
+    - "2011-12-17"
+    - "17:00:00"
+    - "0.00"
+    - 3_4060922250_8b3eaacb80_o.jpg
+    - image/jpeg
+    - "143555"
+    - 2011-11-08 09:16:11
+    - Holy Trinity Church
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-08 09:16:12
+    - 2011-12-05 17:19:21
+  - - "39"
+    - Traditional Christmas Fair
+    - "3"
+    - Christmas in Trinity is a traditional festive family affair. The Trinity Square will host a traditional Christmas fair and the Holy Trinity Church will be host to music, children's craft workshops, Santa, lovely Christmas grub and much, much more...
+    - |-
+      <p style="text-align: justify;">Part of Christmas at Trinity, the Trinity Traditional Fair is good old-fashioned family fun. See if you can topple a coconut from the coconut shy and see how high you can fly on the swing boats.</p>
+      <p style="text-align: justify;">Once you've enjoyed the outdoor festivities, move inside the church to listen to Christmas music whilst browsing a variety of stalls, visiting Santa's Grotto (only &pound;2.50), eating some lovely festive grub, meeting Dickensian characters and watching your kids get creative in the children's workshops.</p>
+      <p style="text-align: justify;">Make sure to put Saturday the 10th and 17th in your diary and be part of two fantastic traditional family Christmas events!</p>
+    - ""
+    - "2011-12-10"
+    - "11:00:00"
+    - "2011-12-17"
+    - "17:00:00"
+    - "0.00"
+    - home_banner_trinity.jpg
+    - image/jpeg
+    - "34855"
+    - 2011-11-08 09:45:57
+    - Trinity at Christmas
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-08 09:42:57
+    - 2011-11-13 22:50:45
+  - - "41"
+    - Santa's World
+    - "5"
+    - Santa's World is back! Hull's ONLY festive interactive experience with elves, Mrs Christmas and Santa, bringing that extra special sparkle to your child's Christmas. This year we have something extra special - Santa will also be bringing along his REAL-LIFE REINDEERS!
+    - |-
+      <p>Santa's World is back!</p>
+      <p>A festive interactive experience  with elves, Mrs. Christmas and Santa himself, bringing that extra special  sparkle to your child&rsquo;s Christmas. This year we have something new &ndash;  Santa will also be bringing his real-life reindeers with him!</p>
+      <p>Upstairs in the Food Court, children are invited to take part in:</p>
+      <ul>
+      <li>Christmas themed arts and crafts activities</li>
+      <li>Christmas tree decorations workshop - they can make their own for the tree at home</li>
+      <li>Writing a letter to Santa, letting him know their Christmas wishes</li>
+      <li>Storytelling and singing with Santa</li>
+      <li>Having their photograph taken with Santa on his throne</li>
+      <li>Having their face painted, choosing from a huge range of festive characters</li>
+      </ul>
+      <p>Then comes the biggest treat of all&hellip; meeting Santa's real-life reindeer! Get up close and personal with these magical creatures. It&rsquo;s  like nothing Hull has ever seen before!</p>
+      <p>There&rsquo;s something to keep mum and dad occupied too. Pop to the caf&eacute;  for a bite to eat, share an ice cream and with an array of festive  stalls you can complete your Christmas shopping there and then. Or why  not relax with a winter warmer whilst watching your little ones create  memories that will last forever?</p>
+      <p style="text-align: justify;">All this for only &pound;4 and multiple tickets are available at a discount.</p>
+      <p>Sessions last for up to an hour and there&rsquo;s no need to book, just turn up.</p>
+      <p>Entrance is via the escalator near Boots or via the scenic lift (near Caffachino).</p>
+      <p>So get into the festive spirit this Christmas with Prospect  Shopping Centre. And don&rsquo;t forget that late night shopping starts from Thursday  17<sup>th</sup> November.</p>
+    - www.prospectshoppingcentre.co.uk
+    - "2011-11-19"
+    - "11:00:00"
+    - "2011-12-24"
+    - "17:00:00"
+    - "4.00"
+    - Prospect Centre Santa.png
+    - image/png
+    - "155435"
+    - 2011-11-09 16:35:36
+    - Prospect Centre Bee
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - true
+    - 2011-11-08 10:38:16
+    - 2011-11-29 09:37:19
+  - - "42"
+    - Winter Wonderland
+    - "8"
+    - |-
+      Ride the Magical Train through snowy scenes, meet Christmas characters and elves, watch 3D cinema, enjoy a sleigh ride and visit Santa in his North Pole grotto. 
+      
+      Good boys and girls will receive a present.
+    - |-
+      <p style="text-align: justify;">Ride the Magical Train through snowy scenes, meet Christmas characters and elves, watch 3D cinema, enjoy a sleigh ride and visit Santa in his North Pole grotto. <br /><br />Good boys and girls will receive a present.</p>
+      <p style="text-align: justify;">Plus... fairground rides, sweet shops, cafe&nbsp;and much more...</p>
+      <p style="text-align: justify;"><a href="http://www.hullwinterwonderland.co.uk/">http://www.hullwinterwonderland.co.uk/</a></p>
+    - ""
+    - "2011-11-25"
+    - "13:00:00"
+    - "2011-12-24"
+    - "17:40:00"
+    - "5.00"
+    - 5_home_banner_winter_wonderland.jpg
+    - image/jpeg
+    - "33659"
+    - 2011-11-08 11:50:43
+    - Winter Wonderland
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-08 11:50:44
+    - 2011-11-14 15:15:27
+  - - "43"
+    - Vampires Rock
+    - "9"
+    - The year is 2030, the city is New York, the undead are among us and livelier than ever!
+    - |-
+      <div style="text-align: justify;" dir="ltr">
+      <p class="style29">This musical comedy is set in the year 2030, the city is New York, the undead are among us and livelier than ever!</p>
+      <p class="style28">Steve Steinman, with his unique tongue in cheek humour, plays the charismatic and supremely evil Baron Von Rockula, owner of the Live and Let Die Club.</p>
+      <p class="style28">In search of a bride, the Baron must convince his chosen one to agree to eternal immortality, to be his queen and live forever!</p>
+      <p class="style28">The spellbinding cast and musicians blast their way through the greatest rock anthems ever, including songs from Meat Loaf, Rainbow, AC/DC, Alice&nbsp;&nbsp;Cooper,&nbsp;&nbsp;Rolling&nbsp;&nbsp;Stones, Bon Jovi, Queen, White Snake, Bonnie Tyler and Cher.&nbsp;</p>
+      <p class="style28">An amazing stage set, pyrotechnics to blow your mind, beautiful dancers and of course Steve Steinman&rsquo;s famously powerful vocals and sense of humour, make sure this show is not to be missed!</p>
+      </div>
+    - You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.
+    - "2011-11-22"
+    - "19:30:00"
+    - "2011-11-22"
+    - "22:00:00"
+    - "21.50"
+    - vampires-rock.jpg
+    - image/jpeg
+    - "205901"
+    - 2011-11-10 15:47:06
+    - Vampires Rock
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-10 15:47:07
+    - 2011-11-10 15:47:07
+  - - "44"
+    - Santa's Grotto at Monkey Bizness
+    - "1"
+    - Santa's coming to Monkey Bizness from 1st December.
+    - <p>Santa's coming to Monkey Bizness from 1st December.<br /><br />Important Santa Dates for your Diary<br />On Friday, 9th December and Wednesday, 14th December Toddlers can join in the festive fun with their own Christmas party. &nbsp;11.00am - 3.00pm<br /><br />Christmas Party on Friday, 16th December 5.00pm - 7.00pm<br />Book your child breakfast, lunch or tea with Santa.Have 2 hours of fun, breakfast, lunch or tea, a visit to Santa's Grotto and meet his little helper and take a present home for just &pound;8.00 per child.<br /><br /><br /></p>
+    - Call 08458 739645 for further details and to book your child's place.
+    - "2011-12-01"
+    - "00:00:00"
+    - "2011-12-01"
+    - "23:59:00"
+    - "8.00"
+    - RetrieveAsset.jpg
+    - image/jpeg
+    - "75418"
+    - 2011-11-11 16:32:27
+    - Santa's Grotto at Monkey Bizness
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-11 16:32:27
+    - 2011-11-11 16:33:32
+  - - "45"
+    - Santa Parade
+    - "4"
+    - Festive parade and real-life reindeer!
+    - |-
+      <p style="text-align: justify;">Be part of the festive fun! Setting off from Hull New Theatre and making its way to Princes Quay, you can then meet Santa's reindeer from 11am on Princes Dock Street!</p>
+      <p style="text-align: justify;"><strong>For more Christmas info and opening times, please visit <a title="http://www.princes-quay.co.uk/" href="http://www.princes-quay.co.uk/">www.princes-quay.co.uk</a></strong></p>
+    - ""
+    - "2011-11-26"
+    - "10:30:00"
+    - "2011-11-26"
+    - "12:00:00"
+    - "0.00"
+    - 18_Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-15 11:14:53
+    - Princes Quay Santa
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-14 14:39:32
+    - 2011-11-15 11:14:53
+  - - "46"
+    - Victorian Christmas
+    - "12"
+    - Step back in time and enjoy a Victorian Christmas in the Museums Quarter, High Street.
+    - |-
+      <p style="text-align: justify;">Step back in time and enjoy a Victorian Christmas in the Museums Quarter. With Santa's Grotto, Punch and Judy, a craft fair with products from local artists, festive food, craft activities, face painting and much more!</p>
+      <p style="text-align: justify;">Museums Quarter, High Street.</p>
+      <p style="text-align: justify;">Please visit the <a href="http://search3.openobjects.com/kb5/hull/events/event.page?record=n5mE7Y_zl3A" target="_blank">website</a> for full details.</p>
+    - ""
+    - "2011-12-03"
+    - "11:00:00"
+    - "2011-12-03"
+    - "15:00:00"
+    - "0.00"
+    - wilson_laura_leach_steve1650.jpg
+    - image/jpeg
+    - "146741"
+    - 2011-11-14 21:52:18
+    - Victorian Museums
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-14 21:52:22
+    - 2011-11-15 14:24:51
+  - - "47"
+    - Voulez Vouz Christmas Party
+    - "9"
+    - Hot Christmas Fork Buffet with dancing to the fabulous Voulez Vous and disco!
+    - |-
+      <p style="text-align: justify;"><span>Abba tribute band, stunning costumes, great  music.</span></p>
+      <p style="text-align: justify;"><span>To begin the night, guests will be enjoying a traditional  Christmas banquet, which will include a broad range of options from  tomato soup to champagne pate for starters, from a traditional roast  turkey to salmon and prawns in puff pastry for the main course, and from  Christmas pudding with rum sauce to festive cheesecake for dessert.</span></p>
+      <p style="text-align: justify;"><span>Throughout the meal, Chrysalis Discos will be providing some top-class  music to keep the party spirit going until the Voulez Vous hit the stage  at 10pm to perform a non-stop barrage of ABBA hits, including all  the songs from the highly successful film Mamma Mia.</span></p>
+      <p style="text-align: justify;"><span>The Voulez Vous  will have guests singing and dancing all night long to their repertoire  of pure ABBA music.</span></p>
+    - You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300.
+    - "2011-12-16"
+    - "19:30:00"
+    - "2011-12-16"
+    - "23:59:00"
+    - "28.00"
+    - Christmas Party Nights image.jpg
+    - image/jpeg
+    - "60922"
+    - 2011-11-15 10:27:56
+    - Voulez Vous
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 10:25:33
+    - 2011-11-15 12:48:19
+  - - "48"
+    - Voulez Vous Christmas Party
+    - "9"
+    - "Hot Christmas Fork Buffet with dancing to the fabulous Voulez Vous and disco! "
+    - |-
+      <p style="text-align: justify;"><span>Abba tribute band, stunning costumes, great  music.</span></p>
+      <p style="text-align: justify;"><span>To begin the night, guests will be  enjoying a traditional  Christmas banquet, which will include a broad  range of options from  tomato soup to champagne pate for starters, from a  traditional roast  turkey to salmon and prawns in puff pastry for the  main course, and from  Christmas pudding with rum sauce to festive  cheesecake for dessert.</span></p>
+      <p style="text-align: justify;"><span>Throughout the meal, Chrysalis  Discos will be providing some top-class  music to keep the party spirit  going until the Voulez Vous hit the stage  at 10pm to perform a non-stop  barrage of ABBA hits, including all  the songs from the highly  successful film Mamma Mia.</span></p>
+      <p style="text-align: justify;"><span>The Voulez Vous  will have guests singing and dancing all night long to their repertoire  of pure ABBA music.</span></p>
+    - "You can call the box office between 10am and 10pm, Monday to Sunday, on 01482 300 300. "
+    - "2011-12-17"
+    - "19:30:00"
+    - "2011-12-17"
+    - "23:59:00"
+    - "28.00"
+    - Christmas Party Nights image.jpg
+    - image/jpeg
+    - "60922"
+    - 2011-11-15 10:29:47
+    - Voulez Vous
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 10:29:48
+    - 2011-11-15 12:47:59
+  - - "49"
+    - Christmas Lights Switch-on with Capital FM
+    - "4"
+    - Lights, Capital FM and prizes, what more could you want?
+    - |-
+      <p style="text-align: justify;">JoJo from Capital FM will be turning on the centre&rsquo;s Christmas lights, plus shoppers have the chance to win lots of fantastic prizes with the Capital Street Stars!</p>
+      <p style="text-align: justify;"><strong>For more Christmas info and opening times, please visit <a title="http://www.princes-quay.co.uk/" href="http://www.princes-quay.co.uk/">www.princes-quay.co.uk</a></strong></p>
+    - ""
+    - "2011-11-26"
+    - "11:00:00"
+    - "2011-11-26"
+    - "17:00:00"
+    - "0.00"
+    - Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-15 10:59:01
+    - Princes Quay Santa
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 10:59:01
+    - 2011-11-15 11:06:53
+  - - "50"
+    - Fabulous Festive Market at Princes Quay
+    - "4"
+    - Open every Thursday 11am-8pm and every Saturday and Sunday 11am-4pm
+    - |-
+      <p style="text-align: justify;">A fantastic variety of food, drink, arts and crafts!</p>
+      <p style="text-align: justify;">Open every Thursday 11am-8pm and every Saturday and Sunday 11am-4pm.</p>
+      <p style="text-align: justify;"><strong>For more Christmas info and opening times, please visit <a title="http://www.princes-quay.co.uk/" href="http://www.princes-quay.co.uk/">www.princes-quay.co.uk</a></strong></p>
+    - ""
+    - "2011-11-26"
+    - "11:00:00"
+    - "2011-12-22"
+    - "20:00:00"
+    - "0.00"
+    - 18_Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-15 11:01:37
+    - Princes Quay Santa
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 11:01:37
+    - 2011-11-29 17:22:11
+  - - "51"
+    - 24 Days of Christmas with Princes Quay
+    - "4"
+    - Enjoy some fantastic retailer offers!
+    - |-
+      <p style="text-align: justify;">Every day throughout December until Christmas Eve a fantastic retailer offer, especially for Princes Quay shoppers, will be revealed on the giant Advent calendar, located in the Central Atrium.</p>
+      <p style="text-align: justify;">Look out for the fabulously festive offers in-store and at<br /><a href="http:// www.facebook.com/princesquayhull" target="_blank"><br />www.facebook.com/princesquayhull</a></p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;"><strong>For more Christmas info and opening times, please visit <a title="http://www.princes-quay.co.uk/" href="http://www.princes-quay.co.uk/">www.princes-quay.co.uk</a></strong></p>
+    - ""
+    - "2011-12-01"
+    - "09:00:00"
+    - "2011-12-24"
+    - "17:00:00"
+    - "0.00"
+    - 18_Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-15 11:04:31
+    - Princes Quay Santa
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 11:04:32
+    - 2011-11-15 11:05:16
+  - - "52"
+    - Late night shopping a Princes Quay
+    - "4"
+    - Every Thursday in December until 9pm.
+    - "<p style=\"text-align: justify;\">Enjoy some festive shopping every Thursday in December until 9pm.<br /><br />For more Christmas info and opening times, please visit www.princes-quay.co.uk</p>"
+    - ""
+    - "2011-12-01"
+    - "09:00:00"
+    - "2011-12-22"
+    - "21:00:00"
+    - "0.00"
+    - 18_Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-15 11:20:06
+    - Princes Quay Santa
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 11:20:06
+    - 2011-11-15 11:20:06
+  - - "53"
+    - Paul Hudson book signing
+    - "11"
+    - BBC Look North's weatherman, Paul Hudson, signs his new book.
+    - |-
+      <p style="text-align: justify;">BBC  Look North's weatherman, and all-round  thorn in Peter Levy's side, Paul  Hudson, will be popping in to sign  copies of his latest book, Frozen  Britain.</p>
+      <p style="text-align: justify;">Almost   a year to the day since the heavy snow last year, here's your chance  to  ask him in person what lays in store for us this winter!</p>
+      <p style="text-align: justify;">For further details, please call 0843 290 8399.</p>
+    - ""
+    - "2011-11-25"
+    - "11:30:00"
+    - "2011-11-25"
+    - "12:30:00"
+    - "0.00"
+    - frozen.jpg
+    - image/jpeg
+    - "42607"
+    - 2011-11-15 12:28:39
+    - Frozen Britain
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 12:28:39
+    - 2011-11-15 12:35:14
+  - - "54"
+    - Rosemary Shrager book signing
+    - "11"
+    - TV chef Rosemary Shrager signs her new cookery book.
+    - |-
+      <p class="description" style="text-align: justify;">Come and meet TV chef Rosemary Shrager as  she pops into our store on to sign copies of her  latest book, 'Rosemary Shrager's Yorkshire Breakfasts'.</p>
+      <p class="description" style="text-align: justify;">If you ask her  nicely, she may even give you tips for Christmas dinner!</p>
+      <p style="text-align: justify;">For further details, please call 0843 290 8399.</p>
+    - ""
+    - "2011-12-01"
+    - "14:00:00"
+    - "2011-12-01"
+    - "15:00:00"
+    - "0.00"
+    - Breakfasts.jpg
+    - image/jpeg
+    - "29582"
+    - 2011-11-15 12:31:11
+    - Breakfasts
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 12:31:12
+    - 2011-11-16 13:59:07
+  - - "55"
+    - Val Wood book signing
+    - "11"
+    - Local favourite Val Wood signs her latest novel.
+    - |-
+      <p class="description">Waterstone's are really pleased to welcome Val back to their store to sign copies of her latest book, The Harbour Girl.</p>
+      <p class="description">This will  be their biggest selling book over Christmas, so come early to avoid  disappointment.</p>
+      <p class="description">For further details, please call 0843 290 8399.</p>
+    - ""
+    - "2011-12-10"
+    - "10:00:00"
+    - "2011-12-10"
+    - "23:59:00"
+    - "0.00"
+    - Wood.jpg
+    - image/jpeg
+    - "18388"
+    - 2011-11-15 12:34:54
+    - Val Wood
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 12:34:54
+    - 2011-11-15 12:38:23
+  - - "56"
+    - Junior Open Exhibition
+    - "12"
+    - Celebrating Hull's young creative talent.
+    - |-
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Our exciting children&rsquo;s exhibition  provides a chance for children aged 15 and under to have their work on display at  the Ferens  Art Gallery, and to win a prize. </span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">This exhibition will be temporarily  closed from 5-7 December inclusive.&nbsp; We apologise for any inconvenience this may  cause.</span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Sponsored by the Friends of the  Ferens and National Association of Decorative and Fine Arts Societies  (NADFAS).</span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Ferens</span><span style="font-family: Arial;"> Art Gallery</span><span style="font-family: Arial;">, Queen Victoria  Square</span></p>
+    - ""
+    - "2011-12-03"
+    - "10:00:00"
+    - "2012-01-22"
+    - "23:59:00"
+    - "0.00"
+    - Junior Open.jpg
+    - image/jpeg
+    - "161795"
+    - 2011-11-15 14:20:50
+    - Junior Open
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 14:20:51
+    - 2011-11-15 15:35:59
+  - - "57"
+    - "Time Troopers: Yule love it!"
+    - "12"
+    - Get in the festive spirit and create your own decorative Christmas yule log.
+    - |-
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Get in the festive spirit and create  your own decorative Christmas yule log.</span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Time Troopers is a free fortnightly  children's club for under 16s. Children must be accompanied by an  adult.</span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial; font-size: small;">Hands on History Museum, Trinity Square.</span></p>
+    - ""
+    - "2011-12-10"
+    - "11:00:00"
+    - "2011-12-10"
+    - "13:00:00"
+    - "0.00"
+    - Time Troopers.jpg
+    - image/jpeg
+    - "92706"
+    - 2011-11-15 14:26:30
+    - Time Troopers
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 14:26:31
+    - 2011-11-15 14:26:31
+  - - "58"
+    - Christingle session
+    - "2"
+    - Be part of a heartwarming festive event.
+    - |-
+      <p style="text-align: justify;">All are invited to light a candle and celebrate the true meaning of Christmas: togetherness, peace on earth and goodwill to everyone around the world.</p>
+      <p style="text-align: justify;">This is an informal service with traditional Christmas carols, which is very appropriate to people of all ages. Each child will receive a &lsquo;Christingle&rsquo;, an orange with red ribbon, sticks with sweets and a candle on top. And if you want to know why, then please come along to find out!</p>
+      <p style="text-align: justify;">Why not arrive earlier and enjoy Christmas at Trinity? With choir music, gift stalls, hot festive food, a Santa's Grotto and children's workshops from 11am-4pm, it's set to be a fantastic day for all!</p>
+    - ""
+    - "2011-12-17"
+    - "16:00:00"
+    - "2011-12-17"
+    - "17:00:00"
+    - "0.00"
+    - Christingle.jpg
+    - image/jpeg
+    - "88657"
+    - 2011-11-15 16:51:08
+    - Christingle
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-15 16:51:08
+    - 2011-12-05 16:12:51
+  - - "59"
+    - Newland Avenue Lights Switch-on
+    - "15"
+    - Former Hull City striker Dean Windass will flick the switch at 6pm, bringing Newland Avenue alive with festive illuminations!
+    - |-
+      <p style="text-align: justify;">Former Hull City striker Dean Windass will flick the switch at 6pm, bringing Newland Avenue alive with festive illuminations!</p>
+      <p style="text-align: justify;">Live bands will perform on a stage outside the Piper Club, a Santa's Grotto will be held at Recycling Unlimited, and&nbsp;volunteers at the&nbsp;Emmaus charity store will attempt to set a world record for playing the most consecutive games of Monopoly using the Hull version of the board.</p>
+      <p style="text-align: justify;">Meanwhile, fairground rides and food stalls will replace the traffic between Grafton Street and Alexandra Road, adding to the special celebratory atmosphere.</p>
+      <p style="text-align: justify;">It's set to be a fantastic night of fun, food and festivities!</p>
+    - ""
+    - "2011-11-30"
+    - "17:00:00"
+    - "2011-11-30"
+    - "22:00:00"
+    - "0.00"
+    - news-newlandxmas.jpg
+    - image/jpeg
+    - "34028"
+    - 2011-11-23 16:09:27
+    - Newland Avenue Xmas Lights
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-20 19:31:27
+    - 2011-11-29 09:36:52
+  - - "60"
+    - The Snow Queen
+    - "14"
+    - A magical play full of brave reindeer and evil goblins, newly adapted by Middle Child Theatre.
+    - |-
+      <div style="text-align: justify;"><strong>A new adaptation by Middle Child Theatre, in association with the  University of Hull Department of Drama and Music.</strong></div>
+      <div style="text-align: justify;">&nbsp;&nbsp;</div>
+      <div style="text-align: justify;">
+      <p>This Christmas, a magical journey  will take place. A journey to the furthest reaches of the world, and to the  furthest reaches of your imagination. A journey of adventure, a journey of  surprise, a journey of mystery. A journey to find a friend.</p>
+      <p>Hans Christian Anderson&rsquo;s classic  tale of winter wonderment, <em>The Snow  Queen,</em> has been especially adapted for the stage by Middle Child Theatre  Company in this Christmas adventure for all the family.</p>
+      <p>Following the story of  Gerda, a young girl finding herself wrapped up in the kind of adventure she  thought she could only ever imagine in her Grandmother&rsquo;s stories, the show  combines puppetry, projection, live music and more to create a mesmerizing  mystical environment, stretching from the comfort of the family home to the  furthest reaches of the arctic and beyond!</p>
+      <p>&nbsp;</p>
+      <p>Wednesday 21st and Thursday 22nd December, 7pm</p>
+      <p>Wednesday 28th December, 2pm and 7pm</p>
+      <p>Thursday 29th December, 7pm</p>
+      <p>Friday 30th December, 7pm</p>
+      <p>Saturday 31st December and Sunday 1st January, 2pm</p>
+      <p>Monday 2nd December, 7pm</p>
+      <p>&nbsp;</p>
+      <p>Run time: 90 minutes</p>
+      <p>&nbsp;</p>
+      </div>
+      <p class="paragraph_style_3" style="text-align: justify;">The Donald Roy Theatre, Gulbenkian Centre, Hull University</p>
+      <p style="text-align: justify;">Box Office: 01482 466142 / 07902 302819<br />Tickets: &pound;5<br />Concessions: &pound;3</p>
+    - ""
+    - "2011-12-21"
+    - "19:00:00"
+    - "2012-01-02"
+    - "20:30:00"
+    - "5.00"
+    - Snow-Queen-Final-To-Print-F.jpg
+    - image/jpeg
+    - "51341"
+    - 2011-11-20 21:30:20
+    - The Snow Queen
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-20 21:30:20
+    - 2011-11-21 11:11:13
+  - - "62"
+    - Santa's Grotto at Princes Quay
+    - "4"
+    - Meet Santa at Prince's Quay!
+    - |-
+      <p><strong> </strong></p>
+      <div style="text-align: justify;">Princess Quay's grotto open daily from Saturday  26th November &ndash; Saturday 24th December in the Central  Atrium!</div>
+      <div style="text-align: justify;">Grotto entry is &pound;4.50 per child, includes a present and also allows you  to take your own photographs.</div>
+      <div style="text-align: justify;">&nbsp;</div>
+      <div style="text-align: justify;">Grotto opening times:</div>
+      <div style="text-align: justify;">26<sup><span style="font-size: small;">&nbsp;</span>th </sup>November &ndash;  24<sup>th </sup>December</div>
+      <div style="text-align: justify;">Monday 10am-5pm</div>
+      <div style="text-align: justify;">Tuesday 10am-5pm</div>
+      <div style="text-align: justify;">Wednesday 10am-5pm</div>
+      <div style="text-align: justify;">Thursday 10am-8pm</div>
+      <div style="text-align: justify;">Friday 10am-5pm</div>
+      <div style="text-align: justify;">Saturday 10am-5pm</div>
+      <div style="text-align: justify;">Sunday 11am-4pm</div>
+      <p>Christmas Eve 10am-12noon</p>
+      <p><strong>For more Christmas info and opening times, please visit&nbsp;<a title="http://www.princes-quay.co.uk/" href="http://www.princes-quay.co.uk/">www.princes-quay.co.uk</a></strong></p>
+    - ""
+    - "2011-11-26"
+    - "09:00:00"
+    - "2011-12-24"
+    - "23:59:00"
+    - "4.50"
+    - 18_Princes Quay.bmp
+    - image/bmp
+    - "656054"
+    - 2011-11-23 11:24:05
+    - Princes Quay Santa
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 11:24:05
+    - 2011-11-29 17:22:34
+  - - "63"
+    - Real-life reindeer at Princes Quay!
+    - "4"
+    - Feed and have your photograph taken with Santa's friends for free!
+    - "<p style=\"text-align: justify;\">Feed and have your photograph taken with Santa's real-life reindeer! Come along and meet them for free!</p>"
+    - ""
+    - "2011-11-26"
+    - "11:00:00"
+    - "2011-11-26"
+    - "15:00:00"
+    - "0.00"
+    - Reindeer.jpg
+    - image/jpeg
+    - "1043539"
+    - 2011-11-23 11:32:32
+    - Reindeer
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - true
+    - 2011-11-23 11:31:40
+    - 2011-11-24 09:20:32
+  - - "64"
+    - World AIDS Day
+    - "1"
+    - |
+      Local charity, The Cornerhouse, collecting donations to help those suffering from HIV/AIDS in our area. 
+
+    - |-
+      <p>Local charity, The Cornerhouse, collecting donations to help those suffering from HIV/AIDS in our area.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-01"
+    - "00:00:00"
+    - "2011-12-01"
+    - "23:59:00"
+    - "0.00"
+    - world-aids-day-logo.jpg
+    - image/jpeg
+    - "42424"
+    - 2011-11-23 15:29:59
+    - World AIDS Day
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:29:59
+    - 2011-11-23 15:29:59
+  - - "65"
+    - Hull FC Snowflake Drop
+    - "1"
+    - "Not only are Hull FC joining in the Snowflake Drop giving away lots of prizes, a handful of players and the Airlie Bird are making an appearance between 6pm and 9pm. Enter their competition and be in with a chance to win a 2012/13 season pass. With signed shirts and rugby balls to win, you could go home with an extra special present. "
+    - <p>Not only are Hull FC joining in the Snowflake Drop giving away lots of prizes, a handful of players and the Airlie Bird are making an appearance between 6pm and 9pm. Enter their competition and be in with a chance to win a 2012/13 season pass. With signed shirts and rugby balls to win, you could go home with an extra special present.&nbsp;</p>
+    - ""
+    - "2011-12-01"
+    - "00:00:00"
+    - "2011-12-01"
+    - "23:59:00"
+    - "0.00"
+    - photo_560865.jpg
+    - image/jpeg
+    - "47823"
+    - 2011-11-23 15:38:58
+    - Hull FC Snowflake Drop and player appearance
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:38:59
+    - 2011-11-23 15:38:59
+  - - "66"
+    - "A Light in Every Street "
+    - "1"
+    - |
+      The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered. 
+
+    - |-
+      <p>The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-01"
+    - "00:00:00"
+    - "2011-12-01"
+    - "23:59:00"
+    - "0.00"
+    - 2008-10-23-candle.png
+    - image/png
+    - "75595"
+    - 2011-11-23 15:40:56
+    - "A Light in Every Street "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:40:57
+    - 2011-11-23 15:40:57
+  - - "67"
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - |
+      Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.
+
+    - |-
+      <p>Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-01"
+    - "00:00:00"
+    - "2011-12-01"
+    - "23:59:00"
+    - "0.00"
+    - RetrieveAsset (1).aspx
+    - application/octet-stream
+    - "50857"
+    - 2011-11-23 15:43:19
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:43:20
+    - 2011-11-23 15:43:20
+  - - "68"
+    - Dagger Lane Carols
+    - "1"
+    - Singing Christmas Carols whilst you shop, adding to the festive atmosphere.
+    - |-
+      <p>Singing Christmas Carols whilst you shop, adding to the festive atmosphere.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-03"
+    - "00:00:00"
+    - "2011-12-03"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Dagger Lane Carols
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:44:26
+    - 2011-11-23 15:44:26
+  - - "69"
+    - "The Gold Man "
+    - "1"
+    - "Come see the Gold Man statue and have your photograph taken with him! "
+    - |-
+      <p>Come see the Gold Man statue and have your photograph taken with him!&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-03"
+    - "00:00:00"
+    - "2011-12-03"
+    - "23:59:00"
+    - "0.00"
+    - IMG_3363.JPG
+    - image/jpeg
+    - "279789"
+    - 2011-11-23 15:50:39
+    - "The Gold Man "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:50:42
+    - 2011-11-23 15:50:42
+  - - "70"
+    - Vineyard Church wrapping session
+    - "1"
+    - "Volunteers from the church will gift wrap your presents for a donation. That\xE2\x80\x99s one thing sorted this Christmas!\r\n"
+    - |-
+      <p>Volunteers from the church will gift wrap your presents for a donation. That&rsquo;s one thing sorted this Christmas!</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-03"
+    - "00:00:00"
+    - "2011-12-03"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Vineyard Church wrapping session
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:54:53
+    - 2011-11-23 15:54:53
+  - - "71"
+    - "Official Opening of Queens Garden's Bandstand "
+    - "16"
+    - The new Queens Garden's Bandstand will be officially opened at 1.30pm.
+    - |-
+      <p style="text-align: justify;"><span style="font-family: Arial;">The </span><span style="font-family: Arial;">new Queens Garden's Bandstand </span><span style="font-family: Arial;"> will be officially opened at 1.30pm.</span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial;">Enjoy the musical talent of the Humberside Police  Concert Band during the afternoon whilst free horse  chestnuts are dished out to warm your cockles! </span></p>
+      <p style="text-align: justify;"><span style="font-family: Arial;">Make sure to be part of a free community event that's great fun for everyone, all within Hull's beautiful City Centre gardens.<br /></span></p>
+    - ""
+    - "2011-12-11"
+    - "13:30:00"
+    - "2011-12-11"
+    - "23:59:00"
+    - "0.00"
+    - DSCF1176.JPG
+    - image/jpeg
+    - "98613"
+    - 2011-11-28 09:35:24
+    - Police Band
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-23 15:58:14
+    - 2011-11-28 13:31:56
+  - - "72"
+    - Marie Curie Cancer Care
+    - "1"
+    - "Raising awareness of the charity\xE2\x80\x99s work in our local area. \r\n"
+    - |-
+      <p>Raising awareness of the charity&rsquo;s work in our local area.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-04"
+    - "00:00:00"
+    - "2011-12-04"
+    - "23:59:00"
+    - "0.00"
+    - marie-curie-cancer-care.gif
+    - image/gif
+    - "43832"
+    - 2011-11-25 09:56:01
+    - Marie Curie Cancer Care
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 09:56:02
+    - 2011-11-25 09:56:02
+  - - "73"
+    - "Salvation Army Brass Band "
+    - "1"
+    - "Playing for your enjoyment outside on Ferensway Plaza. "
+    - |-
+      <p>Playing for your enjoyment outside on Ferensway Plaza.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-04"
+    - "00:00:00"
+    - "2011-12-04"
+    - "23:59:00"
+    - "0.00"
+    - salvationarmy_logo.jpg
+    - image/jpeg
+    - "43225"
+    - 2011-11-25 09:58:07
+    - The Salvation Army
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 09:58:07
+    - 2011-11-25 09:58:07
+  - - "74"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - "Balloon Drop with a Jack in a Box and Toy Soldiers on stilts. "
+    - |-
+      <p>Balloon Drop with a Jack in a Box and Toy Soldiers on stilts.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-04"
+    - "00:00:00"
+    - "2011-12-04"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Snowflake Drop
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:03:57
+    - 2011-11-25 10:03:57
+  - - "75"
+    - Hull Truck Theatre
+    - "1"
+    - "Hull Truck will be promoting their Christmas productions, the \xE2\x80\x98Elves and the Shoemaker\xE2\x80\x99 and \xE2\x80\x98The Flint Street Nativity\xE2\x80\x99.\r\n"
+    - |-
+      <p>Hull Truck will be promoting their Christmas productions, the &lsquo;Elves and the Shoemaker&rsquo; and &lsquo;The Flint Street Nativity&rsquo;.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-05"
+    - "00:00:00"
+    - "2011-12-05"
+    - "23:59:00"
+    - "0.00"
+    - 07e0ccb8be9ae006817a33b26c208232.jpg
+    - image/jpeg
+    - "73198"
+    - 2011-11-25 10:07:25
+    - The Elves and the Shoemaker
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:07:25
+    - 2011-11-25 10:08:17
+  - - "76"
+    - Vineyard Church Carols and Gift Wrapping
+    - "1"
+    - "Members of the church will entertain us with Christmas Carols as well as wrap your Christmas presents for a donation. "
+    - |-
+      <p>Members of the church will entertain us with Christmas Carols as well as wrap your Christmas presents for a donation.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-06"
+    - "00:00:00"
+    - "2011-12-06"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Vineyard Church
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:09:06
+    - 2011-11-25 10:09:06
+  - - "77"
+    - Eastfield Primary School
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the afternoon.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the afternoon.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-07"
+    - "00:00:00"
+    - "2011-12-07"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Eastfield Primary School
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:13:14
+    - 2011-11-25 10:13:14
+  - - "78"
+    - "Hull City Council Carers Bus "
+    - "1"
+    - |
+      On Ferensway, the trained staff will be there to answer all of your queries on caring and becoming a carer. 
+
+    - |-
+      <p>On Ferensway, the trained staff will be there to answer all of your queries on caring and becoming a carer.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - Hull-City-Council.gif
+    - image/gif
+    - "26743"
+    - 2011-11-25 10:15:01
+    - "Hull City Council Carers Bus "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:15:02
+    - 2011-11-25 10:15:02
+  - - "79"
+    - "Alderman Cogan Primary School "
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the afternoon.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the afternoon.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Alderman Cogan Primary School "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:15:49
+    - 2011-11-25 10:15:49
+  - - "80"
+    - "A Light in Every Street "
+    - "1"
+    - "The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered. \r\n\
+      A Light in Every Street "
+    - |-
+      <p>The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "A Light in Every Street "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:16:27
+    - 2011-11-25 10:16:27
+  - - "81"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - |
+      Balloon Drop with help from the Elf Family. 
+
+    - |-
+      <p>Balloon Drop with help from the Elf Family.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:17:08
+    - 2011-11-25 10:17:08
+  - - "82"
+    - Viking FM - Cash for  Kids
+    - "1"
+    - "Promoting the station\xE2\x80\x99s charity, Cash For Kids. Christmas Appeal \xE2\x80\x93 The Toy Appeal. \r\n"
+    - |-
+      <p>Promoting the station&rsquo;s charity, Cash For Kids. Christmas Appeal &ndash; The Toy Appeal.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - 41790_141776185837084_7749_n.jpg
+    - image/jpeg
+    - "11982"
+    - 2011-11-25 10:18:44
+    - Cash for Kids
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:18:45
+    - 2011-11-25 10:18:45
+  - - "83"
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - |
+      Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.
+
+    - |-
+      <p>Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-08"
+    - "00:00:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:19:52
+    - 2011-11-25 10:19:52
+  - - "84"
+    - "NHS \xE2\x80\x93 Health Central "
+    - "1"
+    - "Fully trained staff in a minibus on Ferensway will advise on cold weather health issues. "
+    - <p>Fully trained staff in a minibus on Ferensway will advise on cold weather health issues.&nbsp;</p>
+    - ""
+    - "2011-12-09"
+    - "00:00:00"
+    - "2011-12-09"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "NHS \xE2\x80\x93 Health Central "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:20:51
+    - 2011-11-25 10:20:51
+  - - "85"
+    - "Foredyke Primary School "
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the morning.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the morning.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-09"
+    - "00:00:00"
+    - "2011-12-09"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Foredyke Primary School "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:21:48
+    - 2011-11-25 10:21:48
+  - - "86"
+    - "Holyname Primary School "
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the afternoon.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the afternoon.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-09"
+    - "00:00:00"
+    - "2011-12-09"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Holyname Primary School "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:22:28
+    - 2011-11-25 10:22:28
+  - - "87"
+    - Dove House Hospice Lottery
+    - "1"
+    - |
+      Make sure to buy yourself a lottery ticket in aid of the local charity.
+
+    - |-
+      <p>Make sure to buy yourself a lottery ticket in aid of the local charity.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-09"
+    - "00:00:00"
+    - "2011-12-09"
+    - "23:59:00"
+    - "0.00"
+    - Dove_House_Logo_-_Colour.JPG
+    - image/jpeg
+    - "124795"
+    - 2011-11-25 10:23:39
+    - Dove House Hospice Lottery
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:23:39
+    - 2011-11-25 10:23:39
+  - - "88"
+    - "Youth Enterprise "
+    - "1"
+    - |
+      The local Youth Enterprise will hold a fair with stalls selling handmade products. Find them on the 1st Floor Food Terrace and at the Park Street entrance. 
+
+    - |-
+      <p>The local Youth Enterprise will hold a fair with stalls selling handmade products. Find them on the 1st Floor Food Terrace and at the Park Street entrance.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-10"
+    - "00:00:00"
+    - "2011-12-10"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Youth Enterprise "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:25:12
+    - 2011-11-25 10:25:12
+  - - "89"
+    - "Hull Trinity Church Choir "
+    - "1"
+    - |
+      The church choir will sing Christmas Carols during the morning. 
+
+    - |-
+      <p>The church choir will sing Christmas Carols during the morning.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-10"
+    - "00:00:00"
+    - "2011-12-10"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Hull Trinity Church Choir "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:39:39
+    - 2011-11-25 10:39:39
+  - - "90"
+    - "Northern Theatre "
+    - "1"
+    - |
+      Children from the theatre will sing Christmas songs during the afternoon. 
+
+    - |-
+      <p>Children from the theatre will sing Christmas songs during the afternoon.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-10"
+    - "00:00:00"
+    - "2011-12-10"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Northern Theatre "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:41:04
+    - 2011-11-25 10:41:04
+  - - "91"
+    - "Charlie Hook Truck "
+    - "1"
+    - |
+      Taking place on Ferensway, donations collected will go toward funding essential treatment in the US for this little local boy.
+
+    - |-
+      <p>Taking place on Ferensway, donations collected will go toward funding essential treatment in the US for this little local boy.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-11"
+    - "00:00:00"
+    - "2011-12-11"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Charlie Hook Truck
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:46:14
+    - 2011-11-25 10:46:14
+  - - "92"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - |
+      Balloon Drop and a festive Saxophone Musician. 
+
+    - |-
+      <p>Balloon Drop and a festive Saxophone Musician.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-11"
+    - "00:00:00"
+    - "2011-12-11"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Snowflake Drop
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:46:58
+    - 2011-11-25 10:46:58
+  - - "93"
+    - St James Primary School
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the afternoon.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the afternoon.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-12"
+    - "00:00:00"
+    - "2011-12-12"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - St James Primary School
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:52:21
+    - 2011-11-25 10:52:21
+  - - "94"
+    - "Elloughton Primary School "
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the afternoon.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the afternoon.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-13"
+    - "00:00:00"
+    - "2011-12-13"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Elloughton Primary School "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:52:58
+    - 2011-11-25 10:52:58
+  - - "95"
+    - St Charles Primary School
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the morning.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols during the morning.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-14"
+    - "00:00:00"
+    - "2011-12-14"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - St Charles Primary School
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:53:53
+    - 2011-11-25 10:53:53
+  - - "96"
+    - Paisley Primary School
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols during the morning.
+
+    - |-
+      <div>
+      <p>The pupils will sing Christmas songs and carols during the morning.</p>
+      </div>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-15"
+    - "00:00:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Paisley Primary School
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:55:09
+    - 2011-11-25 10:55:09
+  - - "97"
+    - Echoes Foundation
+    - "1"
+    - |
+      Local charity selling 2012 Sporting Heroes Calendar.
+
+    - |-
+      <p>Local charity selling 2012 Sporting Heroes Calendar.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-15"
+    - "00:00:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Echoes Founadtion
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:56:01
+    - 2011-11-25 10:56:01
+  - - "98"
+    - "A Light in Every Street "
+    - "1"
+    - |
+      The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered. 
+
+    - |-
+      <p>The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-15"
+    - "00:00:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "A Light in Every Street "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:56:55
+    - 2011-11-25 10:56:55
+  - - "99"
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - |
+      Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.
+
+    - |-
+      <p>Come and play a game of Ping Pong on the 1st floor food terrace for late night shopping matches. Great fun supplied by Hull City Council.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-15"
+    - "00:00:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "Putting the \xE2\x80\x98ping\xE2\x80\x99 in Christmas Shopping"
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:57:32
+    - 2011-11-25 10:57:32
+  - - "100"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - "Balloon Drop and an Ice Fairy and Jack Frost on stilts. "
+    - |-
+      <p>Balloon Drop and an Ice Fairy and Jack Frost on stilts.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-15"
+    - "00:00:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Snowflake Drop
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:58:10
+    - 2011-11-25 10:58:10
+  - - "101"
+    - Gillshill Primary School
+    - "1"
+    - |
+      The pupils will sing Christmas songs and carols.
+
+    - |-
+      <p>The pupils will sing Christmas songs and carols.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-16"
+    - "00:00:00"
+    - "2011-12-16"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Gillshil Primary School
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:58:55
+    - 2011-11-25 10:58:55
+  - - "102"
+    - Beverley Musical Theatre
+    - "1"
+    - |
+      Members of the theatre will sing Christmas Carols while you do your Christmas Shopping. 
+
+    - |-
+      <p>Members of the theatre will sing Christmas Carols while you do your Christmas Shopping.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-17"
+    - "00:00:00"
+    - "2011-12-17"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Beverley Musical Theatre
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 10:59:55
+    - 2011-11-25 10:59:55
+  - - "103"
+    - "Salvation Army Brass Band "
+    - "1"
+    - Adding to the festive atmosphere for your enjoyment outside on Ferensway Plaza.
+    - <p>Adding to the festive atmosphere for your enjoyment outside on Ferensway Plaza.</p>
+    - ""
+    - "2011-12-18"
+    - "00:00:00"
+    - "2011-12-18"
+    - "23:59:00"
+    - "0.00"
+    - salvationarmy_logo.jpg
+    - image/jpeg
+    - "43225"
+    - 2011-11-25 11:05:11
+    - Salvation Army
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:05:12
+    - 2011-11-25 11:05:12
+  - - "104"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - |
+      Balloon Drop and Karate Santas. 
+
+    - |-
+      <p>Balloon Drop and Karate Santas.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-18"
+    - "00:00:00"
+    - "2011-12-18"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Snowflake Drop
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:06:14
+    - 2011-11-25 11:06:14
+  - - "105"
+    - Echoes Foundation
+    - "1"
+    - |
+      Local charity selling 2012 Sporting Heroes Calendar.
+
+    - |-
+      <div>
+      <p>Local charity selling 2012 Sporting Heroes Calendar.</p>
+      </div>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-21"
+    - "00:00:00"
+    - "2011-12-21"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Echoes Founadtion
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:14:33
+    - 2011-11-25 11:14:33
+  - - "106"
+    - Echoes Foundation
+    - "1"
+    - |
+      Local charity selling 2012 Sporting Heroes Calendar.
+
+    - |-
+      <div>
+      <p>Local charity selling 2012 Sporting Heroes Calendar.</p>
+      </div>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-22"
+    - "00:00:00"
+    - "2011-12-22"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Echoes Founadtion
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:15:03
+    - 2011-11-25 11:15:03
+  - - "107"
+    - "A Light in Every Street "
+    - "1"
+    - "The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered. "
+    - |-
+      <p>The Reverend Alison Gilchrist and volunteers from 6pm onwards will hand out tea lights and prayer cards. The aim is to have every street in Hull on the map, and when the first star comes out on Christmas Eve each tea light is lit and the prayer offered.&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-22"
+    - "00:00:00"
+    - "2011-12-22"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "A Light in Every Street "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:15:42
+    - 2011-11-25 11:15:42
+  - - "108"
+    - Snowflake Drop and Christmas Entertainment
+    - "1"
+    - Balloon Drop and a walking Christmas tree and Christmas pudding and candy cane on stilts.
+    - <p>Balloon Drop and a walking Christmas tree and Christmas pudding and candy cane on stilts.</p>
+    - ""
+    - "2011-12-22"
+    - "00:00:00"
+    - "2011-12-22"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - Snowflake Drop
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:17:07
+    - 2011-11-25 11:17:07
+  - - "109"
+    - "NHS \xE2\x80\x93 Health Central "
+    - "1"
+    - |
+      Fully trained staff in a minibus on Ferensway will advise on cold weather health issues.
+
+    - |-
+      <p>Fully trained staff in a minibus on Ferensway will advise on cold weather health issues.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-23"
+    - "00:00:00"
+    - "2011-12-23"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - "NHS \xE2\x80\x93 Health Central "
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-25 11:17:42
+    - 2011-11-25 11:17:42
+  - - "110"
+    - Humberside Police Concert Band Charity Christmas Concert
+    - "14"
+    - "Join us in seasonal celebrations! Advance tickets \xC2\xA37, on the door \xC2\xA39."
+    - |-
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Join us in seasonal celebration</span><span style="color: #000000; font-family: Arial;">s</span> <span style="color: #000000; font-family: Arial;">at our  annual Christmas Charity Concerts.</span> <span style="color: #000000; font-family: Arial;">From traditional carols to popular</span> <span style="color: #000000; font-family: Arial;">singalongs, including</span> <span style="color: #000000; font-family: Arial;">Rudolph</span> <span style="color: #000000; font-family: Arial;">the Red Nose Reindeer</span> <span style="color: #000000; font-family: Arial;">and J</span><span style="color: #000000; font-family: Arial;">i</span><span style="color: #000000; font-family: Arial;">ngle Bells, </span><span style="color: #000000; font-family: Arial;">there's something for  everyone</span><span style="color: #000000; font-family: Arial;">!</span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">These concerts are  held in support of Help for Heroes.</span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Thursday 15th and Friday 16th December.<br /></span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Middle</span><span style="color: #000000; font-family: Arial;">ton</span><span style="color: #000000; font-family: Arial;"> Hall, University of Hull.</span></p>
+    - "Tickets are available in advance by telephoning the Band Secretary Julia Thompson on 07768 916215 or email thebandoffice@yahoo.co.uk \xE2\x80\x93 priced \xC2\xA37 (latest order date 10 December).\r\n\
+      \r\n\
+      Tickets are available at the door on the night \xE2\x80\x93 priced \xC2\xA39."
+    - "2011-12-15"
+    - "19:30:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "9.00"
+    - Humberside_Police_Concert_Band_Christmas_Concert2.jpg
+    - image/jpeg
+    - "35590"
+    - 2011-11-28 13:40:48
+    - Police Concert Band
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-28 13:40:49
+    - 2011-11-28 13:45:45
+  - - "111"
+    - Humberside Police Concert Band Charity Christmas Concert
+    - "14"
+    - "Join us in seasonal celebrations! Advance tickets \xC2\xA37, on the door \xC2\xA39."
+    - |-
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Join us in seasonal celebration</span><span style="color: #000000; font-family: Arial;">s</span> <span style="color: #000000; font-family: Arial;">at our  annual Christmas Charity Concerts.</span> <span style="color: #000000; font-family: Arial;">From traditional carols to popular</span> <span style="color: #000000; font-family: Arial;">singalongs, including</span> <span style="color: #000000; font-family: Arial;">Rudolph</span> <span style="color: #000000; font-family: Arial;">the Red Nose Reindeer</span> <span style="color: #000000; font-family: Arial;">and J</span><span style="color: #000000; font-family: Arial;">i</span><span style="color: #000000; font-family: Arial;">ngle Bells, </span><span style="color: #000000; font-family: Arial;">there's something for  everyone</span><span style="color: #000000; font-family: Arial;">!</span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">These concerts are  held in support of Help for Heroes.</span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Thursday 15th and Friday 16th December.<br /></span></p>
+      <p style="text-align: justify;"><span style="color: #000000; font-family: Arial;">Middle</span><span style="color: #000000; font-family: Arial;">ton</span><span style="color: #000000; font-family: Arial;"> Hall, University of Hull.</span></p>
+    - "Tickets are available in advance by telephoning the Band Secretary Julia Thompson on 07768 916215 or email thebandoffice@yahoo.co.uk \xE2\x80\x93 priced \xC2\xA37 (latest order date 10 December).\r\n\
+      \r\n\
+      Tickets are available at the door on the night \xE2\x80\x93 priced \xC2\xA39."
+    - "2011-12-16"
+    - "19:30:00"
+    - "2011-12-16"
+    - "23:59:00"
+    - "9.00"
+    - Humberside_Police_Concert_Band_Christmas_Concert2.jpg
+    - image/jpeg
+    - "35590"
+    - 2011-11-28 13:43:36
+    - Police Concert Band
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-11-28 13:43:36
+    - 2011-11-28 13:46:29
+  - - "112"
+    - "Dove House \xE2\x80\x98Light a Life' service"
+    - "2"
+    - A service, organised by Dove House, for the friends and families of those who have had contact with the Hospice through care for their loved ones.
+    - <p>A service, organised by Dove House, for the friends and families of those who  have had contact with the Hospice through care for their loved ones.</p>
+    - ""
+    - "2011-12-08"
+    - "18:30:00"
+    - "2011-12-08"
+    - "23:59:00"
+    - "0.00"
+    - Dove_House_Logo_-_Colour.JPG
+    - image/jpeg
+    - "124795"
+    - 2011-12-05 16:44:50
+    - "Dove House \xE2\x80\x98Light a Life' service"
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-05 16:44:51
+    - 2011-12-05 16:49:29
+  - - "113"
+    - EYMS Carol Concert
+    - "2"
+    - |
+      A concert given by the East Yorkshire Motor Services Brass Band. An evening of carols for everyone to sing, with Christmas readings and festive music. Entry is free, but donations to Holy Trinity are welcome.
+
+    - |-
+      <p>A concert given by the East Yorkshire Motor Services Brass Band. An evening of carols for everyone to sing, with Christmas readings and festive music. Entry is free, but donations to Holy Trinity are welcome.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-11"
+    - "18:30:00"
+    - "2011-12-11"
+    - "23:59:00"
+    - "0.00"
+    - East_Yorkshire_Motor_Services_logo.PNG
+    - image/png
+    - "12006"
+    - 2011-12-05 16:49:00
+    - EYMS Carol Concert
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-05 16:49:00
+    - 2011-12-05 16:49:00
+  - - "114"
+    - Memorial Carol Concert
+    - "2"
+    - |
+      The Memorial Carol Services are organised by the 'Dignity' group of funeral directors in Hull. Those who have lost a loved one recently or longer ago are welcome to come to remember them and, if desired, to light a candle in their memory.
+
+    - |-
+      <p>The Memorial Carol Services are organised by the 'Dignity' group of funeral directors in Hull. Those who have lost a loved one recently or longer ago are welcome to come to remember them and, if desired, to light a candle in their memory.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-14"
+    - "19:30:00"
+    - "2011-12-15"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-05 16:50:38
+    - 2011-12-05 16:50:38
+  - - "115"
+    - SANDS Carol Service
+    - "2"
+    - |
+      The SANDS Carol Service is organised by the Chaplains at the local hospitals for the parents and family members of a child or children who have been still-born, died at birth or died just after birth. It offers the opportunity to light a candle in memory of the child.
+
+    - |-
+      <p>The SANDS Carol Service is organised by the Chaplains at the local hospitals for the parents and family members of a child or children who have been still-born, died at birth or died just after birth. It offers the opportunity to light a candle in memory of the child.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-18"
+    - "14:00:00"
+    - "2011-12-18"
+    - "16:00:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-05 17:09:13
+    - 2011-12-05 17:09:13
+  - - "116"
+    - Service of Nine Lessons and Carols (candlelit)
+    - "2"
+    - "The traditional \xE2\x80\x98nine lessons\xE2\x80\x99 and well-known carols and Christmas anthems sung by the congregation and our choir. The service is mostly by candlelight soplease being a torch if you don\xE2\x80\x99t think a single candle will be sufficient to read by. The service will last about an hour and a quarter.\r\n"
+    - |-
+      <p>The traditional &lsquo;nine lessons&rsquo; and well-known carols and Christmas anthems sung by the congregation and our choir. The service is mostly by candlelight&nbsp;so<em>please being a torch if you don&rsquo;t think a single candle will be sufficient to read by.</em>&nbsp;The service will last about an hour and a quarter.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-18"
+    - "18:30:00"
+    - "2011-12-18"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:30:23
+    - 2011-12-06 09:30:23
+  - - "117"
+    - "Shoppers\xE2\x80\x99 Carol Service"
+    - "2"
+    - "This service will take place under the tower in front of our life-sized crib. It will be a service of short readings and well-known carols. Why not break the bustle of the day to come in and enjoy a reminder of the real reason for the season?!\r\n "
+    - |-
+      <p>This service will take place under the tower in front of our life-sized crib. It will be a service of short readings and well-known carols. Why not break the bustle of the day to come in and enjoy a reminder of the real reason for the season?!</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-19"
+    - "13:00:00"
+    - "2011-12-19"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:31:40
+    - 2011-12-06 09:31:40
+  - - "118"
+    - "Lawyers\xE2\x80\x99 Carol Service"
+    - "2"
+    - |
+      ?
+      A service of nine lessons and carols offered principally for all those involved in law and order in our city, but open to anyone to enjoy.
+
+    - |-
+      <p>A service of nine lessons and carols offered principally for all those involved in law and order in our city, but open to anyone to enjoy.</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-20"
+    - "17:30:00"
+    - "2011-12-20"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:32:28
+    - 2011-12-06 09:32:28
+  - - "119"
+    - Crib Service under the Tower
+    - "2"
+    - "This service will take place under the tower between our life-sized crib and 20-foot Christmas tree. It is particularly suitable for children (both young and old) and includes the telling of the story of the first Christmas. All children are invited to dress up as one of the characters from the Nativity story and will be able to come up to the front to help us sing \xE2\x80\x98Away in a Manger\xE2\x80\x99. As usual, there will be a good selection of well-known carols for everyone to sing. It should last about 45 minutes. Why not come along after the last-minute shopping as a way of celebrating the true message of Christmas?\r\n \r\n"
+    - |-
+      <p>This service will take place under the tower between our life-sized crib and 20-foot Christmas tree. It is particularly suitable for children (both young and old) and includes the telling of the story of the first Christmas. All children are invited to dress up as one of the characters from the Nativity story and will be able to come up to the front to help us sing &lsquo;Away in a Manger&rsquo;. As usual, there will be a good selection of well-known carols for everyone to sing. It should last about 45 minutes. Why not come along after the last-minute shopping as a way of celebrating the true message of Christmas?</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-24"
+    - "12:00:00"
+    - "2011-12-24"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:33:06
+    - 2011-12-06 09:33:06
+  - - "120"
+    - Midnight Communion
+    - "2"
+    - "The \xE2\x80\x98First Communion of Christmas\xE2\x80\x99 with traditional carols and the reading of the \xE2\x80\x98Christmas Gospel\xE2\x80\x99 from John I. We remember that first Christmas night when the \xE2\x80\x98Light of the World\xE2\x80\x99 came upon earth to overcome its darkness. Appropriately, therefore, this service will be by candlelight."
+    - <p>The &lsquo;First Communion of Christmas&rsquo; with traditional carols and the reading of the &lsquo;Christmas Gospel&rsquo; from John I. We remember that first Christmas night when the &lsquo;Light of the World&rsquo; came upon earth to overcome its darkness. Appropriately, therefore, this service will be by candlelight.</p>
+    - ""
+    - "2011-12-24"
+    - "23:30:00"
+    - "2011-12-24"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:33:46
+    - 2011-12-06 09:33:46
+  - - "121"
+    - Christmas Family Communion
+    - "2"
+    - "What better time to come and worship God than on Christmas morning! We gather for a service suited to all ages. We will end by singing, \xE2\x80\x9CYea, Lord we greet Thee, born this happy morning; Jesus, to Thee be glory given; word of the Father, now in flesh appearing, O come all ye faithful...!\xE2\x80\x9D Children are welcome to bring one of their presents and tell us all about it!\r\n"
+    - |-
+      <p>What better time to come and worship God than on Christmas morning! We gather for a service suited to all ages. We will end by singing, &ldquo;Yea, Lord we greet Thee, born this happy morning; Jesus, to Thee be glory given; word of the Father, now in flesh appearing, O come all ye faithful...!&rdquo; Children are welcome to bring one of their presents and tell us all about it!</p>
+      <p>&nbsp;</p>
+    - ""
+    - "2011-12-25"
+    - "10:00:00"
+    - "2011-12-25"
+    - "23:59:00"
+    - "0.00"
+    - 
+    - 
+    - 
+    - 
+    - ""
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "0"
+    - false
+    - 2011-12-06 09:34:16
+    - 2011-12-06 09:34:16
+
+--- 
+features: 
+  columns: 
+  - id
+  - name
+  - controller
+  - action
+  - position
+  - super_admin_only
+  - css_class
+  - created_at
+  - updated_at
+  - menu
+  - permission
+  - location
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  records: 
+  - - "1"
+    - Features
+    - admin/features
+    - ""
+    - "1"
+    - true
+    - ""
+    - 2010-03-16 14:59:00
+    - 2010-04-20 12:11:25
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "3"
+    - Administrators
+    - admin/administrators
+    - ""
+    - "4"
+    - false
+    - admins
+    - 2010-03-16 14:59:00
+    - 2010-04-20 11:54:34
+    - true
+    - true
+    - Management Tools
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "4"
+    - Site Settings
+    - admin/site_settings
+    - ""
+    - "5"
+    - false
+    - settings
+    - 2010-03-16 14:59:00
+    - 2010-09-14 14:49:51
+    - true
+    - true
+    - Management Tools
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "5"
+    - Recycle Bin
+    - admin/extra_infos
+    - ""
+    - "1"
+    - false
+    - recycle
+    - 2010-03-16 14:59:00
+    - 2010-04-20 11:52:26
+    - true
+    - true
+    - Management Tools
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "7"
+    - Roles
+    - admin/roles
+    - ""
+    - "3"
+    - true
+    - ""
+    - 2010-03-16 15:23:18
+    - 2010-04-20 12:11:56
+    - true
+    - false
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "23"
+    - Image Management
+    - admin/images
+    - ""
+    - "2"
+    - false
+    - pictures
+    - 2010-03-22 10:22:35
+    - 2010-09-09 10:13:06
+    - true
+    - true
+    - Management Tools
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "24"
+    - Document Management
+    - admin/documents
+    - ""
+    - "3"
+    - false
+    - documents
+    - 2010-03-22 10:37:46
+    - 2010-04-20 11:57:44
+    - true
+    - true
+    - Management Tools
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "41"
+    - Pages
+    - admin/page_nodes
+    - ""
+    - "1"
+    - false
+    - ""
+    - 2010-04-26 13:39:05
+    - 2010-04-26 13:39:33
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "42"
+    - Banners
+    - admin/banners
+    - ""
+    - "3"
+    - false
+    - ""
+    - 2011-11-02 16:25:31
+    - 2011-11-02 16:25:31
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "43"
+    - Venues
+    - admin/venues
+    - ""
+    - "5"
+    - false
+    - ""
+    - 2011-11-03 09:17:57
+    - 2011-11-03 09:17:57
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "44"
+    - Articles
+    - admin/articles
+    - ""
+    - "2"
+    - false
+    - ""
+    - 2011-11-03 09:19:10
+    - 2011-11-03 09:19:10
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+  - - "45"
+    - Events
+    - admin/events
+    - ""
+    - "4"
+    - false
+    - ""
+    - 2011-11-03 09:22:47
+    - 2011-11-03 09:22:47
+    - true
+    - true
+    - Website Content
+    - 
+    - 
+    - false
+    - 
+    - true
+
+--- 
+images: 
+  columns: 
+  - id
+  - created_at
+  - updated_at
+  - created_by
+  - updated_by
+  - image_content_type
+  - image_file_name
+  - image_file_size
+  - image_updated_at
+  records: 
+  - - "1"
+    - 2011-11-07 12:28:50
+    - 2011-11-07 12:28:50
+    - 
+    - 
+    - image/jpeg
+    - SAM_2350.JPG
+    - "139649"
+    - 2011-11-07 12:28:49
+  - - "2"
+    - 2011-11-07 14:20:48
+    - 2011-11-07 14:20:48
+    - 
+    - 
+    - image/gif
+    - no_image.gif
+    - "1641"
+    - 2011-11-07 14:20:47
+  - - "3"
+    - 2011-11-07 17:01:47
+    - 2011-11-07 17:01:47
+    - 
+    - 
+    - image/jpeg
+    - 4060922250_8b3eaacb80_o.jpg
+    - "143521"
+    - 2011-11-07 17:01:46
+  - - "4"
+    - 2011-11-07 17:19:39
+    - 2011-11-07 17:19:39
+    - 
+    - 
+    - image/jpeg
+    - home_banner_lights.jpg
+    - "56013"
+    - 2011-11-07 17:19:39
+  - - "5"
+    - 2011-11-07 17:27:31
+    - 2011-11-07 17:27:31
+    - 
+    - 
+    - image/jpeg
+    - home_banner_winter_wonderland.jpg
+    - "33683"
+    - 2011-11-07 17:27:31
+  - - "6"
+    - 2011-11-08 10:07:23
+    - 2011-11-08 10:07:23
+    - 
+    - 
+    - image/jpeg
+    - Snow White on Ice.jpg
+    - "50394"
+    - 2011-11-08 10:07:23
+  - - "7"
+    - 2011-11-08 10:09:51
+    - 2011-11-08 10:09:51
+    - 
+    - 
+    - image/jpeg
+    - hull_20091119_9366-Edit.jpg
+    - "487202"
+    - 2011-11-08 10:09:51
+  - - "8"
+    - 2011-11-08 10:38:16
+    - 2011-11-08 10:38:16
+    - 
+    - 
+    - image/jpeg
+    - Prospect Centre.jpg
+    - "111767"
+    - 2011-11-08 10:38:16
+  - - "9"
+    - 2011-11-08 16:53:34
+    - 2011-11-08 16:53:34
+    - 
+    - 
+    - image/jpeg
+    - Christmas Concerts.jpg
+    - "43708"
+    - 2011-11-08 16:53:34
+  - - "10"
+    - 2011-11-09 16:21:03
+    - 2011-11-09 16:21:03
+    - 
+    - 
+    - image/png
+    - Prospect Centre Santa.png
+    - "155435"
+    - 2011-11-09 16:21:03
+  - - "11"
+    - 2011-11-09 16:35:37
+    - 2011-11-09 16:35:37
+    - 
+    - 
+    - image/png
+    - Prospect Centre Santa.png
+    - "155435"
+    - 2011-11-09 16:35:37
+  - - "12"
+    - 2011-11-10 17:09:20
+    - 2011-11-10 17:09:20
+    - 
+    - 
+    - image/gif
+    - hullbid_trans.gif
+    - "2320"
+    - 2011-11-10 17:09:20
+  - - "13"
+    - 2011-11-11 15:37:16
+    - 2011-11-11 15:37:16
+    - 
+    - 
+    - image/jpeg
+    - busk-idol-big-pic.jpg
+    - "55527"
+    - 2011-11-11 15:37:16
+  - - "14"
+    - 2011-11-14 15:11:14
+    - 2011-11-14 15:11:14
+    - 
+    - 
+    - image/jpeg
+    - princes_quay_christmas_flyer_artwork_Page_1.jpg
+    - "22117"
+    - 2011-11-14 15:11:14
+  - - "15"
+    - 2011-11-14 21:52:22
+    - 2011-11-14 21:52:22
+    - 
+    - 
+    - image/jpeg
+    - wilson_laura_leach_steve1650.jpg
+    - "147241"
+    - 2011-11-14 21:52:22
+  - - "16"
+    - 2011-11-15 10:27:57
+    - 2011-11-15 10:27:57
+    - 
+    - 
+    - image/jpeg
+    - Christmas Party Nights image.jpg
+    - "60863"
+    - 2011-11-15 10:27:57
+  - - "17"
+    - 2011-11-15 10:29:48
+    - 2011-11-15 10:29:48
+    - 
+    - 
+    - image/jpeg
+    - Christmas Party Nights image.jpg
+    - "60863"
+    - 2011-11-15 10:29:48
+  - - "18"
+    - 2011-11-15 10:59:01
+    - 2011-11-15 10:59:01
+    - 
+    - 
+    - image/bmp
+    - Princes Quay.bmp
+    - "656054"
+    - 2011-11-15 10:59:01
+  - - "19"
+    - 2011-11-15 12:16:39
+    - 2011-11-15 12:16:39
+    - 
+    - 
+    - image/jpeg
+    - Waterstone's.jpg
+    - "134230"
+    - 2011-11-15 12:16:39
+  - - "20"
+    - 2011-11-15 14:20:51
+    - 2011-11-15 14:20:51
+    - 
+    - 
+    - image/jpeg
+    - Junior Open.jpg
+    - "162141"
+    - 2011-11-15 14:20:51
+  - - "21"
+    - 2011-11-15 14:26:31
+    - 2011-11-15 14:26:31
+    - 
+    - 
+    - image/jpeg
+    - Time Troopers.jpg
+    - "91804"
+    - 2011-11-15 14:26:31
+  - - "22"
+    - 2011-11-16 09:19:10
+    - 2011-11-16 09:19:10
+    - 
+    - 
+    - image/jpeg
+    - Maureen Hunter.jpg
+    - "19226"
+    - 2011-11-16 09:19:10
+  - - "23"
+    - 2011-11-20 19:20:50
+    - 2011-11-20 19:20:50
+    - 
+    - 
+    - image/jpeg
+    - 1315094_f2125c90-1.jpg
+    - "13309"
+    - 2011-11-20 19:20:50
+  - - "24"
+    - 2011-11-20 21:30:21
+    - 2011-11-20 21:30:21
+    - 
+    - 
+    - image/jpeg
+    - Snow-Queen-Final-To-Print-F.jpg
+    - "51222"
+    - 2011-11-20 21:30:20
+  - - "25"
+    - 2011-11-23 11:32:33
+    - 2011-11-23 11:32:33
+    - 
+    - 
+    - image/jpeg
+    - Reindeer.jpg
+    - "1046620"
+    - 2011-11-23 11:32:33
+  - - "26"
+    - 2011-11-23 11:48:00
+    - 2011-11-23 11:48:00
+    - 
+    - 
+    - image/jpeg
+    - Princes Quay.jpg
+    - "272663"
+    - 2011-11-23 11:48:00
+  - - "27"
+    - 2011-11-23 11:49:20
+    - 2011-11-23 11:49:20
+    - 
+    - 
+    - image/jpeg
+    - Princes Quay.jpg
+    - "165675"
+    - 2011-11-23 11:49:20
+  - - "28"
+    - 2011-11-23 15:50:15
+    - 2011-11-23 15:50:15
+    - 
+    - 
+    - image/jpeg
+    - BBC_Building_Queens_Gardens_Hull.jpg
+    - "126885"
+    - 2011-11-23 15:50:15
+  - - "29"
+    - 2011-11-23 16:09:27
+    - 2011-11-23 16:09:27
+    - 
+    - 
+    - image/jpeg
+    - news-newlandxmas.jpg
+    - "34006"
+    - 2011-11-23 16:09:27
+  - - "30"
+    - 2011-11-23 16:31:56
+    - 2011-11-23 16:31:56
+    - 
+    - 
+    - image/jpeg
+    - CD_AW.jpg
+    - "852840"
+    - 2011-11-23 16:31:56
+  - - "31"
+    - 2011-11-28 09:35:24
+    - 2011-11-28 09:35:24
+    - 
+    - 
+    - image/jpeg
+    - DSCF1176.JPG
+    - "98474"
+    - 2011-11-28 09:35:24
+  - - "32"
+    - 2011-11-28 13:43:37
+    - 2011-11-28 13:43:37
+    - 
+    - 
+    - image/jpeg
+    - Humberside_Police_Concert_Band_Christmas_Concert2.jpg
+    - "35517"
+    - 2011-11-28 13:43:36
+  - - "33"
+    - 2011-12-05 15:07:50
+    - 2011-12-05 15:07:50
+    - 
+    - 
+    - image/jpeg
+    - Farino.jpg
+    - "852840"
+    - 2011-12-05 15:07:50
+  - - "34"
+    - 2011-12-05 16:54:09
+    - 2011-12-05 16:54:09
+    - 
+    - 
+    - image/jpeg
+    - Hull BID Hidden Gems 2011 A6.indd_Page_01.jpg
+    - "47387"
+    - 2011-12-05 16:54:09
+
+--- 
+page_contents: 
+  columns: 
+  - id
+  - navigation_title
+  - url_title
+  - title
+  - page_node_id
+  - completed
+  - published
+  - active
+  - last_updated_at
+  - main_content
+  - created_at
+  - updated_at
+  - meta_description
+  - meta_tags
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - position
+  - link
+  records: 
+  - - "1"
+    - Contact Us
+    - contact_us
+    - Contact Us
+    - "1"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - |-
+      <p><strong><span><span>Hull Business Improvement District (BID)</span></span></strong><br /><span><span>34-38 Beverley Road</span></span><br /><span>Hull</span><br /><span>HU3 1YE</span><br /><span>Tel: 01482 324976</span><br /><span>Fax: 01482 213962</span></p>
+      <p><span>For enquires please click the link below:</span><br /><a href="mailto:info@christmasinhull.co.uk">info@christmasinhull.co.uk</a></p>
+      <p><a href="http://www.hullbid.co.uk" target="_blank"><img src="../../../assets/page_contents/1/contained_images/fe83f2e556f8_12_hullbid_trans.gif?1320944960" border="0" alt="" hspace="0" vspace="0" width="250" /></a></p>
+    - 2010-06-29 15:18:17
+    - 2011-11-10 17:10:53
+    - ""
+    - ""
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "2"
+    - Site Map
+    - site_map
+    - Site Map
+    - "2"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - 
+    - 2010-12-16 13:28:46
+    - 2010-12-16 13:56:01
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "3"
+    - Accessibility
+    - accessibility
+    - Accessibility
+    - "3"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - 
+    - 2010-12-16 13:56:31
+    - 2010-12-16 13:57:36
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "4"
+    - Home
+    - home
+    - Welcome
+    - "4"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - |-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    - 2011-11-02 15:57:19
+    - 2011-11-03 12:55:30
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "5"
+    - Venues
+    - venues
+    - Venues
+    - "5"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - ""
+    - 2011-11-03 09:06:55
+    - 2011-11-03 09:14:41
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "6"
+    - About Us
+    - about_us
+    - Christmas in Hull
+    - "6"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - |-
+      <p style="text-align: justify;">Christmas in Hull is a collaborative initiative between Hull BID and Hull City Council. Working with partners throughout the City Centre, Christmas in Hull is your one-stop guide to Hull City Centre Christmas event information.</p>
+      <p style="text-align: justify;">&nbsp;</p>
+      <p style="text-align: justify;"><span style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24px;">A big, warm thank you...</span></p>
+      <p style="text-align: justify;">...to everyone supporting Christmas in Hull this year. It's thanks to you that we're filling Hull City Centre with festive cheer!</p>
+      <ul style="text-align: justify;">
+      <li><a href="http://www.humberaccess.co.uk/" target="_blank">Humber Access</a> for providing equipment so that Santa can abseil down Hull City Hall at the Christmas Lights Switch-on! Be there for 6:30pm on Thursday 24th November to cheer him on! </li>
+      <li><a href="http://www.hulltruck.co.uk" target="_blank">Hull Truck Theatre</a> for providing giant baubles, Sian Thomas for the Dickensian costumes, and Sarah 'Little Un' Follon for safety advice.</li>
+      <li><a href="http://www2.hull.ac.uk/FASS/drama_and_music/drama.aspx" target="_blank">Hull University Drama Department</a> for the actors to fill those costumes.</li>
+      <li><a href="../../../page/venues" target="_blank">St Stephen's</a> for offering an elf and a warm place for the choirs to sing.</li>
+      <li><a href="../../../page/venues" target="_blank">Holy Trinity Church</a> for being brilliant. A truly modern way to engage with the community and a beautiful setting for Christmas at Trinity.</li>
+      <li><a href="http://www.facebook.com/pages/The-Kings-Bar-and-Lounge/248040931899909" target="_blank"></a><a href="http://www.lucybealcakery.co.uk/" target="_blank">Lucy Beal Cakery</a> for lovely baked treats!</li>
+      <li><a href="http://www.facebook.com/pages/Thehullpie/256517454369768?sk=wall" target="_blank">Pie</a> for lovely festive grub, pie-style!</li>
+      <li><a href="http://www.peter-hird.co.uk/" target="_blank">Hird</a>, especially Philip Hird, for invaluable help and advice with Christmas events.</li>
+      <li>Prospect Centre, Hull New Theatre, Princes Quay, Hull Museums, Bonus Arena, Hull Arena and Hull City Hall&nbsp;which, along with St Stephen's, Holy Trinity and Hull Truck Theatre, provide the settings for much of the Christmas magic! (Click on 'Venues' at the top for more information.)</li>
+      <li>Numerous City Centre retailers and their staff for being part of the 'Do They Know It's Christmas?' video (coming soon).</li>
+      <li>And of course, everyone who has visited this website,&nbsp;Liked the <a href="http://www.facebook.com/ChristmasInHull" target="_blank">Facebook page</a>, read the <a href="http://twitter.com/#!/ChristmasInHull" target="_blank">tweets</a>, told their friends and helped spread the festive cheer. Father Christmas has put you on his Nice List. :)</li>
+      </ul>
+      <ul style="text-align: justify;">
+      </ul>
+    - 2011-11-03 09:12:52
+    - 2011-12-05 16:37:42
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "7"
+    - News
+    - news
+    - News
+    - "7"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - ""
+    - 2011-11-03 09:12:59
+    - 2011-11-03 09:13:10
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "8"
+    - Events
+    - events
+    - Events
+    - "8"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - ""
+    - 2011-11-03 09:13:27
+    - 2011-11-03 09:14:58
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+  - - "9"
+    - Christmas in Hull
+    - christmas_in_hull
+    - Christmas in Hull
+    - "9"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - |-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    - 2011-11-04 09:24:17
+    - 2011-11-07 15:02:21
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - true
+    - 2011-11-07 15:02:21
+    - true
+    - "0"
+    - 
+  - - "10"
+    - Partners
+    - partners
+    - Partners
+    - "10"
+    - false
+    - false
+    - true
+    - 2010-04-29 08:55:42
+    - |-
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    - 2011-11-04 09:27:15
+    - 2011-11-07 15:02:23
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - true
+    - 2011-11-07 15:02:23
+    - true
+    - "0"
+    - 
+  - - "11"
+    - News
+    - news
+    - News
+    - "7"
+    - false
+    - false
+    - false
+    - 2010-04-29 08:55:42
+    - ""
+    - 2011-11-03 09:12:59
+    - 2011-11-03 09:13:10
+    - ""
+    - ""
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "0"
+    - 
+
+--- 
+page_nodes: 
+  columns: 
+  - id
+  - name
+  - url
+  - position
+  - action
+  - controller
+  - model
+  - layout
+  - display
+  - display_in_navigation
+  - can_be_moved
+  - can_be_edited
+  - can_be_deleted
+  - created_at
+  - updated_at
+  - access_key
+  - stylesheet
+  - can_have_children
+  - special_menu
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - ancestry
+  records: 
+  - - "1"
+    - Contact Us
+    - contact-us
+    - "1"
+    - contact_us
+    - web
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - true
+    - false
+    - 2010-06-29 15:18:17
+    - 2011-11-03 09:15:03
+    - "5"
+    - ""
+    - false
+    - false
+    - 
+    - "1"
+    - false
+    - 
+    - 
+  - - "2"
+    - Site Map
+    - site-map
+    - "2"
+    - site_map
+    - web
+    - ""
+    - none
+    - true
+    - false
+    - false
+    - false
+    - false
+    - 2010-12-16 13:28:46
+    - 2011-11-03 13:10:50
+    - s
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "3"
+    - Accessibility
+    - accessibility
+    - "3"
+    - accessibility
+    - web
+    - ""
+    - none
+    - true
+    - false
+    - false
+    - false
+    - false
+    - 2010-12-16 13:56:31
+    - 2011-11-03 13:10:51
+    - a
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "4"
+    - Home
+    - home
+    - "0"
+    - index
+    - web
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - true
+    - false
+    - 2011-11-02 15:57:19
+    - 2011-11-03 13:10:22
+    - "0"
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "5"
+    - Venues
+    - venues
+    - "0"
+    - ""
+    - venues
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - false
+    - false
+    - 2011-11-03 09:06:55
+    - 2011-11-03 13:10:12
+    - "1"
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "6"
+    - About Us
+    - about-us
+    - "0"
+    - ""
+    - ""
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - true
+    - false
+    - 2011-11-03 09:12:52
+    - 2011-11-03 13:10:05
+    - "2"
+    - ""
+    - true
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "7"
+    - News
+    - news
+    - "0"
+    - ""
+    - articles
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - false
+    - false
+    - 2011-11-03 09:12:59
+    - 2011-11-03 13:09:53
+    - "3"
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "8"
+    - Events
+    - events
+    - "0"
+    - ""
+    - events
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - false
+    - false
+    - 2011-11-03 09:13:27
+    - 2011-11-03 13:09:47
+    - "4"
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - false
+    - 
+    - 
+  - - "9"
+    - Christmas in Hull
+    - christmas-in-hull
+    - "0"
+    - ""
+    - ""
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - true
+    - false
+    - 2011-11-04 09:24:17
+    - 2011-11-07 15:02:21
+    - ""
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - true
+    - 2011-11-07 15:02:21
+    - "6"
+  - - "10"
+    - Partners
+    - partners
+    - "0"
+    - ""
+    - ""
+    - ""
+    - basic
+    - true
+    - true
+    - false
+    - true
+    - false
+    - 2011-11-04 09:27:15
+    - 2011-11-07 15:02:23
+    - ""
+    - ""
+    - false
+    - false
+    - "1"
+    - "1"
+    - true
+    - 2011-11-07 15:02:23
+    - "6"
+
+--- 
+roles: 
+  columns: 
+  - id
+  - name
+  - all_features
+  - created_at
+  - updated_at
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  records: 
+  - - "3"
+    - Site Admin
+    - true
+    - 2010-03-18 09:43:54
+    - 2010-04-15 14:56:07
+    - 
+    - 
+    - false
+    - 
+    - true
+
+--- 
+site_settings: 
+  columns: 
+  - id
+  - name
+  - value
+  - super_admin_only
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - input_type
+  records: 
+  - - "5"
+    - Email
+    - info@christmasinhull.co.uk
+    - false
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - text_field
+  - - "12"
+    - Site Name
+    - Christmas in Hull
+    - true
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - text_field
+  - - "13"
+    - Site Down For Maintenance
+    - "false"
+    - false
+    - 
+    - 
+    - false
+    - 
+    - true
+    - true/false
+  - - "14"
+    - Stats Url
+    - ":2082/frontend/x3/stats/awstats_landing.html"
+    - true
+    - 
+    - 
+    - false
+    - 
+    - true
+    - text_field
+  - - "15"
+    - Site Domain
+    - http://christmasinhull.co.uk
+    - true
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - text_field
+  - - "16"
+    - Site Maintainer
+    - adam@eskimosoup.co.uk
+    - true
+    - 
+    - "1"
+    - false
+    - 
+    - true
+    - text_field
+  - - "17"
+    - Report Errors
+    - "true"
+    - true
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - true/false
+  - - "18"
+    - Report Routing Errors
+    - "false"
+    - true
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - true/false
+
+--- 
+venues: 
+  columns: 
+  - id
+  - name
+  - image_file_name
+  - image_content_type
+  - image_file_size
+  - image_updated_at
+  - image_alt
+  - address
+  - postcode
+  - created_by
+  - updated_by
+  - recycled
+  - recycled_at
+  - display
+  - position
+  - created_at
+  - updated_at
+  records: 
+  - - "1"
+    - St. Stephen's
+    - StStephens.jpg
+    - image/jpeg
+    - "56876"
+    - 2011-11-07 10:36:36
+    - St. Stephen's
+    - 110 Ferensway, Hull
+    - HU2 8LN
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "5"
+    - 2011-11-03 10:24:52
+    - 2011-11-15 14:21:39
+  - - "2"
+    - Holy Trinity Church
+    - HolyTrinityChurch.jpg
+    - image/jpeg
+    - "143521"
+    - 2011-11-04 10:22:56
+    - Holy Trinity Church
+    - Market Place, Hull
+    - HU1 1RR
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "1"
+    - 2011-11-04 09:29:20
+    - 2011-11-15 14:21:21
+  - - "3"
+    - Trinity Square
+    - TrinitySquare.jpg
+    - image/jpeg
+    - "122488"
+    - 2011-11-04 10:23:02
+    - Trinity Square
+    - ""
+    - HU1 1RR
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "2"
+    - 2011-11-04 09:31:33
+    - 2011-11-04 10:23:04
+  - - "4"
+    - Princes Quay
+    - PrincesQuay.jpg
+    - image/jpeg
+    - "55232"
+    - 2011-11-07 16:50:36
+    - Princes Quay
+    - Hull
+    - HU1 2PQ
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "6"
+    - 2011-11-04 09:33:07
+    - 2011-11-15 14:21:59
+  - - "5"
+    - Prospect Centre
+    - ProspectCentre.jpg
+    - image/jpeg
+    - "70171"
+    - 2011-11-07 16:57:38
+    - "Prospect Centre "
+    - Prospect Street, Hull
+    - HU2 8PP
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "7"
+    - 2011-11-04 09:33:56
+    - 2011-11-15 14:22:54
+  - - "6"
+    - Hull Truck Theatre
+    - HullTruck.jpg
+    - image/jpeg
+    - "39077"
+    - 2011-11-07 16:52:44
+    - Hull Truck
+    - 50 Ferensway, Hull
+    - HU2 8LB
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "10"
+    - 2011-11-04 09:39:59
+    - 2011-11-08 11:03:12
+  - - "7"
+    - Hull New Theatre
+    - HullNewTheatre.jpg
+    - image/jpeg
+    - "85226"
+    - 2011-11-07 16:51:15
+    - Hull New Theatre
+    - Kingston Square, Hull
+    - HU1 3HF
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "9"
+    - 2011-11-04 09:41:30
+    - 2011-11-08 11:03:24
+  - - "8"
+    - Bonus Arena
+    - BonusArena.jpg
+    - image/jpeg
+    - "92989"
+    - 2011-11-07 16:53:39
+    - Bonus Arena - Winter Wonderland
+    - Hull
+    - HU3 6GA
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "11"
+    - 2011-11-04 09:43:57
+    - 2011-11-15 14:23:09
+  - - "9"
+    - Hull City Hall
+    - HullCityHall.jpg
+    - image/jpeg
+    - "104373"
+    - 2011-11-07 16:53:46
+    - Hull City Hall
+    - Queen Victoria Square, Hull
+    - HU1 3RQ
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "3"
+    - 2011-11-04 09:45:08
+    - 2011-11-08 11:04:51
+  - - "10"
+    - "Hull Arena "
+    - HullIceArena.jpg
+    - image/jpeg
+    - "35338"
+    - 2011-11-07 16:55:06
+    - "Hull Arena "
+    - Kingston Street, Hull
+    - HU1 2DZ
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "8"
+    - 2011-11-04 16:27:05
+    - 2011-11-15 14:22:40
+  - - "11"
+    - Waterstone's
+    - Waterstone's.jpg
+    - image/jpeg
+    - "134188"
+    - 2011-11-15 12:16:39
+    - Waterstone's
+    - Grand Buildings, Jameson Street, Hull
+    - " HU1 3JX"
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "13"
+    - 2011-11-15 12:16:39
+    - 2011-11-15 12:16:39
+  - - "12"
+    - Hull Museums
+    - Hands On History Museum.JPG
+    - image/jpeg
+    - "77167"
+    - 2011-11-15 14:12:43
+    - Hull Museums
+    - Various Hull Museums
+    - HU1
+    - "1"
+    - 
+    - false
+    - 
+    - true
+    - "4"
+    - 2011-11-15 14:12:43
+    - 2011-11-15 14:12:43
+  - - "14"
+    - Hull University
+    - Hull Uni.jpg
+    - image/jpeg
+    - "29158"
+    - 2011-11-18 16:49:58
+    - Hull University
+    - Cottingham Road, Hull
+    - HU6 7RX
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "14"
+    - 2011-11-18 16:35:35
+    - 2011-11-18 16:49:59
+  - - "15"
+    - Newland Avenue
+    - 1315094_f2125c90-1.jpg
+    - image/jpeg
+    - "13335"
+    - 2011-11-20 19:20:49
+    - Newland Avenue
+    - Hull
+    - HU5 2NN
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "15"
+    - 2011-11-20 19:20:50
+    - 2011-11-20 19:22:21
+  - - "16"
+    - Queen's Gardens
+    - BBC_Building_Queens_Gardens_Hull.jpg
+    - image/jpeg
+    - "127539"
+    - 2011-11-23 15:50:15
+    - Queen's Gardens
+    - Hull
+    - HU1 3NA
+    - "1"
+    - "1"
+    - false
+    - 
+    - true
+    - "12"
+    - 2011-11-23 15:50:15
+    - 2011-11-23 15:51:21

@@ -1,0 +1,9 @@
+<div class="venue_list">
+	<%= link_to(image_tag(venue.image(:index)), venue) if venue.image? %>
+  <h2><%= link_to(h(venue.name), venue) %></h2>
+	<p>
+		<%= venue.address %>
+		<br />
+		<%= venue.postcode %> (<%= link_to("View map", "http://maps.google.co.uk/maps?q=#{venue.postcode}", {:popup => true}) %>)
+	</p>
+</div>

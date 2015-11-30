@@ -1,0 +1,89 @@
+<% form_for([:admin, @event], :html => {:multipart => true}) do |f| %>
+
+  <%= f.error_messages %>
+
+  <fieldset>
+		<legend>Summary Information</legend>
+		<p>
+			<%= f.label :name %><br />
+			<%= f.text_field :name %>
+		</p>
+		<p>
+			<%= f.label :summary %><br />
+			<%= f.text_area :summary %>
+		</p>
+		<p>
+			<%= f.label :booking_information, "Booking Information" %><br />
+			<%= f.text_area :booking_information %>
+		</p>
+		<% if Venue.active.empty? %>
+			<p><small>
+				No Venues to link to<br />
+				<%= link_to "Create one", new_admin_venue_path, {:popup => true} %> | <%= link_to "Activate one", admin_venues_path, {:popup => true} %>
+			</small></p>
+		<% else %>
+			<p>
+				<%= f.label :venue_id, "Venue" %><br />
+				<%= f.collection_select :venue_id, Venue.active, :id, :name %>&nbsp;<small>or <%= link_to "create one", new_admin_venue_path, {:popup => true} %>.</small>
+			</p>
+		<% end %>
+		<p>
+			<%= f.helpful_label :price, "Price", "Must be a whole number or a decimal." %><br />
+			<%= f.text_field :price %>
+		</p>
+
+		<p>
+			<%= f.check_box :hide_price	%>
+			<%= f.label :hide_price %>
+		</p>
+
+  </fieldset>
+
+  <fieldset>
+		<legend>Dates & Times</legend>
+		<p>
+			<%= f.label :start_date, "Starts" %><br />
+			<% if @event.new_record? %>
+				<%= f.calendar_date_select :start_date, :value => "#{(Date.today + 1).strftime("%B %d, %Y")}" %>
+			<% else %>
+				<%= f.calendar_date_select :start_date %>
+			<% end %>
+			&nbsp;
+			<%= f.time_select :start_time %>
+			&nbsp;
+			<%= f.helpful_label "", "", "The time field here is automatically set to 00:00. If unchanged, the event will be assumed to have no start time and will display only the starting date of the event." %>
+		</p>
+		<p>
+			<%= f.label :end_date, "Ends" %><br />
+			<%= f.calendar_date_select :end_date %>
+			&nbsp;
+			<%= f.time_select :end_time %>
+			&nbsp;
+			<%= f.helpful_label "", "", "The time field here is automatically set to 23:59. If unchanged, the event will be assumed to have no end time and will display only the ending date (if it is different from starting date)." %>
+		</p>
+  </fieldset>
+
+  <fieldset>
+		<legend>Detailed Information</legend>
+		<p>
+			<%= f.label :main_content %><br />
+			<%= f.advanced_text_area :main_content %>
+		</p>
+		<p>
+			<%= image_field_tag f, :event, :image %>
+		</p>
+  </fieldset>
+
+	<p>
+		<%= f.check_box :highlight %>
+    <%= f.helpful_label :highlight, "Highlight", "Check this box to ensure this event is displayed on the site home page. Bare in mind that if there are already 6 highlighted events that are closer in date, they will take precedence." %>
+	</p>
+
+  <p>
+		<%= f.check_box :display %>
+		<%= f.label :display %>
+  </p>
+
+  <p><%= f.submit "Submit" %></p>
+
+<% end %>

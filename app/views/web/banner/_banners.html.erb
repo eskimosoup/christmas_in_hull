@@ -1,0 +1,43 @@
+<%= render '/web/banner/banner_javascript' %>
+
+<% content_tag(:div, :class => "banner_container") do %>
+
+	<% @banners.each_with_index do |banner, index| %>
+		<% style = (index == 0) ? "" : "display:none;" %>
+		<% bgcolour = '#df5972; color: #fff;' if index == 0 %>
+		<% bgcolour = '#b9bb56; color: #fff;' if index == 1 %>
+		<% bgcolour = '#ccecfc; color: #b54b42;' if index == 2 %>
+		<% content_tag(:div, :id => "banner_#{index}", :class => "banner", :style => "#{style} background:#{bgcolour}") do %>
+			<% content_tag(:div, :class => "banner_text") do %>
+				<% content_tag(:h1, banner.name) %>
+        <%= content_tag(:p, brev(banner.content.gsub(/\n/, '<br />'), 250)) if !banner.content.blank? %>
+				<%= content_tag(:p, banner_link(banner), :style => "padding-top:5px;") if !banner_link(banner).blank? %>
+      <% end -%>
+      <% if !banner_link(banner).blank? %>
+        <% link_to banner_url(banner) do  %>
+          <% content_tag(:div, :class => "banner_image") do %>
+            <%= content_tag(:span, "") %>
+            <%= image_tag(banner.image(:large), :width => "668", :height => "263") %>
+          <% end -%>
+        <% end %>
+      <% else %>
+        <% content_tag(:div, :class => "banner_image") do %>
+          <%= content_tag(:span, "") %>
+          <%= image_tag(banner.image(:large), :width => "668", :height => "263") %>
+        <% end -%>
+      <% end %>
+		<% end -%>
+	<% end -%>
+
+	<% content_tag(:div, :class => "banner_bottom") do %>
+		<% @banners.each_with_index do |banner, index| %>
+			<% content_tag(:div, :onclick => "showImage(#{index})") do %>
+				<%= image_tag("2014/banners/#{index}.jpg") %>
+				<%= banner.name %>
+			<% end -%>
+		<% end -%>
+	<% end -%>
+
+	<%= render "/web/banner/countdown" %>
+
+<% end %>

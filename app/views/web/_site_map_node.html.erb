@@ -1,0 +1,13 @@
+<% if node.display_in_navigation? %>
+	<li>
+		<%= link_to node.name, url_for(node.path) %>
+    <% children = PageNode.children_of(node).active.navigation.sort_by{|x| x.name} %>
+    <% if children.length > 0 %>
+	    <% for child in children %>
+		    <ul>
+		      <%= render :partial => "site_map_node", :locals => {:node => child} %>
+		    </ul>
+	    <% end %>
+	 <% end %>
+	</li>
+<% end %>

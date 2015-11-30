@@ -1,0 +1,32 @@
+<% hide_left %>
+
+<h1><%= title("Search Results for #{params[:search]}") %></h1>
+<% if @results.length > 0 %>
+  <% for result in @results %>
+    <div class="result">
+      <% begin %>
+        <%= render :partial => "#{result.class.to_s.underscore.pluralize}/search_result", :locals => {:result => result} %>
+      <% rescue Exception => e %>
+        <% logger.info "Result render error:" %>
+        <% logger.info e.to_s %>
+          <h3><%= h result.name %></h3>
+          <p><%= h result.summary %></p>
+          <% if result.class == PageContent %>
+            <p><%= link_to "More", url_for(result.page_node.path) %></p>
+          <% else %>
+            <% begin %>
+              <p><%= link_to "More", url_for(result) %></p>
+            <% rescue %>
+            <% end %>
+          <% end %>
+      <% end %>
+    </div>
+  <% end %>
+  <p><%= will_paginate(@results, :params => {:search => params[:search]}) %></p>
+<% else %>
+	<p>No Results.</p>
+<% end %>
+
+<% content_for :right do %>
+	<%= render "/shared/common_right" %>
+<% end %>

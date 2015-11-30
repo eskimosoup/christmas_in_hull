@@ -1,0 +1,129 @@
+<% determine_page_node %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+	<link rel="shortcut icon" href="/favicon.ico" />
+
+	<title><%= h("#{SETTING['name']} - #{yield(:title) || "Untitled"}") %></title>
+
+	<%= stylesheet_link_tag "webstyle.css" %>
+	<%= stylesheet_link_tag "tnymc.css" %>
+	<% if stylesheets %>
+    <% stylesheets.each do |stylesheet| %>
+			<%= stylesheet_link_tag stylesheet %>
+    <% end %>
+  <% end %>
+
+	<%= javascript_include_tag "prototype" %>
+	<%= javascript_include_tag "script-styles" %>
+	<% if @include_tinymce_script -%>
+	  <%= javascript_include_tag "tiny_mce/tiny_mce.js" %>
+	  <%= javascript_include_tag "tiny_mce_config" %>
+	<% end -%>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+	<%= yield :head %>
+
+	<%= render 'layouts/analytics' %>
+
+</head>
+
+<% if load_functions %>
+  <body onload="<%= load_functions.join(" ") %>">
+<% else %>
+  <body>
+<% end %>
+
+<div class="maincontainer">
+
+	<p class="skip"><a href="#content" accesskey="s">Skip to the main content</a></p>
+
+	<div class="top">
+		<%= link_to image_tag("2014/logo.png", :class => "logo", :alt => SETTING['name']), root_url, :title => SETTING['name'] %>
+		<div class="navigation">
+  		<%= navigation :tiers => false %>
+		</div>
+  </div>
+
+  <!-- <span class="holly"></span> -->
+
+	<% if home? && !(@banners.empty?) %>
+		<div class="banners">
+			<%= render '/web/banner/banners' %>
+		</div>
+	<% end %>
+
+	<div id="content">
+
+		<%- unless hide_flash? -%>
+		  <%- flash.each do |name, msg| -%>
+				<%= content_tag :div, msg, :id => "flash_#{name}" %>
+			<%- end -%>
+		<%- end -%>
+
+		<% if hide_left? && hide_right? %>
+
+			<%= @content_for_layout %>
+
+		<% elsif hide_left? %>
+
+			<div class="content_left">
+				<%= @content_for_layout %>
+			</div>
+
+			<div class="right">
+				<%= yield :right %>
+			</div>
+
+		<% elsif hide_right? %>
+
+			<div class="left">
+		    <%= yield :left if yield :left %>
+			</div>
+
+			<div class="content_right">
+				<%= @content_for_layout %>
+			</div>
+
+		<% else %>
+
+			<div class="left">
+		    <%= yield :left if yield :left %>
+			</div>
+
+			<div class="content_middle">
+				<%= @content_for_layout %>
+			</div>
+
+			<div class="right">
+				<%= yield :right %>
+			</div>
+
+		<% end %>
+
+    <div class="clear"></div>
+
+	</div>
+
+	<div class="bottom">
+		<%= link_to(image_tag("logo-hull-bid.png", :alt => "Hull Bid", :class => "logo_1"), "http://www.hullbid.co.uk", {:popup => true}) %>
+    <%= link_to(image_tag("logo-hull-city-council.png", :alt => "Hull City Council", :class => "logo_3"), "http://www.hullcc.gov.uk", {:popup => true}) %>
+	</div>
+
+  <div class="footer">
+    <p>
+    	&copy; <%= h(SiteSetting.find_by_name("Site Name").value) %> |
+    	<a href="http://www.eskimosoup.co.uk" target="_blank">Web design by eskimosoup</a> |
+    	<%= link_to "Site Map", {:controller => "web", :action => "site_map"}, {:accesskey => "s"} %>
+  	</p>
+	</div>
+
+</div>
+
+</body>
+
+</html>

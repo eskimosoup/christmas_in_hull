@@ -1,0 +1,17 @@
+23/06/11
+--------
+Nick - added :no_message to supress the "no items to display" message, pass it true to have no message.
+
+27/01/11
+--------
+Carl - Added the ability to have multiple sorts per column using arrays instead of strings as input.
+
+
+04/01/11
+--------
+Adam - Altered eskimo_table view: changed searchlogic order calls to reject instead of delete_if to allow will_paginate to carry across the params to the next/previous page.
+
+
+10/11/10
+--------
+Nick - Added <th> for Position when manual sorting is true.

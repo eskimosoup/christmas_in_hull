@@ -1,0 +1,15 @@
+<%- if @current_page_node -%>
+	<% node_root = @current_page_node.path_ids.collect{|x| PageNode.find(x)}.select{|x| x.display_in_navigation? }.first %>
+	<% content_tag :div do %>
+    <h2><%= link_to node_root.navigation_title, url_for(node_root.path) %></h2>
+    <% if @current_page_node == node_root %>
+      <%= yield "left_navigation_#{node_root.yield_name}" %>
+    <% end %>
+    <% children = PageNode.children_of(node_root).navigation %>
+    <% if children.length > 0 %>
+	  <ul>
+		  <%= render :partial => "shared/navigation/vertical_node", :locals => {:nodes => children} %>
+	  </ul>
+	  <% end %>
+	<% end %>
+<% end %>

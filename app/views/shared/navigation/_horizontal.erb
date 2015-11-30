@@ -1,0 +1,9 @@
+<% if options[:tiers] %>
+  <% for id in @current_page_node.path_ids %>
+    <div>
+      <%= render "shared/navigation/horizontal_node", :nodes => PageNode.navigation.siblings_of(id) %>
+    </div>
+  <% end %>
+<% else %>
+  <%= render "shared/navigation/horizontal_node", :nodes => nodes %>
+<% end %>

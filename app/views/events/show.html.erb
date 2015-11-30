@@ -1,0 +1,48 @@
+<% hide_left %>
+<% title("Events") %>
+
+<h1><%= h(@event.name) %></h1>
+
+<div class="event_info">
+
+  <span class="large_date">
+		<%= h(simple_date_format(@event.start_date)) %>
+		<% if !(@event.end_date == @event.start_date) %>
+			to <%= h(simple_date_format(@event.end_date)) %>
+		<% end %>
+		<span class="time">
+			Start Time: <%= h(@event.start_time.strftime("%H:%M")) %>
+			<% if !(@event.end_time.strftime("%H:%M") == "23:59") %>
+				-
+				End Time: <%= h(@event.end_time.strftime("%H:%M")) %>
+			<% end %>
+		</span>
+  </span>
+
+  <span class="cost">
+  	<% unless @event.hide_price %>
+			<%= @event.formatted_price %>
+		<% end %>
+	</span>
+
+</div>
+
+<% if @event.image? %>
+  <%= image_tag @event.image.url(:show), :class => "image_left" %>
+<% end %>
+
+<%= @event.main_content %>
+
+<%= @event.booking_information %>
+
+<div class="hr">
+	<hr />
+</div>
+
+<p>
+  <%= link_to "All Events", events_path %>
+</p>
+
+<% content_for :right do %>
+	<%= render "venues" %>
+<% end %>

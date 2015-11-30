@@ -1,0 +1,307 @@
+07/09/11
+--------
+Nick - added a catch to the lytebox.js file to prevent random error in ie (around like 190).
+
+12/08/11
+--------
+Nick - changed horizontal node navigation so that they dont have the spaced for hannah
+
+11/07/11
+--------
+Nick - added a change to the default of the error_messages behaviour so it comes with no header message and an id of flash_error by default
+
+05/07/11
+--------
+Nick - moved site name to setting.yml to save a database call on ever page load, since we never change the site name anyways and updated the routes to remove jargons
+
+19/05/11
+--------
+Nick - updated the doc:diagrams task to generate png version of model image
+
+09/05/11
+--------
+Carl - moved error page regeneration from page node model to controller because it was incompatible with eskimo images.
+
+03/05/11
+--------
+Nick - took a reference to color from the vertical navigation view
+
+18/04/11
+--------
+Adam - Added a new hash of options to the contact form's text area ('rows' and 'cols'). The text area was failing HTML validation as a result of these being omitted.
+
+15/04/11
+--------
+Nick - added diagram rake file (rake doc:diagrams) which atm generates er diagram for models, will expand to do controllers when i resolve bug
+
+13/04/11
+--------
+Nick - added some useful defaults to config/locales/en
+
+08/04/11
+--------
+Nick - changed the layout logo to go to root_url instead of web#index
+
+07/04/11
+--------
+Nick - added some date generation gems to environment for testing
+
+06/04/11
+--------
+Nick - added may_contain_documents to main content for page contents
+
+28/03/11
+--------
+Carl - made options hash work on tiny_mce text areas
+
+
+28/03/11
+--------
+Nick - added stylesheet loading to application layout - use add_stylesheet anywhere to add a stylesheet load to the head
+
+
+25/03/11
+--------
+Nick - added sort by position to noded in admin lists
+
+
+24/03/11
+--------
+Carl - added failed_login_count integer column to administrators in schema. Add manually to existing projects for ultra protection from brutes.
+
+
+18/03/11
+--------
+Nick - changed .path method to redirect links correctly and added "/" to the start of controller references so the in admin it keeps root context. Also added .is_a_link? method to determine if a page node is a link
+Nick - added al (auto link) method to application helper.  This looks through text and replaces link like strings with real links (http and https)
+
+
+14/03/11
+--------
+Nick - Took the else yield navigations off the left layout divs, we shud b in total control of them in the views.
+
+
+07/03/11
+--------
+Nick - Added the javascript style switches.  Look at pyramid 8 rebuild team members for an example or ask Nick.
+Nick - Updated breadcrumbs to print home >> content_for_title when page node cannot be determined.
+
+
+04/03/11
+--------
+Nick - Changed vertical navigation a little to select children better and to improve the yielding to menu. 
+Nick - Added yield_name method to page_nodes.
+
+
+03/03/11
+--------
+Nick - Changed the tiny_mce_configs javascript to pass variables to linker window in a new way.
+
+
+25/02/11
+--------
+Nick - Made a lot of changes to the page nodes functionality and menus
+
+
+======framework-1.0.3 released=======
+
+
+16/02/11
+--------
+Carl - Added active? method to page contents that checks active and it's page node active? method. Useful
+       for searching.
+
+
+10/02/11
+--------
+Nick - Altered page nodes to redirect to 404.html if they are not set to display.  
+Nick - Added options to link_to_page to change how it handles undisplayed / dead links.
+Nick - Added a new plugin - eskimo_error_pages, see the readme for more info.  I have put the required code in the PageNode model too.
+
+
+09/02/11
+--------
+Nick - Changed the link_to_page method a little so that it checks if the page is active and puts in a dead link if it isnt.
+
+
+27/01/11
+--------
+Nick - Added remind_links helper to application helper. Usage: remind_links(link, :facebook => true, :twitter => true). See code for all options  
+Nick - Added share_links helper to application helper. Usage: share_links(link, :facebook => true, :twitter => true).  See code for all options
+
+
+25/01/11
+--------
+Carl - page node tree entries are lowlighted if they are set not to display.
+
+
+24/01/11
+--------
+Nick - added simpleToggle to the application javascript.
+
+
+20/01/11
+--------
+Nick - added the code so that pages which can't be deleted have the delete option taken out of the admin, don't know why this hadn't already been done...
+
+
+19/01/11
+--------
+Nick - put in link_to_page method (link_to_page "link_text", "page_node_name", {options}), likely to change soon though.
+
+
+18/01/11
+--------
+Carl - page_node/show uses likely_layout method call instead of layout
+
+
+10/01/11
+--------
+Adam - Added document manager to linker_text_area in tiny_mce_config.js
+
+
+06/01/11
+--------
+Adam - Changed the application layout file's pragma directive from charset ISO-8859-1 to charset UTF-8; ISO-8859-1 conflicted with the DOCTYPE declaration.
+Carl - Added eskimo_redirects plugin. It's use is optional and if left alone won't affect anything.
+
+
+23/12/10
+--------
+Carl - Changed TinyMCE so that it works properly with IE. If you need to fix this in old sites copy accross
+       the public/javascripts/admin/tiny_mce_config.js file and insert.html.erb files from eskimo_images,
+       eskimo_links and eskimo_documents.
+
+
+17/12/10
+--------
+Nick - Added after_save {|node| node.page_contents.each{|x| x.save} } to force PageContents callback to happen
+
+
+16/12/10
+--------
+Nick - Changed the site map and accessibility pages to work a little better and added those pages to the data.yaml
+Nick - Changed the default admin page node index views to account for sites which cant add new pages and tweaked tree_select to not select a disabled option by default.
+Nick - Put the document_manager.gif back in public/images/admin - had reverted to old picture for some reason.
+
+
+07/12/10
+--------
+Nick - turned error reporting back on in production by default but added site settings to turn error reports and routing reports (independent of one another) on and off.
+
+
+03/12/10
+--------
+Nick - added named scope called "children" to page nodes
+
+
+29/11/10
+--------
+Nick - changed the default site search to put results in divs (class = "result").
+
+
+25/11/10
+--------
+Nick - added .reject{|x| x.recycled? } to places which select page_nodes.
+Adam - Altered tiny_mce_config.js to fix spelling errors: 'Picture Mananger', 'Document Mananger', 'Link Mananger'.
+Nick - Changed the contact us form title from <h1> to <h3>.
+
+
+24/11/10
+--------
+Nick - Added code to the /app/controller/admin/page_nodes_controller.rb in the branch method to allow files to copy when a page contents is duplicated.  To allow this you will need to add a on a site for site basis, not just copying over the plugins.
+Nick - took out the default behaviour of using the stylesheet named in the style of the page node.  Hannah never uses this so its a bit pointless.
+Nick - changed the page_node can be moved select tag so that souper admins can always move page nodes and so "top level insertion" (...) is on by default.
+
+
+23/11/10
+--------
+Nick - improved the bench text file generator to include models referenced in page nodes.
+Nick - changed the application layout to TRY and load a stylesheet defined in the page node.
+Nick - changed the exception mailer to email the mainteiner with the name of the site in it.
+
+
+18/11/10
+--------
+Nick - added a new helper: number helper, at the moment just has the number_to_pounds method but this is where we will dump all other number methods.
+Nick - added quick_fill_tag to form helper in eskimagic.  This inserts a select box which prefils a target element.  e.g. quick_fill_tag("product_colour", Product.all.collect{|x| x.colour}.uniq.sort, name="Similar Colours...") will fill the products colour with the colour the person selects from the drop down menu, which will be full of other colours which products use.  
+Carl - Removed html_popups routes from config/routes. Also sorted out the rest of the routes so the fallback catch-all routes we usually have should be unnecessary. So I commented them out.
+
+
+16/11/10
+--------
+Nick - Added a Users generator to eskimo_generators and upped to version 0.0.2.  
+Nick - Titles in the navigation partial are now links at hannahs request.  Also stripped an old reference to the g method from search  results page.
+Carl - new plugin eskimo_links added. Moves functionality out of html_popups in eskimagic. Since eskimo_images eskimo_documents and eskimo_links have replaced all funcitonality of html_popups I have deleted its controller and views.
+
+
+15/11/10
+--------
+Carl - updated documents so they work with tiny mce like images. See README in plugin for details. Also there is an integration guide for sites made in the last few days.
+Nick - small changes, made the tree select check that the items in it havn;t been recycled (mostly for page notes, position select).  Also changed the default data so the feature "Recycle Bin" goes to the controller "admin/extra_infos" to stop a problem with routes.
+
+
+11/11/10
+--------
+Nick - Turned off error messages by default since they are sometimes getting to the client, we are so overloaded with them that it makes it impossible to check.  We can turn them on when we need to if we have a known issue on a site or just plain do want it on.
+Nick - Fixed a bug in eskimagic where the creator and updater werent getting set.  Also change the index_list_advanced to list the creator and updater properly and removed delete page links from index_list and index_list_advanced.
+Nick - Moved the generators from lib and eskimagic into a generic eskimo_generators controller so we can more easily update the generators in various sites.
+Adam - Altered contact us mailer view from '...has filled in the contact us a question form' to '...has filled in the contact us form'.
+
+
+10/11/10
+--------
+Nick - Fixed a bug in the PageNode versioning where a version in the recycle bin would still show up in the versions navigation.
+
+
+10/11/10
+--------
+Carl - Replaced old document management with new paperclip style like the current image management. Usage and syntax should be eerily familiar. See the Readme. Raised version number.
+
+
+====== VERSION=1.0.2=RELEASED ======
+
+
+10/11/10
+--------
+Adam - Altered contact us mailer subject to include 'Site Name'.
+Nick - Tiny change on the eskimo_scaffold so that the name of the feature generated by running the scaffold is .titlized instead of .humanized.
+
+
+9/11/10
+-------
+Carl - check_box_tree_tag is now orderable by position.
+
+
+05/11/10
+--------
+Carl - Added check_box_tree_tag to the form builder extension in eskimagic. The partial it uses is in admin/shared.
+
+
+04/11/10
+--------
+Nick - Added display_in_navigation option back into page nodes for a more specific hide option (to hide from navigation but display on site map)
+
+
+28/10/10
+--------
+Carl - Dropped in the eskimo_tables plugin which moves the code from the admin_table_helper in eskimagic to tables/eskimo_table in the new plugin. admin_table can be used in the same way it was being used. eskimo_table can be passed :manual_sorting => true to switch to one like the old "admin/shared/admin_table_sort". Apart from that it's still the same so far.
+
+
+27/10/10
+--------
+Carl - Dropped in the subscribes_to plugin from arena
+
+
+27/10/10
+--------
+Nick - Added generators for Articles, Events, Case Studies, FAQs, Testimonials and XImages (located in lib/generators)
+Nick - Moved tasks from eskimagic, eskimo_images and yaml_db to lib folder to remove warning
+Nick - Added code to automatically format dates and date times in the admin tables
+Nick - Moved the paperclip tasks to lib/tasks to force them to work, this is a bad approach and needs to be addressed
+
+
+21/10/10
+--------
+Carl - Added conditional to path method of PageNode model that checks for controller with no action. Added similar path method to Feature model. Changed some methods in web/_left_navigation to use these methods.
+Carl - Added quite a few routes to the standard, eskimodules and eskimages route files.

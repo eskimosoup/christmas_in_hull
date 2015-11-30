@@ -1,0 +1,135 @@
+/*--Main--*/
+body {
+	font-family: Arial, Tahoma, sans-serif; 
+	font-size: 13px;
+	color: #0a1624; 	
+}
+
+
+p {
+	margin: 0px; 
+	padding: 8px 0px 8px 0px;
+}
+
+
+.hr {
+	height: 5px;
+	background-image: url(../images/hr_bg.gif);
+	background-repeat: repeat-x;
+	margin: 12px 0px 12px 0px;
+	clear: left;
+}
+
+.hr hr {
+  display: none;
+}
+
+
+/*--Links--*/
+a:link, a:visited, a:active {
+	color: #a91124; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+a:hover {
+	color: #4a2a29; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+a.underline:link, a.underline:visited, a.underline:active {
+	color: #000000; 
+	text-decoration: none; 
+	font-weight: normal;
+	border-bottom: 2px solid #7f7f7f;
+	padding-bottom: 1px;
+	line-height: 20px;
+}
+
+a.underline:hover {
+	color: #7f7f7f; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+/*--Titles--*/
+h1 {
+	color: #16120f; 
+	font-size: 39px; 
+	font-weight: normal; 
+	margin: 0px 0px 12px 0px; 
+	padding: 0px 0px 6px 0px;
+	line-height: normal;
+	text-transform: uppercase;
+	font-family: Century Gothic, Arial, sans-serif;
+	letter-spacing: 0.05em;
+	background-image: url(../images/title_border.gif);
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+h2 {
+	color: #0a1624; 
+	font-size: 24px; 
+	font-weight: normal; 
+	margin: 12px 0px 0px 0px; 
+	padding: 12px 0px 0px 0px;
+	line-height: normal;
+	font-family: Century Gothic, Arial, sans-serif;
+}
+
+h3 {
+	color: #0a1624; 
+	font-size: 15px; 
+	font-weight: normal; 
+	margin: 8px 0px 0px 0px; 
+	padding: 8px 0px 0px 0px;
+	line-height: normal;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+
+h1 a:link, h1 a:visited, h1 a:active,
+h2 a:link, h2 a:visited, h2 a:active,
+h3 a:link, h3 a:visited, h3 a:active
+ {
+	color: #16120f; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover
+ {
+	color: #a91124; 
+	text-decoration: none; 
+	font-weight: normal;
+}
+
+/*--Styles--*/
+.image_right {
+	float: right; 
+	margin: 12px 0px 8px 20px;
+}
+
+.image_left {
+	float: left; 
+	margin: 12px 20px 8px 0px;
+}
+
+
+/*--Bullets--*/
+ul.fancy_bullet {
+	list-style-type: none;
+	padding: 0px;
+	margin: 10px 0px 10px 0px;
+}
+
+ul.fancy_bullet li {
+	background-image: url(../images/bullet.gif);
+	background-repeat: no-repeat;
+	background-position: left 6px;
+	padding: 0px 0px 4px 20px;
+}
