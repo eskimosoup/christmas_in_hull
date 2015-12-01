@@ -5,7 +5,9 @@ class WebController < ApplicationController
     @banners = Banner.for_index
     @events = Event.for_index
     @articles = Article.for_index
-    @opening_times = OpeningTime.all(:include => :shopping_centre, :conditions => ["date = ? AND display = ?", Date.today, true], :order => "date ASC")
+    @opening_times = OpeningTime.all(:include => :shopping_centre, :joins => :shopping_centre,
+                                     :conditions => ["date = ? AND shopping_centres.display = ? AND opening_times.display = ?", Date.today, true, true],
+                                     :order => "date ASC")
   end
 
   def site_down
