@@ -2,11 +2,11 @@
 <h1><%= title(@title) %></h1>
 
 <% if params[:venue] %>
-	<%= render "venue", :venue => Venue.find(params[:venue].to_i) %>
+  <%= render "venue", :venue => Venue.find(params[:venue].to_i) %>
 <% end %>
 
 <% if @events.empty? %>
-	<p>No events to be displayed.</p>
+  <p>No events to be displayed.</p>
 <% else %>
   <% @events.each do |event| %>
     <%= render "events/event", :event => event %>
@@ -16,6 +16,6 @@
 <% end %>
 
 <% content_for :right do %>
-	<%= render "venues" %>
-	<%#= render "/shared/advert" %>
+  <%= render "venues" %>
+  <%#= render "/shared/advert" %>
 <% end %>

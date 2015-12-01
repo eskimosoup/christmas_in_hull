@@ -1,14 +1,14 @@
 <% form_for [:admin, @newsletter_subscriber] do |f| %>
-  
+
   <%= f.error_messages %>
-  
-	<fieldset>
-		<legend>Email Address</legend>
-		<p>
-			<%= f.text_field :email %>
-		</p>
-	</fieldset>
-  
+
+  <fieldset>
+    <legend>Email Address</legend>
+    <p>
+      <%= f.text_field :email %>
+    </p>
+  </fieldset>
+
   <p><%= f.submit "Submit" %></p>
-  
+
 <% end %>

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121120093941) do
+ActiveRecord::Schema.define(:version => 20151201094352) do
 
   create_table "administrators", :force => true do |t|
     t.string   "username"
@@ -197,6 +197,17 @@ ActiveRecord::Schema.define(:version => 20121120093941) do
     t.datetime "updated_at"
   end
 
+  create_table "opening_times", :force => true do |t|
+    t.date     "date",                                 :null => false
+    t.string   "opening_hours",                        :null => false
+    t.integer  "shopping_centre_id",                   :null => false
+    t.boolean  "display",            :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "opening_times", ["shopping_centre_id"], :name => "index_opening_times_on_shopping_centre_id"
+
   create_table "page_contents", :force => true do |t|
     t.string   "navigation_title"
     t.string   "url_title"
@@ -256,6 +267,13 @@ ActiveRecord::Schema.define(:version => 20121120093941) do
     t.boolean  "recycled",     :default => false
     t.datetime "recycled_at"
     t.boolean  "display",      :default => true
+  end
+
+  create_table "shopping_centres", :force => true do |t|
+    t.string   "name"
+    t.boolean  "display",    :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "site_settings", :force => true do |t|

@@ -5,7 +5,7 @@
 <% end %>
 
 <% if @banners.length > 1 %>
-	<% add_load_function("startPage();") %>
+  <% add_load_function("startPage();") %>
 <% end %>
 
 <% hide_left %>
@@ -13,25 +13,44 @@
 <% title(@page_node.title) %>
 
 <% if @events.empty? and @articles.empty? %>
-
-	<%= @page_node.active_content.main_content %>
-
+  <%= @page_node.active_content.main_content %>
 <% else %>
+  <div class="opening-times">
+    <h2>Christmas Opening Times</h2>
 
-	<% if !@events.empty? %>
-    <div class="col_1">
-      <%= render "events" %>
-    </div>
-	<% end %>
+    <% unless @opening_times.empty? %>
+      <table class="opening-hours">
+        <tr>
+          <th>Shopping Centre</th>
+          <th>Date</th>
+          <th>Opening Times</th>
+        </tr>
+        <%= render @opening_times %>
+      </table>
+    <% end %>
 
-	<% if !@articles.empty? %>
-    <div class="col_2">
-      <%= render "articles" %>
-    </div>
-	<% end %>
+    <%= link_to "View Opening Times", opening_times_path %>
+  </div>
+
+  <div>
+    <% if !@events.empty? %>
+      <div class="col_1">
+        <%= render "events" %>
+      </div>
+    <% end %>
+
+    <% if !@articles.empty? %>
+      <div class="col_2">
+        <%= render "articles" %>
+      </div>
+    <% end %>
+  </div>
+  <div class="clear"></div>
+
+
 
 <% end %>
 
 <% content_for :right do %>
-	<%= render "/shared/common_right" %>
+  <%= render "/shared/common_right" %>
 <% end %>

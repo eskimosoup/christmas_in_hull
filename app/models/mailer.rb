@@ -1,8 +1,8 @@
 class Mailer < ActionMailer::Base
 
-	add_template_helper ApplicationHelper
+  add_template_helper ApplicationHelper
 
-	def contact_us(name, email, tel, enquiry)
+  def contact_us(name, email, tel, enquiry)
     @subject        = "Contact Us Form Completed - #{SiteSetting.like("Site Name").first.value}"
     @from           = email
     @recipients     = SiteSetting.like("Email").first.value

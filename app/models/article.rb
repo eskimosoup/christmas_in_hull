@@ -1,15 +1,15 @@
 class Article < ActiveRecord::Base
 
   acts_as_eskimagical
-	acts_as_taggable_on :tags
+  acts_as_taggable_on :tags
 
-	validates_presence_of :headline, :date
+  validates_presence_of :headline, :date
 
-	named_scope :position,   :order => "position"
+  named_scope :position,   :order => "position"
   named_scope :active,     :conditions => ["recycled = ? AND display = ? AND date <= ?", false, true, Date.today], :order => "date DESC"
   named_scope :recycled,   :conditions => ["recycled = ?", true]
   named_scope :unrecycled, :conditions => ["recycled = ?", false]
-  named_scope :year, 			 lambda{|year| {:conditions => ["year(date) = ?", year]} }
+  named_scope :year,        lambda{|year| {:conditions => ["year(date) = ?", year]} }
   named_scope :month,      lambda{|month| {:conditions => ["month(date) = ?", month]} }
 
   has_attached_image :image, :styles => {:thumbnail => "80x63#", :show => "250", :home_large => "294x116#"}
@@ -17,7 +17,7 @@ class Article < ActiveRecord::Base
   may_contain_images :main_content
 
   def active?
-  	display? && !recycled? && date <= Date.today
+    display? && !recycled? && date <= Date.today
   end
 
   def name
@@ -33,10 +33,10 @@ class Article < ActiveRecord::Base
   end
 
   def self.latest(count=1)
-  	if count > 1
-    	self.active[0..(count-1)]
+    if count > 1
+      self.active[0..(count-1)]
     else
-    	self.active.first
+      self.active.first
     end
   end
 
@@ -52,7 +52,7 @@ class Article < ActiveRecord::Base
   end
 
   def self.for_index
-		self.active[0..5]
+    self.active[0..5]
   end
 
 end

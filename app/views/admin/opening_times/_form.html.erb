@@ -1,0 +1,30 @@
+<% form_for([:admin, @opening_time], :html => {:multipart => true}) do |f| %>
+
+  <%= f.error_messages %>
+
+  <fieldset>
+    <legend>Summary Information</legend>
+    <p>
+      <%= f.label :shopping_centre_id %><br />
+      <%= f.collection_select :shopping_centre_id, ShoppingCentre.order("name asc"), :id, :name %>
+    </p>
+
+    <p>
+      <%= f.label :date %><br />
+      <%= f.calendar_date_select :date %>
+    </p>
+
+    <p>
+      <%= f.label :opening_hours %><br />
+      <%= f.text_field :opening_hours %>
+    </p>
+  </fieldset>
+
+  <p>
+    <%= f.check_box :display %>
+    <%= f.label :display %>
+  </p>
+
+  <p><%= f.submit "Submit" %></p>
+
+<% end %>

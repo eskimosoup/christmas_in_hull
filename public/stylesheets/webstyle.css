@@ -768,3 +768,35 @@ h2.news_events_title {
   border: 3px solid #5b3e3e;
   margin-bottom: 8px;
 }
+
+.opening-times {
+  margin: 20px;
+}
+
+table.opening-hours {
+  width: 100%;
+  border: 3px solid #ad1a27;
+}
+
+table.opening-hours th {
+  background-color: #ad1a27;
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+table.opening-hours td {
+  font-size: 1.2em;
+}
+
+table.opening-hours th, td {
+  text-align: center;
+  border: none;
+}
+
+table.opening-hours tbody tr:nth-child(odd) {
+  background-color: #F0E7D8;
+}
+
+table.opening-hours tbody tr:nth-child(even) {
+
+}

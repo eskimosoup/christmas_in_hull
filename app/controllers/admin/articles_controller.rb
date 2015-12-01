@@ -5,7 +5,7 @@ class Admin::ArticlesController < Admin::AdminController
   def index
     # set the default ordering
     params[:search] ||= {}
-  	 params[:search][:order] ||= "descend_by_date"
+     params[:search][:order] ||= "descend_by_date"
     @search = Article.unrecycled.search(params[:search])
     @articles = @search.paginate(:page => params[:page], :per_page => 50)
   end

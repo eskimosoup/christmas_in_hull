@@ -6,24 +6,24 @@
 <div class="event_info">
 
   <span class="large_date">
-		<%= h(simple_date_format(@event.start_date)) %>
-		<% if !(@event.end_date == @event.start_date) %>
-			to <%= h(simple_date_format(@event.end_date)) %>
-		<% end %>
-		<span class="time">
-			Start Time: <%= h(@event.start_time.strftime("%H:%M")) %>
-			<% if !(@event.end_time.strftime("%H:%M") == "23:59") %>
-				-
-				End Time: <%= h(@event.end_time.strftime("%H:%M")) %>
-			<% end %>
-		</span>
+    <%= h(simple_date_format(@event.start_date)) %>
+    <% if !(@event.end_date == @event.start_date) %>
+      to <%= h(simple_date_format(@event.end_date)) %>
+    <% end %>
+    <span class="time">
+      Start Time: <%= h(@event.start_time.strftime("%H:%M")) %>
+      <% if !(@event.end_time.strftime("%H:%M") == "23:59") %>
+        -
+        End Time: <%= h(@event.end_time.strftime("%H:%M")) %>
+      <% end %>
+    </span>
   </span>
 
   <span class="cost">
-  	<% unless @event.hide_price %>
-			<%= @event.formatted_price %>
-		<% end %>
-	</span>
+    <% unless @event.hide_price %>
+      <%= @event.formatted_price %>
+    <% end %>
+  </span>
 
 </div>
 
@@ -36,7 +36,7 @@
 <%= @event.booking_information %>
 
 <div class="hr">
-	<hr />
+  <hr />
 </div>
 
 <p>
@@ -44,5 +44,5 @@
 </p>
 
 <% content_for :right do %>
-	<%= render "venues" %>
+  <%= render "venues" %>
 <% end %>

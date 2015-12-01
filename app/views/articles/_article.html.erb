@@ -5,16 +5,16 @@
 <h2 class="news_events_title"><%= link_to h(article.headline), {:action => "show", :id => article.id, :tag => params[:tag], :year => params[:year], :month => params[:month]} %></h2>
 
 <span class="date">
-	<%= h(simple_date_format(article.date)) %>
+  <%= h(simple_date_format(article.date)) %>
 </span>
 
 <%= h(article.summary) %>
 <br />
 
 <p align="right">
-	<%= link_to "Read more", {:action => "show", :id => article.id, :tag => params[:tag], :year => params[:year], :month => params[:month]}, {:class=>"more_green"} %>
+  <%= link_to "Read more", {:action => "show", :id => article.id, :tag => params[:tag], :year => params[:year], :month => params[:month]}, {:class=>"more_green"} %>
 </p>
 
 <div class="hr">
-	<hr />
+  <hr />
 </div>

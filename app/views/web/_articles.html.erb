@@ -1,32 +1,32 @@
 <% @articles.each_with_index do |article, index| %>
-	<% if index == 0 %>
-		<div class="news_event_highlight">
-			<% if article.image? %>
-				<div class="large_thumbnail">
-					<span>NEWS</span>
-					<%= link_to(image_tag("2014/news.jpg"), article) %>
-				</div>
-			<% end %>
-			<span class="large_date">
-				<%= simple_date_format(article.date) %>
-			</span>
-			<h2><%= link_to(article.name, article) %></h2>
-			<%= brev(article.summary, 100) %>
-		</div>
-	<% else %>
-		<div class="news_event_list">
-			<% if article.image? %>
-				<div class="thumbnail">
-					<%= link_to(image_tag(article.image(:thumbnail)), article) %>
-				</div>
-			<% end %>
-			<span class="date">
-				<%= simple_date_format(article.date) %>
-			</span>
-			<h3><%= link_to(article.name, article) %></h3>
-			<%= brev(article.summary, 50) %>
-		</div>
-	<% end %>
+  <% if index == 0 %>
+    <div class="news_event_highlight">
+      <% if article.image? %>
+        <div class="large_thumbnail">
+          <span>NEWS</span>
+          <%= link_to(image_tag("2014/news.jpg"), article) %>
+        </div>
+      <% end %>
+      <span class="large_date">
+        <%= simple_date_format(article.date) %>
+      </span>
+      <h2><%= link_to(article.name, article) %></h2>
+      <%= brev(article.summary, 100) %>
+    </div>
+  <% else %>
+    <div class="news_event_list">
+      <% if article.image? %>
+        <div class="thumbnail">
+          <%= link_to(image_tag(article.image(:thumbnail)), article) %>
+        </div>
+      <% end %>
+      <span class="date">
+        <%= simple_date_format(article.date) %>
+      </span>
+      <h3><%= link_to(article.name, article) %></h3>
+      <%= brev(article.summary, 50) %>
+    </div>
+  <% end %>
 <% end %>
 <%= content_tag(:div, (), {:class => "clear"}) %>
 <%= tag(:br) %>

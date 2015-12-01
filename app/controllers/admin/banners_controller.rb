@@ -1,8 +1,8 @@
 class Admin::BannersController < Admin::AdminController
 
-	handles_images_for Banner
+  handles_images_for Banner
 
-	before_filter :gather_variables, :only => [:new, :edit]
+  before_filter :gather_variables, :only => [:new, :edit]
 
   def index
     @search = Banner.unrecycled.position.search(params[:search])
@@ -52,9 +52,9 @@ class Admin::BannersController < Admin::AdminController
   end
 
   def gather_variables
-		@events 	= Event.active
-		@articles = Article.active
-		@venues 	= Venue.active
+    @events   = Event.active
+    @articles = Article.active
+    @venues   = Venue.active
   end
 
 end

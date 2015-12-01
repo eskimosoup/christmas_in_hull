@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2015-12-01
+  opening_hours: MyString
+  shopping_centre: 
+  display: false
+
+two:
+  date: 2015-12-01
+  opening_hours: MyString
+  shopping_centre: 
+  display: false
