@@ -2,7 +2,7 @@
 <h1><%= title("News#{@title}") %></h1>
 
 <% if @articles.empty? %>
-	<p>No Articles.</p>
+  <p>No Articles.</p>
 <% else %>
   <% for article in @articles %>
     <%= render "articles/article", :article => article %>
@@ -11,9 +11,9 @@
 <% end %>
 
 <% content_for :right do  %>
-	<div class="news_nav">
-		<%= render :partial => "tags" %>
-		<%= render :partial => "dates" %>
-		<%#= render "/shared/advert" %>
-	</div>
+  <div class="news_nav">
+    <%= render :partial => "tags" %>
+    <%= render :partial => "dates" %>
+    <%#= render "/shared/advert" %>
+  </div>
 <% end %>

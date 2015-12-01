@@ -3,16 +3,16 @@
 <h1><%= title("Venues") %></h1>
 
 <% if @venues.empty? %>
-	<p>No venues.</p>
+  <p>No venues.</p>
 <% else %>
   <% @venues.each do |venue| %>
-  	<% unless venue.events.blank? %>
-			<%= render "venue", {:venue => venue} %>
-		<% end %>
+    <% unless venue.events.blank? %>
+      <%= render "venue", {:venue => venue} %>
+    <% end %>
   <% end %>
 <% end %>
 
 <% content_for :right do %>
-	<%= render "/shared/common_right" %>
-	<%#= render "/shared/advert" %>
+  <%= render "/shared/common_right" %>
+  <%#= render "/shared/advert" %>
 <% end %>

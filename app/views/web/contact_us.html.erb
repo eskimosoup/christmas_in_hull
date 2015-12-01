@@ -5,7 +5,7 @@
 <h1><%= title(@page_node.title) %></h1>
 
 <div class="contact_left">
-	<% form_tag({:controller => "web", :action => "deliver_contact_us"}) do %>
+  <% form_tag({:controller => "web", :action => "deliver_contact_us"}) do %>
     <p>
       <%= label_tag :name %><br />
       <%= text_field_tag :name, params[:name] %>
@@ -29,9 +29,9 @@
 </div>
 
 <div class="contact_right">
-	<%= @page_node.active_content.main_content %>
+  <%= @page_node.active_content.main_content %>
 </div>
 
 <% content_for :right do %>
-	<%= render "/shared/common_right" %>
+  <%= render "/shared/common_right" %>
 <% end %>

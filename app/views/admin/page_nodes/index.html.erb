@@ -1,10 +1,10 @@
 <% title "Content Pages" %>
 <div class="view">
-	<%= link_to "Browse", {:action => "index"}, :class => "highlight" %>
-	 | 
-	<%= link_to "Search", params.merge({:action => "index_list"}) %>
-	 | 
-	<%= link_to "Re-Order", {:action => "index_reorder"} %>
+  <%= link_to "Browse", {:action => "index"}, :class => "highlight" %>
+   |
+  <%= link_to "Search", params.merge({:action => "index_list"}) %>
+   |
+  <%= link_to "Re-Order", {:action => "index_reorder"} %>
 </div>
 
 <% if current_administrator.super_admin? || PageNode.unrecycled.can_have_children.length > 0 %>
@@ -12,5 +12,5 @@
 <% end %>
 
 <div id="tree">
-	<%= render :partial => "static_tree", :locals => {:nodes => @roots, :static => true} %>
+  <%= render :partial => "static_tree", :locals => {:nodes => @roots, :static => true} %>
 </div>

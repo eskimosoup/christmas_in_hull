@@ -5,30 +5,31 @@
 
 <head>
 
-	<link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="shortcut icon" href="/favicon.ico" />
 
-	<title><%= h("#{SETTING['name']} - #{yield(:title) || "Untitled"}") %></title>
+  <title><%= h("#{SETTING['name']} - #{yield(:title) || "Untitled"}") %></title>
 
-	<%= stylesheet_link_tag "webstyle.css" %>
-	<%= stylesheet_link_tag "tnymc.css" %>
-	<% if stylesheets %>
+  <%= stylesheet_link_tag "webstyle.css" %>
+  <%= stylesheet_link_tag "tnymc.css" %>
+  <% if stylesheets %>
     <% stylesheets.each do |stylesheet| %>
-			<%= stylesheet_link_tag stylesheet %>
+      <%= stylesheet_link_tag stylesheet %>
     <% end %>
   <% end %>
 
-	<%= javascript_include_tag "prototype" %>
-	<%= javascript_include_tag "script-styles" %>
-	<% if @include_tinymce_script -%>
-	  <%= javascript_include_tag "tiny_mce/tiny_mce.js" %>
-	  <%= javascript_include_tag "tiny_mce_config" %>
-	<% end -%>
+  <%= javascript_include_tag "prototype" %>
+  <%= javascript_include_tag "script-styles" %>
+  <% if @include_tinymce_script -%>
+    <%= javascript_include_tag "tiny_mce/tiny_mce.js" %>
+    <%= javascript_include_tag "tiny_mce_config" %>
+  <% end -%>
+  <%= csrf_meta_tag %>
 
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
-	<%= yield :head %>
+  <%= yield :head %>
 
-	<%= render 'layouts/analytics' %>
+  <%= render 'layouts/analytics' %>
 
 </head>
 
@@ -40,87 +41,87 @@
 
 <div class="maincontainer">
 
-	<p class="skip"><a href="#content" accesskey="s">Skip to the main content</a></p>
+  <p class="skip"><a href="#content" accesskey="s">Skip to the main content</a></p>
 
-	<div class="top">
-		<%= link_to image_tag("2014/logo.png", :class => "logo", :alt => SETTING['name']), root_url, :title => SETTING['name'] %>
-		<div class="navigation">
-  		<%= navigation :tiers => false %>
-		</div>
+  <div class="top">
+    <%= link_to image_tag("2014/logo.png", :class => "logo", :alt => SETTING['name']), root_url, :title => SETTING['name'] %>
+    <div class="navigation">
+      <%= navigation :tiers => false %>
+    </div>
   </div>
 
   <!-- <span class="holly"></span> -->
 
-	<% if home? && !(@banners.empty?) %>
-		<div class="banners">
-			<%= render '/web/banner/banners' %>
-		</div>
-	<% end %>
+  <% if home? && !(@banners.empty?) %>
+    <div class="banners">
+      <%= render '/web/banner/banners' %>
+    </div>
+  <% end %>
 
-	<div id="content">
+  <div id="content">
 
-		<%- unless hide_flash? -%>
-		  <%- flash.each do |name, msg| -%>
-				<%= content_tag :div, msg, :id => "flash_#{name}" %>
-			<%- end -%>
-		<%- end -%>
+    <%- unless hide_flash? -%>
+      <%- flash.each do |name, msg| -%>
+        <%= content_tag :div, msg, :id => "flash_#{name}" %>
+      <%- end -%>
+    <%- end -%>
 
-		<% if hide_left? && hide_right? %>
+    <% if hide_left? && hide_right? %>
 
-			<%= @content_for_layout %>
+      <%= @content_for_layout %>
 
-		<% elsif hide_left? %>
+    <% elsif hide_left? %>
 
-			<div class="content_left">
-				<%= @content_for_layout %>
-			</div>
+      <div class="content_left">
+        <%= @content_for_layout %>
+      </div>
 
-			<div class="right">
-				<%= yield :right %>
-			</div>
+      <div class="right">
+        <%= yield :right %>
+      </div>
 
-		<% elsif hide_right? %>
+    <% elsif hide_right? %>
 
-			<div class="left">
-		    <%= yield :left if yield :left %>
-			</div>
+      <div class="left">
+        <%= yield :left if yield :left %>
+      </div>
 
-			<div class="content_right">
-				<%= @content_for_layout %>
-			</div>
+      <div class="content_right">
+        <%= @content_for_layout %>
+      </div>
 
-		<% else %>
+    <% else %>
 
-			<div class="left">
-		    <%= yield :left if yield :left %>
-			</div>
+      <div class="left">
+        <%= yield :left if yield :left %>
+      </div>
 
-			<div class="content_middle">
-				<%= @content_for_layout %>
-			</div>
+      <div class="content_middle">
+        <%= @content_for_layout %>
+      </div>
 
-			<div class="right">
-				<%= yield :right %>
-			</div>
+      <div class="right">
+        <%= yield :right %>
+      </div>
 
-		<% end %>
+    <% end %>
 
     <div class="clear"></div>
 
-	</div>
+  </div>
 
-	<div class="bottom">
-		<%= link_to(image_tag("logo-hull-bid.png", :alt => "Hull Bid", :class => "logo_1"), "http://www.hullbid.co.uk", {:popup => true}) %>
+  <div class="bottom">
+    <%= link_to(image_tag("logo-hull-bid.png", :alt => "Hull Bid", :class => "logo_1"), "http://www.hullbid.co.uk", {:popup => true}) %>
     <%= link_to(image_tag("logo-hull-city-council.png", :alt => "Hull City Council", :class => "logo_3"), "http://www.hullcc.gov.uk", {:popup => true}) %>
-	</div>
+  </div>
 
   <div class="footer">
     <p>
-    	&copy; <%= h(SiteSetting.find_by_name("Site Name").value) %> |
-    	<a href="http://www.eskimosoup.co.uk" target="_blank">Web design by eskimosoup</a> |
-    	<%= link_to "Site Map", {:controller => "web", :action => "site_map"}, {:accesskey => "s"} %>
-  	</p>
-	</div>
+      &copy; <%= h(SiteSetting.find_by_name("Site Name").value) %> |
+      <a href="http://www.eskimosoup.co.uk" target="_blank">Web design by eskimosoup</a> |
+      <%= link_to "Site Map", {:controller => "web", :action => "site_map"}, {:accesskey => "s"} %>
+    </p>
+  </div>
 
 </div>
 

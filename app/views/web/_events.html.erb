@@ -1,38 +1,38 @@
 <% @events.each_with_index do |event, index| %>
-	<% if index == 0 %>
-		<div class="news_event_highlight">
-			<% if event.image? %>
-				<div class="large_thumbnail">
-					<span>EVENTS</span>
-					<%= link_to(image_tag("2014/events.jpg"), event) %>
-				</div>
-			<% end %>
-			<span class="large_date">
-				<%= simple_date_format(event.start_date) %>
-				<% if !(event.end_date == event.start_date) %>
-					- <%= simple_date_format(event.end_date) %>
-				<% end %>
-			</span>
-			<h2><%= link_to(event.name, event) %></h2>
-			<%= brev(event.summary, 100) %>
-		</div>
-	<% else %>
-		<div class="news_event_list">
-			<% if event.image? %>
-				<div class="thumbnail">
-					<%= link_to(image_tag(event.image(:thumbnail)), event) %>
-				</div>
-			<% end %>
-			<span class="date">
-				<%= simple_date_format(event.start_date) %>
-				<% if !(event.end_date == event.start_date) %>
-					- <%= simple_date_format(event.end_date) %>
-				<% end %>
-			</span>
-			<h3><%= link_to(event.name, event) %></h3>
-			<%#= brev(event.summary, 50) %>
-		</div>
-	<% end %>
+  <% if index == 0 %>
+    <div class="news_event_highlight">
+      <% if event.image? %>
+        <div class="large_thumbnail">
+          <span>EVENTS</span>
+          <%= link_to(image_tag("2014/events.jpg"), event) %>
+        </div>
+      <% end %>
+      <span class="large_date">
+        <%= simple_date_format(event.start_date) %>
+        <% if !(event.end_date == event.start_date) %>
+          - <%= simple_date_format(event.end_date) %>
+        <% end %>
+      </span>
+      <h2><%= link_to(event.name, event) %></h2>
+      <%= brev(event.summary, 100) %>
+    </div>
+  <% else %>
+    <div class="news_event_list">
+      <% if event.image? %>
+        <div class="thumbnail">
+          <%= link_to(image_tag(event.image(:thumbnail)), event) %>
+        </div>
+      <% end %>
+      <span class="date">
+        <%= simple_date_format(event.start_date) %>
+        <% if !(event.end_date == event.start_date) %>
+          - <%= simple_date_format(event.end_date) %>
+        <% end %>
+      </span>
+      <h3><%= link_to(event.name, event) %></h3>
+      <%#= brev(event.summary, 50) %>
+    </div>
+  <% end %>
 <% end %>
 <%= content_tag(:div, (), {:class => "clear"}) %>
 <%= tag(:br) %>

@@ -5,7 +5,7 @@ class Admin::EventsController < Admin::AdminController
   def index
     # set the default ordering
     params[:search] ||= {}
-  	 params[:search][:order] ||= "descend_by_start_date"
+     params[:search][:order] ||= "descend_by_start_date"
     @search = Event.unrecycled.search(params[:search])
     @events = @search.paginate(:page => params[:page], :per_page => 50)
   end

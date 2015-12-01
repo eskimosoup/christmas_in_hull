@@ -1,11 +1,11 @@
 class Venue < ActiveRecord::Base
 
-	acts_as_eskimagical
+  acts_as_eskimagical
 
   validates_presence_of :name, :postcode
 
-	named_scope :position, 	 :order => "position"
-  named_scope :active, 		 :conditions => ["recycled = ? AND display = ?", false, true]
+  named_scope :position,    :order => "position"
+  named_scope :active,      :conditions => ["recycled = ? AND display = ?", false, true]
   named_scope :recycled,   :conditions => ["recycled = ?", true]
   named_scope :unrecycled, :conditions => ["recycled = ?", false]
   named_scope :arrange,    :order => "id"
@@ -16,7 +16,7 @@ class Venue < ActiveRecord::Base
   has_many :events
 
   def active?
-  	display? && !recycled?
+    display? && !recycled?
   end
 
 end

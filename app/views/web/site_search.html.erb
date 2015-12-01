@@ -24,9 +24,9 @@
   <% end %>
   <p><%= will_paginate(@results, :params => {:search => params[:search]}) %></p>
 <% else %>
-	<p>No Results.</p>
+  <p>No Results.</p>
 <% end %>
 
 <% content_for :right do %>
-	<%= render "/shared/common_right" %>
+  <%= render "/shared/common_right" %>
 <% end %>

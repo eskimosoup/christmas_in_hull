@@ -5,8 +5,8 @@ class VenuesController < ApplicationController
   end
 
   def show
-		@venue = Venue.active.find(params[:id])
-		redirect_to events_path(:venue => @venue.id) and return
+    @venue = Venue.active.find(params[:id])
+    redirect_to events_path(:venue => @venue.id) and return
   end
 
 end

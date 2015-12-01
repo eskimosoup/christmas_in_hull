@@ -1,19 +1,19 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
 
-	def determine_page_node
-		if @page_node
-			@current_page_node = @page_node
-		elsif PageNode.controller_action(params[:controller], params[:action]).first
-			@current_page_node = PageNode.controller_action(params[:controller], params[:action]).sort_by{|x| x.position}.first
-		elsif PageNode.controller_action(params[:controller], "").first
-			@current_page_node = PageNode.controller_action(params[:controller], "").sort_by{|x| x.position}.first
-		else
-			nil
-		end
-	end
+  def determine_page_node
+    if @page_node
+      @current_page_node = @page_node
+    elsif PageNode.controller_action(params[:controller], params[:action]).first
+      @current_page_node = PageNode.controller_action(params[:controller], params[:action]).sort_by{|x| x.position}.first
+    elsif PageNode.controller_action(params[:controller], "").first
+      @current_page_node = PageNode.controller_action(params[:controller], "").sort_by{|x| x.position}.first
+    else
+      nil
+    end
+  end
 
-	# pass :behaviour => "hide" or behaviour => "highlight" to change page hidden / not found behaviour
+  # pass :behaviour => "hide" or behaviour => "highlight" to change page hidden / not found behaviour
   def link_to_page(link_text, page_name, options={})
     page_node = PageNode.find_by_name(page_name)
     if page_node
@@ -65,42 +65,42 @@ module ApplicationHelper
     ret.html_safe
   end
 
-	def remind_links(link, options={})
-	  # google, yahoo, msn
-	  options[:title] ||= link
-	  options[:target] ||= "_blank"
-	  ret = "<div class = 'remind_links'>"
-	  if options[:google]
-	    ret += link_to image_tag("google_remind.png"), "http://www.google.com/calendar/event?action=TEMPLATE&text=#{options[:title]}&sprop=website:#{link}&sprop=name:#{options[:title]}&details=#{link}", :target => options[:target]
+  def remind_links(link, options={})
+    # google, yahoo, msn
+    options[:title] ||= link
+    options[:target] ||= "_blank"
+    ret = "<div class = 'remind_links'>"
+    if options[:google]
+      ret += link_to image_tag("google_remind.png"), "http://www.google.com/calendar/event?action=TEMPLATE&text=#{options[:title]}&sprop=website:#{link}&sprop=name:#{options[:title]}&details=#{link}", :target => options[:target]
     end
-	  if options[:yahoo]
-	    ret += link_to image_tag("yahoo_remind.png"), "http://calendar.yahoo.com/?v=60&TITLE=#{options[:title]}&ST=#{Time.now.strftime("%Y%m%d")}&URL=#{link}", :target => options[:target]
+    if options[:yahoo]
+      ret += link_to image_tag("yahoo_remind.png"), "http://calendar.yahoo.com/?v=60&TITLE=#{options[:title]}&ST=#{Time.now.strftime("%Y%m%d")}&URL=#{link}", :target => options[:target]
     end
-	  if options[:msn]
-	    ret += link_to image_tag("msn_remind.png"), "http://calendar.msn.com/calendar", :target => options[:target]
+    if options[:msn]
+      ret += link_to image_tag("msn_remind.png"), "http://calendar.msn.com/calendar", :target => options[:target]
     end
-	  ret += "</div>"
-	  ret
-	end
+    ret += "</div>"
+    ret
+  end
 
-	# auto link
-	def al(string)
-	  string.gsub! URI::regexp(%w(http https)) do |match|
-	    auto_link match
-	  end
-	  string
-	end
+  # auto link
+  def al(string)
+    string.gsub! URI::regexp(%w(http https)) do |match|
+      auto_link match
+    end
+    string
+  end
 
   def brev(text, max_length)
-		if text.length > max_length
-			"#{text[0...(max_length)] + "..."}"
-		else
-			text
-		end
+    if text.length > max_length
+      "#{text[0...(max_length)] + "..."}"
+    else
+      text
+    end
   end
 
   def home?
-		(params[:controller] == "web" && params[:action] == "index") ? true : false
+    (params[:controller] == "web" && params[:action] == "index") ? true : false
   end
 
 end

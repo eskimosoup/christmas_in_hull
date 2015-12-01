@@ -1,11 +1,12 @@
 class WebController < ApplicationController
 
   def index
-		@page_node = PageNode.find_by_name("Home")
-		@banners = Banner.for_index
-		@events = Event.for_index
-		@articles = Article.for_index
-	end
+    @page_node = PageNode.find_by_name("Home")
+    @banners = Banner.for_index
+    @events = Event.for_index
+    @articles = Article.for_index
+    @opening_times = OpeningTime.all(:include => :shopping_centre, :conditions => ["date = ? AND display = ?", Date.today, true], :order => "date ASC")
+  end
 
   def site_down
 
@@ -27,18 +28,18 @@ class WebController < ApplicationController
   end
 
   def contact_us
-  	@page_node = PageNode.find_by_name("Contact Us")
+    @page_node = PageNode.find_by_name("Contact Us")
   end
 
   def deliver_contact_us
-		if params[:email].blank? && params[:tel].blank?
-			flash[:error] = "Please enter either an email or telephone number so that we can get back to you."
-			redirect_to :controller => "web", :action => "contact_us", :name => params[:name], :email => params[:email], :tel => params[:tel], :enquiry => params[:enquiry]
-		else
-			Mailer.deliver_contact_us(params[:name], params[:email], params[:tel], params[:enquiry])
-			flash[:notice] = "Your enquiry has been sent."
-			redirect_to :controller => "web", :action => "thank_you"
-		end
+    if params[:email].blank? && params[:tel].blank?
+      flash[:error] = "Please enter either an email or telephone number so that we can get back to you."
+      redirect_to :controller => "web", :action => "contact_us", :name => params[:name], :email => params[:email], :tel => params[:tel], :enquiry => params[:enquiry]
+    else
+      Mailer.deliver_contact_us(params[:name], params[:email], params[:tel], params[:enquiry])
+      flash[:notice] = "Your enquiry has been sent."
+      redirect_to :controller => "web", :action => "thank_you"
+    end
   end
 
   def create_subscriber

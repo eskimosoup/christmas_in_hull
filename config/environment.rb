@@ -1,7 +1,7 @@
 # Be sure to restart your server when you modify this file
 
 # Specifies gem version of Rails to use when vendor/rails is not present
-RAILS_GEM_VERSION = '2.3.14' unless defined? RAILS_GEM_VERSION
+RAILS_GEM_VERSION = '2.3.18' unless defined? RAILS_GEM_VERSION
 
 # Uncomment this line when taking the site live;
 # RailsEnv = 'production'
@@ -9,10 +9,30 @@ RAILS_GEM_VERSION = '2.3.14' unless defined? RAILS_GEM_VERSION
 # Bootstrap the Rails environment, frameworks, and default configuration
 require File.join(File.dirname(__FILE__), 'boot')
 
+# monkey patch for rubygems. Will ignore vendor gems.
+module Gem
+  def self.source_index
+    sources
+  end
+
+  def self.cache
+    sources
+  end
+
+  SourceIndex = Specification
+
+  class SourceList
+    # If you want vendor gems, this is where to start writing code.
+    def search( *args ); []; end
+    def each( &block ); end
+    include Enumerable
+  end
+end
+
 Rails::Initializer.run do |config|
 
-	config.cache_store = :file_store, "#{RAILS_ROOT}/public/fragment_cache"
-	config.action_controller.page_cache_directory = "#{RAILS_ROOT}/public/page_cache"
+  config.cache_store = :file_store, "#{RAILS_ROOT}/public/fragment_cache"
+  config.action_controller.page_cache_directory = "#{RAILS_ROOT}/public/page_cache"
 
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers
@@ -29,7 +49,7 @@ Rails::Initializer.run do |config|
 
 
   # data generation plugins
-  
+
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -50,3 +70,5 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+
