@@ -1,7 +1,7 @@
 class Admin::OpeningTimesController < Admin::AdminController
 
   def index
-    @opening_times = OpeningTime.order("date asc").paginate(:page => params[:page], :per_page => 50)
+    @opening_times = OpeningTime.all(:order => "date asc")
   end
 
   def new
