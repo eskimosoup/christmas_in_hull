@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20151201094352) do
+ActiveRecord::Schema.define(:version => 20151201150348) do
 
   create_table "administrators", :force => true do |t|
     t.string   "username"
@@ -145,6 +145,33 @@ ActiveRecord::Schema.define(:version => 20151201094352) do
     t.integer "role_id"
   end
 
+  create_table "galleries", :force => true do |t|
+    t.string   "name",                                   :null => false
+    t.text     "summary"
+    t.boolean  "display",              :default => true
+    t.integer  "position",             :default => 0
+    t.integer  "gallery_images_count", :default => 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "galleries", ["name"], :name => "index_galleries_on_name", :unique => true
+
+  create_table "gallery_images", :force => true do |t|
+    t.integer  "gallery_id",                           :null => false
+    t.string   "image_file_name"
+    t.string   "image_content_type"
+    t.integer  "image_file_size"
+    t.datetime "image_updated_at"
+    t.string   "image_alt"
+    t.integer  "position",           :default => 0
+    t.boolean  "display",            :default => true
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "gallery_images", ["gallery_id"], :name => "index_gallery_images_on_gallery_id"
+
   create_table "glossary_items", :force => true do |t|
     t.string   "word"
     t.text     "definition"
@@ -206,6 +233,7 @@ ActiveRecord::Schema.define(:version => 20151201094352) do
     t.datetime "updated_at"
   end
 
+  add_index "opening_times", ["shopping_centre_id", "date"], :name => "index_opening_times_on_shopping_centre_id_and_date", :unique => true
   add_index "opening_times", ["shopping_centre_id"], :name => "index_opening_times_on_shopping_centre_id"
 
   create_table "page_contents", :force => true do |t|
