@@ -146,6 +146,7 @@ ActiveRecord::Schema.define(:version => 20151201150348) do
   end
 
   create_table "galleries", :force => true do |t|
+    t.integer  "event_id",                               :null => false
     t.string   "name",                                   :null => false
     t.text     "summary"
     t.boolean  "display",              :default => true
@@ -155,6 +156,7 @@ ActiveRecord::Schema.define(:version => 20151201150348) do
     t.datetime "updated_at"
   end
 
+  add_index "galleries", ["event_id"], :name => "index_galleries_on_event_id"
   add_index "galleries", ["name"], :name => "index_galleries_on_name", :unique => true
 
   create_table "gallery_images", :force => true do |t|

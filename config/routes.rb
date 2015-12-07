@@ -2,6 +2,7 @@ ActionController::Routing::Routes.draw do |map|
 
   map.resources :articles
   map.resources :events
+  map.resources :galleries
   map.resources :venues
   map.resources :offers
   map.resources :opening_times, :only => [:index]

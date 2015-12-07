@@ -10,6 +10,6 @@
   </p>
 <% end %>
 
-<%= eskimo_table({:columns => [["", lambda{|gi| image_tag(gi.image? ? gi.image.url(:thumbnail) : "/images/no_image.jpg")}, ""],
+<%= eskimo_table({:columns => [["Gallery", lambda{|x| x.gallery.name }], ["", lambda{|gi| image_tag(gi.image? ? gi.image.url(:thumbnail) : "/images/no_image.jpg")}, ""],
                                ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"]],
 :list => @gallery_images, :images => true }) %>
