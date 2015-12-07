@@ -16,7 +16,7 @@ class Banner < ActiveRecord::Base
   belongs_to :venue
 
   has_attached_image :image, :styles => {:thumbnail => "80x63#", :large => "668x263#"}
-  has_attached_image :alt_image, :styles => {:thumbnail => "80x63#", :large => "668x263#"}
+  #has_attached_image :alt_image, :styles => {:thumbnail => "80x63#", :large => "668x263#"}
   has_images
 
   def active?

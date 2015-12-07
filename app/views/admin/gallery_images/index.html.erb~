@@ -1,0 +1,15 @@
+<% title("Gallery Images") %>
+
+<p><%= link_to "New Gallery Image", new_admin_gallery_image_path %></p>
+
+<% form_tag admin_gallery_images_path, :method => 'get' do %>
+  <p>
+    <%= select_tag :gallery_id, options_for_select(Gallery.all(:order => :name).map{ |x| [x.name, x.id] }, params[:gallery_id]) %>
+
+    <%= submit_tag "Submit", :name => nil %>
+  </p>
+<% end %>
+
+<%= eskimo_table({:columns => [["", lambda{|gi| image_tag(gi.image? ? gi.image.url(:thumbnail) : "/images/no_image.jpg")}, ""],
+                               ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"]],
+:list => @gallery_images, :images => true }) %>

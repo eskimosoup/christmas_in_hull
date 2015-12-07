@@ -1,0 +1,8 @@
+<% title("Galleries") %>
+
+<p><%= link_to "New Gallery", new_admin_gallery_path %></p>
+
+<%= eskimo_table({ :columns => [["Name", "name"], ["Summary", lambda{|a| brev(a.summary, 50)}, "summary"],
+                                ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"],
+                                ["Images", lambda{|x| link_to pluralize(x.gallery_images_count, "image"), admin_gallery_gallery_images_path(x) }]],
+                  :list => @galleries, :manual_sorting => true }) %>
