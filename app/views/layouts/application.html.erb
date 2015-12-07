@@ -11,6 +11,7 @@
 
   <%= stylesheet_link_tag "webstyle.css" %>
   <%= stylesheet_link_tag "tnymc.css" %>
+  <%= stylesheet_link_tag "shadowbox.css" %>
   <% if stylesheets %>
     <% stylesheets.each do |stylesheet| %>
       <%= stylesheet_link_tag stylesheet %>
@@ -19,10 +20,16 @@
 
   <%= javascript_include_tag "prototype" %>
   <%= javascript_include_tag "script-styles" %>
+  <%= javascript_include_tag "shadowbox.js" %>
   <% if @include_tinymce_script -%>
     <%= javascript_include_tag "tiny_mce/tiny_mce.js" %>
     <%= javascript_include_tag "tiny_mce_config" %>
   <% end -%>
+  <script type="text/javascript">
+    document.observe('dom:loaded', function(){
+      Shadowbox.init();
+    });
+  </script>
   <%= csrf_meta_tag %>
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>

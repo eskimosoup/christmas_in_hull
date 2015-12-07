@@ -4,7 +4,7 @@
 
 <% form_tag admin_gallery_images_path, :method => 'get' do %>
   <p>
-    <%= select_tag :gallery_id, options_for_select(Gallery.all(:order => :name).map{ |x| [x.name, x.id] }, params[:gallery_id]) %>
+    <%= select_tag :gallery_id, options_for_select(Gallery.all(:order => :name).map{ |x| [x.name, x.id] }, params[:gallery_id].to_i) %>
 
     <%= submit_tag "Submit", :name => nil %>
   </p>

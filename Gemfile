@@ -14,3 +14,5 @@ gem 'ancestry', '1.2.5'
 gem 'nokogiri', '1.5.11'
 gem 'rmagick', '2.13.3'
 gem 'rdoc'
+gem 'iconv', '~> 1.0.3'
+

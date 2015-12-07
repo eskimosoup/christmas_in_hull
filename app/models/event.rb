@@ -30,6 +30,7 @@ class Event < ActiveRecord::Base
   has_attached_image :image, :styles => {:thumbnail => "80x63#", :show => "250", :home_large => "294x116#"}
   has_images
   may_contain_images :main_content
+  has_many :galleries, :dependent => :destroy
 
   before_validation do |event|
     if event.end_date.to_s.blank?

@@ -19,9 +19,8 @@ ActionController::Routing::Routes.draw do |map|
     admin.resources :newsletter_subscribers, :except => [:show]
     admin.resources :shopping_centres, :except => [:show]
     admin.resources :opening_times, :except => [:show]
-    admin.resources :galleries, :except => [:show], :collection => { :order => :post } do |gallery|
-      gallery.resources :gallery_images, :except => [:show], :collection => { :order => :post }
-    end
+    admin.resources :galleries, :except => [:show], :collection => { :order => :post } 
+    admin.resources :gallery_images, :except => [:show], :collection => { :order => :post }
     admin.connect 'recycle_bin/index',        :controller => 'recycle_bin',    :action => 'index'
     admin.connect 'administrators/edit_self', :controller => 'administrators', :action => 'edit_self'
   end

@@ -1,0 +1,35 @@
+<% content_for :left do %>
+  <div>
+    <h2><%= link_to "View Events", events_path %></h2>
+    <% unless @galleries.blank? %>
+      <ol>
+        <% @galleries.each do |gallery| %>
+	  <li>
+            <%= link_to gallery.name, gallery_path(gallery) %>
+	  </li>
+	<% end %>	
+      </ol>
+    <% end %>	    
+<% end %>
+
+<h1><%= @gallery.name %></h1>
+
+<% if @gallery.event %>
+  <p>
+    <%= link_to "View Event", event_path(@gallery.event) %>
+  </p>
+<% end %>
+
+<div>
+  <%= raw @gallery.summary %>
+</div>
+
+<% unless @gallery.gallery_images.count(:conditions => ["display = ?", true]).zero? %>
+  <% @gallery.gallery_images.all(:conditions => ["display = ?", true]).each_with_index do |gallery_image, i| %>
+    <%= link_to(
+    image_tag(gallery_image.image(:small), { :class => 'event-gallery-image', :alt => gallery_image.image_alt, :id => "gallery-image-#{i}" }),
+    gallery_image.image.url(:large), { :rel => "shadowbox[gallery-images]", :title => gallery_image.image_alt, :class => "event-gallery" } ) %>
+  <% end %>
+<% end %>	
+
+<div class="clear"></div>

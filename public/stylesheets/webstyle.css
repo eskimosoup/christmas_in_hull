@@ -800,3 +800,30 @@ table.opening-hours tbody tr:nth-child(odd) {
 table.opening-hours tbody tr:nth-child(even) {
 
 }
+
+a#event-gallery {
+  float: left;
+  width: 437px;
+  font-weight: bold;
+  text-align: center;
+
+  img {
+    border: 3px solid #a91124;
+    width: 437px;
+    height: 176px;
+  }
+}
+
+a.event-gallery {
+  float: left;
+  margin: 6px 13px;
+  width: 150px;
+  font-weight: bold;
+  text-align: center;
+
+  img {
+    border: 3px solid #a91124;
+    width: 150px;
+    height: 150px;
+  }
+}
