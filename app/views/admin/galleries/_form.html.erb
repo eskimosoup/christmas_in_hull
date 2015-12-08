@@ -16,7 +16,7 @@
 
     <p>
       <%= f.label :event_id %><br />
-      <%= f.select :event_id, Event.all(:order => :name).map{ |x| [x.name, x.id] } %>
+      <%= f.select :event_id, Event.all(:order => :name).map{ |x| [x.name, x.id] }, { :include_blank => true } %>
   </fieldset>
 
   <p>
