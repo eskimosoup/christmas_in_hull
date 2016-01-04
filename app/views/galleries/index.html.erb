@@ -1,3 +1,14 @@
+<% content_for :head do %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js' %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.6.0/jquery.matchHeight-min.js' %>
+  <script>
+    $(function() { $('.event-gallery').matchHeight(); });
+  </script>
+<% end %>
+
+<% hide_left %>
+<% hide_right %>
+
 <h2>Event Galleries</h2>
 
 <% unless @galleries.blank? %>
@@ -8,6 +19,6 @@
 	<%= image_tag(gallery_image.image(:small)) %>
       <% end %>
       <%= gallery.name %>
-    </a> 
+    </a>
   <% end %>
-<% end %>  
+<% end %>
