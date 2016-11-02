@@ -770,7 +770,11 @@ h2.news_events_title {
 }
 
 .opening-times {
-  margin: 20px;
+  margin: 0 0 20px;
+}
+.opening-times h2 {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 table.opening-hours {
