@@ -1,0 +1,14 @@
+<% @offers.each_with_index do |offer, index| %>
+  <div class="offer_list">
+    <% if offer.image? %>
+      <div class="thumbnail">
+        <%= link_to(image_tag(offer.image(:thumbnail)), offer) %>
+      </div>
+    <% end %>
+    <h3><%= link_to(offer.company_name, offer) %></h3>
+    <%= brev(offer.summary, 143) %>
+  </div>
+<% end %>
+<%= content_tag(:div, (), {:class => "clear"}) %>
+<%= tag(:br) %>
+<%= content_tag(:p, (link_to "All Offers", offers_path), {}) %>
