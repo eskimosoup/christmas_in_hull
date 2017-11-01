@@ -835,3 +835,10 @@ a.event-gallery {
     height: 150px;
   }
 }
+
+.offer_list {
+	display: inline-block;
+	margin-right: 30px;
+	max-width: 44%;
+	vertical-align: top;
+}
