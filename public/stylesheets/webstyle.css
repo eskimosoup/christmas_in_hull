@@ -161,7 +161,7 @@ a[href $='.doc']:hover, a[href $='.xls']:hover, a[href $='.docx']:hover {
 	font-weight: 700;
 	display: inline-block;
 	height: 33px;
-	padding: 16px 29px 0;
+	padding: 16px 19px 0;
   text-transform: uppercase;
 }
 
