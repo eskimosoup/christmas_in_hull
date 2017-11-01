@@ -2,7 +2,7 @@
 body {
 	margin: 0px;
 	text-align: center;
-	background-image: url(../images/2014/bg.jpg);
+	background-image: url(../images/2017/background.jpg);
 	background-position: 50% top;
 	background-repeat: no-repeat;
 	background-color: white;
@@ -132,23 +132,27 @@ a[href $='.doc']:hover, a[href $='.xls']:hover, a[href $='.docx']:hover {
 
 /*--Top--*/
 .top {
-	height: 129px;
+	/* height: 129px; */
 }
 
 .logo {
 	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
 }
 
 
 /*--Navigation--*/
 .navigation {
-  background: #a6aa2b;
-	position: absolute;
-	text-align: right;
+  background: #E72D7B;
+	text-align: center;
 	font-size: 15px;
 	font-family: Arial, sans-serif;
-	top: 77px;
-	right: 0;
+	/*
+		position: absolute;
+		top: 77px;
+		right: 0;
+	*/
 }
 
 .navigation a:link, .navigation a:visited, .navigation a:active {
@@ -157,7 +161,7 @@ a[href $='.doc']:hover, a[href $='.xls']:hover, a[href $='.docx']:hover {
 	font-weight: 700;
 	display: inline-block;
 	height: 33px;
-	padding: 16px 9px 0;
+	padding: 16px 29px 0;
   text-transform: uppercase;
 }
 
@@ -430,7 +434,7 @@ th {
 
 /*--Banner--*/
 .banner_container {
-	height: 367px;
+	height: 300px;
 	position: relative;
 	z-index: 1;
 }
@@ -531,7 +535,7 @@ th {
 /*--Countdown Clock--*/
 .countdown_clock {
 	/*background-image: url(../images/count_down_clock_bg.jpg?version=1);*/
-  background: #a6aa2b;
+  background: #E72D7B;
 	width: 229px;
 	height: 101px;
 	background-repeat: no-repeat;
