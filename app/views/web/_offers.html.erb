@@ -5,7 +5,7 @@
         <%= link_to(image_tag(offer.image(:thumbnail)), offer) %>
       </div>
     <% end %>
-    <h3><%= link_to(offer.company_name, offer) %></h3>
+    <h3 class="offer_title"><%= link_to(offer.company_name, offer) %></h3>
     <%= brev(offer.summary, 143) %>
   </div>
 <% end %>

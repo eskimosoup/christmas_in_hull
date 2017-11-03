@@ -33,32 +33,27 @@
   </div>
 
   <div>
-    <% if !@events.empty? %>
       <div class="col_1">
-        <%= render "events" %>
+        <% if !@events.empty? %>
+          <%= render "events" %>
+        <% end %>
+        <% if !@articles.empty? %>
+          <%= render "articles" %>
+        <% end %>
       </div>
-    <% end %>
 
-    <% if !@articles.empty? %>
+    <% if @offers.present? %>
       <div class="col_2">
-        <%= render "articles" %>
+        <div class="news_event_highlight">
+          <div class="large_thumbnail">
+            <%= link_to(image_tag("2017/offers.jpg"), offers_path) %>
+          </div>
+        </div>
+        <%= render 'offers' %>
       </div>
     <% end %>
   </div>
   <div class="clear"></div>
-
-  <% if @offers.present? %>
-
-    <div class="news_event_highlight">
-      <div class="large_thumbnail">
-        <%= link_to(image_tag("2017/offers.jpg"), offers_path) %>
-      </div>
-    </div>
-    <%= render 'offers' %>
-  <% end %>
-
-
-
 <% end %>
 
 <% content_for :right do %>

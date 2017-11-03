@@ -836,9 +836,15 @@ a.event-gallery {
   }
 }
 
+.offer_title {
+	margin-bottom: 5px;
+}
+
+/*
 .offer_list {
 	display: inline-block;
 	margin-right: 30px;
 	max-width: 44%;
 	vertical-align: top;
 }
+*/
