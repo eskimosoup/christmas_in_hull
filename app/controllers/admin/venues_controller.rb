@@ -4,7 +4,7 @@ class Admin::VenuesController < Admin::AdminController
 
   def index
     @search = Venue.unrecycled.position.search(params[:search])
-    @venues = @search.paginate(:page => params[:page], :per_page => 50)
+    @venues = @search#.paginate(:page => params[:page], :per_page => 50)
   end
 
   def new
