@@ -22,7 +22,9 @@ GEM
     iconv (1.0.4)
     json (1.8.3)
     mysql (2.9.1)
+    mysql (2.9.1-x86-mingw32)
     nokogiri (1.5.11)
+    nokogiri (1.5.11-x86-mingw32)
     paperclip (2.3.11)
       activerecord (>= 2.3.0)
       activesupport (>= 2.3.2)
@@ -42,7 +44,7 @@ GEM
       nokogiri (>= 1.4.4, < 1.6)
     searchlogic (2.4.23)
       activerecord (>= 2.0.0)
-    will_paginate (2.3.15)
+    will_paginate (3.0.5)
 
 PLATFORMS
   ruby
@@ -62,7 +64,7 @@ DEPENDENCIES
   rmagick (= 2.13.3)
   sanitize (= 2.0.3)
   searchlogic (= 2.4.23)
-  will_paginate (= 2.3.15)
+  will_paginate (= 3.0.5)
 
 BUNDLED WITH
    1.14.6

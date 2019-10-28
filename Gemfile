@@ -5,7 +5,7 @@ gem 'mysql'
 
 gem 'authlogic', '2.1.6'
 gem 'searchlogic', '2.4.23'
-gem 'will_paginate', '2.3.15'
+gem 'will_paginate', '3.0.5'
 gem 'paperclip', '2.3.11'
 gem 'friendly_id', '3.2.1.1'
 gem 'acts-as-taggable-on', '2.0.6'
