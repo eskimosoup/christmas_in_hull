@@ -3,7 +3,7 @@ class Admin::VenuesController < Admin::AdminController
   handles_images_for Venue
 
   def index
-    @search = Venue.unrecycled.position.search(params[:search])
+    @search = Venue.unrecycled.display_order.position.search(params[:search])
     @venues = @search#.paginate(:page => params[:page], :per_page => 50)
   end
 

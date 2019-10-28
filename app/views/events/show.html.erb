@@ -17,6 +17,7 @@
         End Time: <%= h(@event.end_time.strftime("%H:%M")) %>
       <% end %>
     </span>
+    <%= "Venue: #{@event.venue.name}" if @event.venue %>
   </span>
 
   <span class="cost">
