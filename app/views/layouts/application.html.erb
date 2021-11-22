@@ -9,7 +9,7 @@
 
   <title><%= h("#{SETTING['name']} - #{yield(:title) || "Untitled"}") %></title>
 
-  <%= stylesheet_link_tag "webstyle.css?2021-11-22" %>
+  <%= stylesheet_link_tag "webstyle.css?2021-11-22--3" %>
   <%= stylesheet_link_tag "tnymc.css" %>
   <%= stylesheet_link_tag "shadowbox.css" %>
   <% if stylesheets %>
@@ -64,8 +64,8 @@
 
   <% if home? && !(@banners.empty?) %>
     <div class="banners">
-      <%#= render '/web/banner/banners' %>
-      <%= image_tag '2021/2021-home-hero.png', :alt => "This city is Hull and we're ready for Christmas..." %>
+      <%= render '/web/banner/banners' %>
+      <%#= image_tag '2021/2021-home-hero.png', :alt => "This city is Hull and we're ready for Christmas..." %>
     </div>
   <% end %>
 
