@@ -177,6 +177,7 @@ a[href $='.doc']:hover, a[href $='.xls']:hover, a[href $='.docx']:hover {
 	background-color: #fefefe;
 	padding: 0px 35px 30px 35px;
 	padding-top: 40px;
+	min-height: 100vh;
 }
 
 .content_left {
