@@ -1,0 +1,39 @@
+<div class="event_info">
+
+  <span class="large_date">
+    <%= h(simple_date_format(event.start_date)) %>
+    <% if !(event.end_date == event.start_date) %>
+      to <%= h(simple_date_format(event.end_date)) %>
+    <% end %>
+    <% if event.has_proper_start_time? %>
+      <span class="time">
+        Time: <%= h(event.start_time.strftime("%H:%M")) %>
+        <% if event.has_proper_end_time? %>
+          -
+          <%= h(event.end_time.strftime("%H:%M")) %>
+        <% end %>
+      </span>
+    <% end %>
+  </span>
+
+  <span class="event_venue">
+    at <%= event.venue.name if event.venue %>
+  </span>
+
+  <span class="cost">
+    <% unless event.hide_price %>
+      <%= event.formatted_price %>
+    <% end %>
+  </span>
+
+</div>
+
+<% if event.image? %>
+ <div class="thumbnail"><%= link_to image_tag(event.image.url(:thumbnail), :alt => event.image_alt), event %></div>
+<% end %>
+
+<h2 class="news_events_title"><%= link_to h(event.name), event %></h2>
+
+<%= event.summary %>
+
+<p align="right"><%= link_to "Read more", event, {:class => "more_red"} %></p>

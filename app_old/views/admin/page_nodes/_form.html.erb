@@ -1,0 +1,93 @@
+<% if @page_node.new_record? then action = "create" else action = "update" end %>
+
+<% form_for @page_node, :url => {:controller => "admin/page_nodes", :action => action, :id => @page_node.id, :content_id => params[:content_id]} do |f| %>
+
+  <%= f.error_messages %>
+
+  <fieldset>
+    <legend>Page Node</legend>
+    <p>
+      <%= f.label :layout, "Type" %><br />
+      <%= f.select :layout, PageNode.layouts %>
+      <% unless f.object.new_record? %>
+        <%= submit_tag "Change Page Type", :name => "update_type" %>
+      <% end %>
+    </p>
+    <% if f.object.new_record? || current_administrator.super_admin? %>
+      <p id="name">
+        <%= f.helpful_label :name, "Name", "Should not be changed once set" %><br />
+        <%= f.text_field :name %>
+      </p>
+    <% end %>
+    <p>
+      <%= f.label :position %><br />
+      <% if f.object.can_be_moved? || current_administrator.super_admin? %>
+        <% if @current_administrator.super_admin? %>
+          <%= tree_select PageNode.roots.reject{|x| x.recycled?}, "page_node[parent_id]", f.object.parent_id, :include_blank => true, :insert_anywhere => true, :page_node => f.object %>
+        <% else %>
+          <%= tree_select PageNode.roots.reject{|x| x.recycled?}, "page_node[parent_id]", f.object.parent_id, :page_node => f.object %>
+        <% end %>
+      <% end %>
+    </p>
+  </fieldset>
+
+  <% unless f.object.new_record? %>
+    <div id="page_layout">
+      <% f.fields_for :page_contents, @page_content do |builder| %>
+        <%= render "admin/page_contents/#{f.object.layout}", :f => builder %>
+      <% end %>
+    </div>
+  <% end %>
+
+  <% if @current_administrator.super_admin? %>
+    <%= toggle_fieldset "Souper Admin Properties" %>
+      <p>
+        <%= f.label :access_key %><br />
+        <%= f.text_field :access_key %>
+      </p>
+      <p>
+        <%= f.check_box :can_be_moved %>
+        <%= f.label :can_be_moved %>
+      </p>
+      <p>
+        <%= f.check_box :can_be_edited %>
+        <%= f.label :can_be_edited %>
+      </p>
+      <p>
+        <%= f.check_box :can_be_deleted %>
+        <%= f.label :can_be_deleted %>
+      </p>
+      <p>
+        <%= f.check_box :can_have_children %>
+        <%= f.label :can_have_children %>
+      </p>
+      <p>
+        <%= f.check_box :display_in_navigation %>
+        <%= f.label :display_in_navigation %>
+      </p>
+      <p>
+        <%= f.check_box :special_menu %>
+        <%= f.label :special_menu %>
+      </p>
+      <p>
+        <%= f.label :controller %><br />
+        <%= f.text_field :controller %>
+      </p>
+      <p>
+        <%= f.label :action %><br />
+        <%= f.text_field :action %>
+      </p>
+      <p>
+        <%= f.label :model %><br />
+        <%= f.text_field :model %>
+      </p>
+      <p>
+        <%= f.label :stylesheet %><br />
+        <%= f.text_field :stylesheet %>
+      </p>
+    </fieldset>
+  <% end %>
+
+  <p><%= f.submit f.object.new_record? ? "Next Step" : "Update" %></p>
+
+<% end %>

@@ -1,0 +1,12 @@
+<% title("Venues") %>
+
+<p><%= link_to "New Venue", new_admin_venue_path %></p>
+
+<% form_for @search do |f| %>
+  <p>
+    <%= f.text_field :name_like %>
+    <%= f.submit "Search" %>
+  </p>
+<% end %>
+
+<%= eskimo_table({:columns => ["name", "postcode", ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"], ["", lambda{|venue| link_to(image_tag("/images/maps.jpg"), "http://maps.google.co.uk/maps?q=#{venue.postcode}", {:popup => true})}, ""]], :list => @venues, :images => true, :manual_sorting => true}) %>

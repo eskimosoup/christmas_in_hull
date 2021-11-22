@@ -1,0 +1,21 @@
+<% hide_left %>
+<h1><%= title(@title) %></h1>
+
+<% if params[:venue] %>
+  <%= render "venue", :venue => Venue.find(params[:venue].to_i) %>
+<% end %>
+
+<% if @events.empty? %>
+  <p>No events to be displayed.</p>
+<% else %>
+  <% @events.each do |event| %>
+    <%= render "events/event", :event => event %>
+    <div class="hr"><hr /></div>
+  <% end %>
+  <%= will_paginate(@events) %>
+<% end %>
+
+<% content_for :right do %>
+  <%= render "venues" %>
+  <%#= render "/shared/advert" %>
+<% end %>

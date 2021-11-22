@@ -1,0 +1,19 @@
+<% hide_left %>
+<h1><%= title("News#{@title}") %></h1>
+
+<% if @articles.empty? %>
+  <p>No Articles.</p>
+<% else %>
+  <% for article in @articles %>
+    <%= render "articles/article", :article => article %>
+  <% end %>
+  <%= will_paginate @articles %>
+<% end %>
+
+<% content_for :right do  %>
+  <div class="news_nav">
+    <%= render :partial => "tags" %>
+    <%= render :partial => "dates" %>
+    <%#= render "/shared/advert" %>
+  </div>
+<% end %>

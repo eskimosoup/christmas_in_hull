@@ -1,0 +1,35 @@
+<% form_for [:admin, @venue], :html => {:multipart => true} do |f| %>
+
+  <%= f.error_messages %>
+
+  <fieldset>
+    <legend>Main Information</legend>
+    <p>
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= image_field_tag f, :venue, :image %>
+    </p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Address Details</legend>
+      <p>
+        <%= f.label :address %><br />
+        <%= f.text_area :address %>
+      </p>
+      <p>
+        <%= f.helpful_label :postcode, "Postcode", "This will be used to build the link to Google Maps." %><br />
+        <%= f.text_field :postcode %>
+      </p>
+  </fieldset>
+
+  <p>
+    <%= f.check_box :display %>
+    <%= f.label :display %>
+  </p>
+
+  <p><%= f.submit "Submit" %></p>
+
+<% end %>

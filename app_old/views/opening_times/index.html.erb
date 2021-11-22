@@ -1,0 +1,16 @@
+<% hide_left %>
+<% hide_right %>
+<h1><%= title("Christmas Opening Times") %></h1>
+
+<% if @opening_times.empty? %>
+  <p>No opening times yet.</p>
+<% else %>
+  <table class="opening-hours">
+    <tr>
+      <th>Shopping Centre</th>
+      <th>Date</th>
+      <th>Opening Times</th>
+    </tr>
+    <%= render @opening_times %>
+  </table>
+<% end %>

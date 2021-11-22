@@ -5,7 +5,8 @@
 <h1><%= title(@page_node.title) %></h1>
 
 <div class="contact_left">
-  <% form_tag({:controller => "web", :action => "deliver_contact_us"}) do %>
+<!--
+  <% # form_tag({:controller => "web", :action => "deliver_contact_us"}) do %>
     <p>
       <%= label_tag :name %><br />
       <%= text_field_tag :name, params[:name] %>
@@ -23,9 +24,10 @@
       <%= text_area_tag :enquiry, params[:enquiry], {:rows => 5, :cols => 30} %>
     </p>
     <p>
-      <%= submit_tag "Submit" %>
+      <%#= submit_tag "Submit" %>
     </p>
-  <% end %>
+  <% # end %>
+-->
 </div>
 
 <div class="contact_right">

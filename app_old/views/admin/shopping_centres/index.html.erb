@@ -1,0 +1,6 @@
+<% title("Shopping Centres") %>
+
+<p><%= link_to "New Shopping Centre", new_admin_shopping_centre_path %></p>
+
+<%= eskimo_table({ :columns => [["Name", "name"], ["Display", lambda{ |x| x.display? ? 'Yes' : 'No' }, "display"]],
+                   :list => @shopping_centres, :lowlight => lambda{ |sc| !sc.display? } }) %>

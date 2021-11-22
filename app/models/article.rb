@@ -6,7 +6,8 @@ class Article < ActiveRecord::Base
   validates_presence_of :headline, :date
 
   named_scope :position,   :order => "position"
-  named_scope :active,     :conditions => ["recycled = ? AND display = ? AND date <= ?", false, true, Date.today], :order => "date DESC"
+  #named_scope :active,     :conditions => ["recycled = ? AND display = ? AND date <= ?", false, true, Date.today], :order => "date DESC"
+  named_scope :active,     :conditions => ["recycled = ? AND display = ? ", false, true], :order => "date DESC"
   named_scope :recycled,   :conditions => ["recycled = ?", true]
   named_scope :unrecycled, :conditions => ["recycled = ?", false]
   named_scope :year,        lambda{|year| {:conditions => ["year(date) = ?", year]} }
@@ -17,7 +18,7 @@ class Article < ActiveRecord::Base
   may_contain_images :main_content
 
   def active?
-    display? && !recycled? && date <= Date.today
+    display? && !recycled? # && date <= Date.today
   end
 
   def name

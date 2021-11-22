@@ -1,0 +1,20 @@
+You are here:
+<% nodes = [] %>
+<% nodes << link_to("Home", root_path) %>
+
+<% if @current_page_node %>
+  <% for id in @current_page_node.path_ids %>
+    <% node = PageNode.find(id) %>
+    <% unless !node.active? %>
+      <% if id == @current_page_node.path_ids.last %>
+        <% nodes << node.navigation_title %>
+      <% else %>
+        <% nodes << link_to(node.navigation_title, node.path) %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% else %>
+  <% nodes << @content_for_title %>
+<% end %>
+
+<%= nodes.join(" >> ") %>

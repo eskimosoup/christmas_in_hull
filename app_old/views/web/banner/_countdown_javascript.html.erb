@@ -1,0 +1,60 @@
+<script type="text/javascript">
+
+  var montharray = new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+  function countdown(yr,m,d) {
+
+    theyear  = yr;
+    themonth = m;
+    theday   = d;
+
+    var today = new Date();
+    var todayy = today.getYear();
+
+    if (todayy < 1000) {
+      todayy += 1900;
+    }
+
+    var todaym = today.getMonth();
+    var todayd = today.getDate();
+    var todayh = today.getHours();
+    var todaymin = today.getMinutes();
+    var todaysec = today.getSeconds();
+    var todaystring = montharray[todaym] + " " + todayd + ", " + todayy + " " + todayh + ":" + todaymin + ":" + todaysec;
+
+    futurestring = montharray[m-1] + " " + d + ", " + yr;
+    dd = Date.parse(futurestring) - Date.parse(todaystring);
+
+    dday = Math.floor(dd/(60*60*1000*24)*1);
+    if (dday < 10) {
+      dday = "0" + dday;
+    }
+
+    dhour = Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
+    if (dhour < 10) {
+      dhour = "0" + dhour;
+    }
+
+    dmin = Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
+    if (dmin < 10) {
+      dmin = "0" + dmin;
+    }
+
+    dsec = Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
+    if (dsec < 10) {
+      dsec = "0" + dsec;
+    }
+
+    if (parseFloat(dday) < 1) {
+      document.getElementById("countdown").innerHTML = "<div>Merry Christmas!</div>";
+    }
+    else {
+      document.getElementById("countdown").innerHTML = "<div>" + dday + "<br /><span>DAYS</span></div>" + "<div>" + dhour + "<br /><span>HOURS</span></div>" + "<div>" + dmin + "<br /><span>MINS</span></div>" + "<div>" + dsec + "<br /><span>SECS</span></div>" + "<span class=\"countdown_text\">Until Christmas!</span>";
+      setTimeout("countdown(theyear,themonth,theday)", 1000);
+    }
+
+  }
+
+  countdown(2019,12,25);
+
+</script>

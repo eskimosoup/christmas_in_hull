@@ -1,0 +1,12 @@
+<% metadata(@page_node.active_content.meta_description, @page_node.active_content.meta_tags) %>
+
+<% hide_left %>
+
+<h1><%= title(@page_node.title) %></h1>
+
+<%= @page_node.active_content.main_content %>
+
+<% content_for :right do %>
+  <%= render "/shared/common_right" %>
+  <%#= render "/shared/advert" %>
+<% end %>

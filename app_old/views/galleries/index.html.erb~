@@ -1,0 +1,14 @@
+<h2>Event Galleries</h2>
+
+<% unless @galleries.blank? %>
+  <% @galleries.each do |gallery| %>
+    <a class="event-gallery" href="<%= gallery_path(gallery) %>">
+      <% unless gallery.gallery_images_count.zero? %>
+        <% gallery_image = gallery.gallery_images.first(:conditions => ["display = ?", true]) %>
+	<%= image_tag(gallery_image.image(:small)) %>
+      <% end %>
+      <%= gallery.name %>
+    </a> 
+    <div class="clear"></div>
+  <% end %>
+<% end %>  

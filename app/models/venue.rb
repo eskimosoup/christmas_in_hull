@@ -9,7 +9,7 @@ class Venue < ActiveRecord::Base
   named_scope :recycled,   :conditions => ["recycled = ?", true]
   named_scope :unrecycled, :conditions => ["recycled = ?", false]
   named_scope :arrange,    :order => "id"
-  named_scope :display_order,    :order => "displayed desc"
+  named_scope :display_order, :order => "display desc"
 
   has_attached_image :image, :styles => {:index => "294x116#", :show => "250"}
   has_images

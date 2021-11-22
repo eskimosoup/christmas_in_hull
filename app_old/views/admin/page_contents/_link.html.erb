@@ -1,0 +1,11 @@
+<fieldset>
+  <legend>Additional Information</legend>
+  <p>
+    <%= f.label :navigation_title %><br />
+    <%= f.text_field :navigation_title %>
+  </p>
+  <p>
+    <%= f.label :link %><br />
+    <%= f.select :link, link_options_for_select(f.object.link, :page_node_reject => lambda{|x| x.is_a_link?}) %>
+  </p>
+</fieldset>

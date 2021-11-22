@@ -1,0 +1,7 @@
+<% title("Opening Times") %>
+
+<p><%= link_to "New Opening Time", new_admin_opening_time_path %></p>
+
+<%= eskimo_table({ :columns => [["Shopping Centre Name", "shopping_centre_name"], ["Date", lambda{ |x| l x.date }],
+                                ["Opening Hours", "opening_hours"], ["Display", lambda{ |x| x.display? ? 'Yes' : 'No' }, "display"]],
+                   :list => @opening_times, :lowlight => lambda{ |sc| !sc.display? } }) %>

@@ -1,0 +1,13 @@
+<% hide_left %>
+
+<h1><%= title("Site Map") %></h1>
+
+<ul>
+  <% for node in @roots %>
+    <%= render :partial => "site_map_node", :locals => {:node => node} %>
+  <% end %>
+</ul>
+
+<% content_for :right do %>
+  <%= render "/shared/common_right" %>
+<% end %>

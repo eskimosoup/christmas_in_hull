@@ -1,0 +1,20 @@
+<% hide_left %><% hide_right %>
+<h1><%= title("Offers") %></h1>
+
+<% if @offers.empty? %>
+  <p>No Offers.</p>
+<% else %>
+  <% @offers.each do |offer| %>
+    <% if offer.logo? %>
+     <div class="thumbnail"><%= link_to image_tag(offer.logo.url(:thumbnail), :alt => offer.logo_alt), offer %></div>
+    <% end %>
+    <h2 class="company_name"><%= link_to h(offer.company_name), offer %></h2>
+    <%=h offer.summary %><br />
+    <p align="right">
+    <%= link_to 'View Offer', offer %>
+    </p>
+    <div class="hr">
+      <hr />
+    </div>
+  <% end %>
+<% end %>

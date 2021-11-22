@@ -1,0 +1,39 @@
+<% hide_left %><% hide_right %>
+
+<h1><%= title h(@offer.company_name) %></h1>
+
+<% if @offer.image? %>
+    <%= image_tag @offer.image.url(:show),  :class => "image_right", :alt => @offer.image_alt %>
+<% end %>
+
+<p>
+  <% if @offer.logo? %>
+    <%= image_tag(@offer.logo.url(:show), :alt => @offer.logo_alt)%>
+  <% end %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%=h @offer.address %>
+</p>
+
+<p>
+  <b>Postcode:</b>
+  <%=h @offer.postcode %>(<%= link_to("View map", "http://maps.google.co.uk/maps?q=#{@offer.postcode}", {:popup => true}) %>)
+</p>
+
+<p>
+  <% unless @offer.website == "http://" %>
+    <b>Website:</b>
+    <%= link_to (@offer.website, @offer.website, {:target => "_blank"}) %>
+  <% end %>
+</p>
+<p>
+  <% if @offer.description? %>
+    <%= @offer.description %>
+  <% end %>
+</p>
+
+<div class="hr"><hr /></div>
+
+<%= link_to 'View All', offers_path %>

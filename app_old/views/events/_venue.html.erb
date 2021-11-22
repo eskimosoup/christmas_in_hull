@@ -1,0 +1,23 @@
+<div class="venue_details">
+  
+  <div class="left">
+    <h2><%= venue.name %></h2>
+    <p>
+      <%= h(venue.address) %>
+      <br />
+      <%= h(venue.postcode) %>
+    </p>
+    <p>
+      <%= link_to("View on Google maps", "http://maps.google.co.uk/maps?q=#{venue.postcode}", {:popup => true}) %>
+    </p>
+  </div>
+  
+  <div class="right">
+    <%= image_tag venue.image(:index) if venue.image? %>
+  </div>
+  
+  <div class="clear"></div>
+  
+</div>
+
+<div class="clear"></div>

@@ -1,0 +1,12 @@
+<% title("Articles") %>
+
+<p><%= link_to "New Article", new_admin_article_path %></p>
+
+<% form_for @search do |f| %>
+  <p>
+    <%= f.text_field :headline_or_summary_or_main_content_like %>
+    <%= f.submit "Search" %>
+  </p>
+<% end %>
+
+<%= eskimo_table({:columns => ["headline", ["Summary", lambda{|a| brev(a.summary, 50)}, "summary"], "date", ["Display", lambda{|x| x.display? ? 'Yes' : 'No' }, "display"]], :list => @articles, :images => true, :lowlight => lambda{|offer| !offer.display?}}) %>

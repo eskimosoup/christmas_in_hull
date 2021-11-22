@@ -1,6 +1,14 @@
 <iframe style="margin-left:5px;" width="188" height="206" src="https://www.youtube.com/embed/ArXb-CEnAig?rel=0" frameborder="0" allowfullscreen></iframe>
 
-
+<p class="fancy_font padding">
+  <a href="https://highstreetsafari.com/locations/hull" target="_blank"><%= image_tag("christmas-spirits.jpg", :alt=>"Christmas spirits", :style=>"margin-bottom: 8px;max-width:202px;height:auto;") %></a>
+  <br />
+Santa has a less famous brother, Albert Claus. Albert's job is to maintain the Christmas Spirit and spread joy bubbles on Christmas Day, but he's gone missing! Take part in the trail and scan each of the cheerful Spirits of Christmas, to learn what has happened to Albert and solve the mystery. Plus, download a free Christmas Spirit eBook.<br/>
+</p>
+<p style="padding-left: 12px; padding-right: 5px;">
+<a href="https://highstreetsafari.com/locations/hull" class="underline">Find out more and start the trail</a>
+</p>
+<div class="hr"><hr /></div>
 <p class="fancy_font padding">
   <a href="https://www.facebook.com/pages/Christmas-in-Hull/170492059701643" target="_blank"><%= image_tag("facebook.gif", :alt=>"facebook", :style=>"margin-bottom: 8px;") %></a>
   <br />
@@ -14,6 +22,7 @@
 
 <div class="hr"><hr /></div>
 
+<% if false %>
 <fieldset id="newsletter_subscription">
   <legend>Receive events and news from Hull BID</legend>
   <% form_tag '/create_subscriber' do %>
@@ -26,6 +35,8 @@
 
 <div class="hr"><hr /></div>
 
+<% end %>
+
 <p style="padding-left: 12px; padding-right: 5px;"><%= link_to_page "If you have a City Centre event to promote, please contact us.", "Contact Us", {:class=>"underline"} %></p>
 
 <div class="hr"><hr /></div>
@@ -33,7 +44,7 @@
 <h3 class="transport_information">Transport Information</h3>
 <%= image_tag("bus.jpg") %>
 <ul class="fancy_bullet">
-  <li><%= link_to "East Yorkshire Motor Services", "http://www.eyms.co.uk", {:popup => true, :class => "underline"} %></li>
-  <li><%= link_to "Stagecoach", "http://www.stagecoachbus.com", {:popup => true, :class => "underline"} %></li>
+  <li><%= link_to "East Yorkshire Motor Services", "https://www.eastyorkshirebuses.co.uk/festive-buses-0", {:popup => true, :class => "underline"} %></li>
+  <li><%= link_to "Stagecoach", "https://www.stagecoachbus.com/promos-and-offers/east-midlands/christmas/christmas-timetables", {:popup => true, :class => "underline"} %></li>
   <li><%= link_to "Taxi Safety", article_path(:id => 11), {:class => "underline"} %></li>
 </ul>

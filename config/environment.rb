@@ -31,7 +31,9 @@ end
 
 Rails::Initializer.run do |config|
 
-  config.cache_store = :file_store, "#{RAILS_ROOT}/public/fragment_cache"
+  # CHANGED
+  # config.cache_store = :file_store, "#{RAILS_ROOT}/public/fragment_cache"
+  config.cache_store = nil
   config.action_controller.page_cache_directory = "#{RAILS_ROOT}/public/page_cache"
 
   # Settings in config/environments/* take precedence over those specified here.

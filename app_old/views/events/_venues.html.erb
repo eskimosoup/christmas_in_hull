@@ -1,0 +1,16 @@
+<h2>VENUES</h2>
+<div class="hr">
+  <hr />
+</div>
+<% Venue.active.position.each do |venue| %>
+  <% unless venue.events.blank? %>
+    <% if params[:venue] && params[:venue].to_i == venue.id %>
+      <span class="venue_nav"><%= link_to(venue.name, {:action => "index", :venue => venue.id}, :class => "highlight") %>&nbsp;<%= link_to("[x]", {:action => "index"}) %></span>
+    <% else %>
+      <span class="venue_nav"><%= link_to(venue.name, {:action => "index", :venue => venue.id}) %></span>
+    <% end %>
+    <% if !(venue == Venue.active.position.last) %>
+      <div class="hr"><hr /></div>
+    <% end %>
+  <% end %>
+<% end %>
