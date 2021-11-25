@@ -15,7 +15,7 @@ class Banner < ActiveRecord::Base
   belongs_to :page_node, :class_name => "PageNode", :foreign_key => :page_id
   belongs_to :venue
 
-  has_attached_image :image, :styles => {:thumbnail => "80x63#", :large => "668x263#"}
+  has_attached_image :image, :styles => {:thumbnail => "80x63#", :large => "960x300#"}
   #has_attached_image :alt_image, :styles => {:thumbnail => "80x63#", :large => "668x263#"}
   has_images
 
@@ -24,7 +24,6 @@ class Banner < ActiveRecord::Base
   end
 
   def self.for_index
-    self.active.position.reject{|banner| !banner.image?}[0...3]
+    self.active.position.reject{|banner| !banner.image?}
   end
-
 end

@@ -19,13 +19,13 @@
         <% link_to banner_url(banner) do  %>
           <% content_tag(:div, :class => "banner_image") do %>
             <%= content_tag(:span, "") %>
-            <%= image_tag(banner.image.url, :width => "960", :height => "300") %>
+            <%= image_tag(banner.image(:large), :width => "960", :height => "300") %>
           <% end -%>
         <% end %>
       <% else %>
         <% content_tag(:div, :class => "banner_image") do %>
           <%= content_tag(:span, "") %>
-          <%= image_tag(banner.image.url, :width => "960", :height => "300") %>
+          <%= image_tag(banner.image(:large), :width => "960", :height => "300") %>
         <% end -%>
       <% end %>
     <% end -%>
